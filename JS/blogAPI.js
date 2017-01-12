@@ -1,0 +1,3 @@
+function getPost(int postNum){
+  
+}

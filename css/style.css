@@ -51,10 +51,6 @@ h4{
 small{
   opacity: 0.8;
 }
-
-label{
-  text-shadow:  0, 0, 0, rgba(0, 0, 0, 0);
-}
 /*Header Elements*/
 
 .nav{
@@ -90,11 +86,10 @@ label{
 .btn-ucf{
   background-color: rgba(0,0,0,0);
   border-style: solid;
-  border-color: #0D171F;
+  border-color: #333;
   border-width: thick;
   font-size: 25px;
   font-weight: bolder;
-  color: #0D171F;
 }
 
 .btn-ucf:hover{
@@ -167,6 +162,10 @@ label{
 
 .card-body{
   font-size: 20px;
+}
+
+.tech-commons-para{
+padding-top: 10px;
 }
 
 .card iframe{

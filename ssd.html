@@ -5,7 +5,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
@@ -32,18 +31,10 @@
 
     var hiring = false;
 
-
-
-
     $(document).ready(function(){
       if(!hiring){
         document.getElementById("hiring").style.display = "none";
       }
-
-      $('.masonry-container').masonry({
-        // options
-        itemSelector: '.item'
-      });
 
 
       var colapse1Size = $("#colapse-1-body").height();
@@ -364,7 +355,7 @@
         <div class="card-body">
           <div class = "grid" id="grid-content">
             <div class="container">
-              <div class="row masonry-container">
+              <div class="row">
               <div class="Item filter cb1 tc2 1d lap mac">
                 <img src="Images\products\mac.jpg" class="img-responsive" />
                 <div class="item-name">MacBook Air</div>
