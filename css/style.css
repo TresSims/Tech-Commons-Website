@@ -74,8 +74,11 @@ small{
   padding-top: 1em;
 }
 
-.dropdown{
+/*.dropdown{
   padding-top: 1em;
+}*/
+.dropdown{
+  padding-top: .5em;
 }
 
 .dropdown-menu a{
@@ -86,15 +89,19 @@ small{
 .btn-ucf{
   background-color: rgba(0,0,0,0);
   border-style: solid;
-  border-color: #333;
-  border-width: thick;
-  font-size: 25px;
-  font-weight: bolder;
+  /*border-color: #333;*/
+  border-color: #0D171F;
+  border-width: 4px;
+  font-size: 30px;
+  /*font-weight: bolder;*/
+  color: #0D171F;
 }
 
 .btn-ucf:hover{
   color: #fff;
   border-color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  box-shadow: 1px 1px 2px #000;
 }
 
 /*Header Image*/
@@ -163,9 +170,15 @@ small{
 .card-body{
   font-size: 20px;
 }
+.left-side-para{
+  font-size: 16px;
+  padding-top: 10px;
+  line-height: 25px;
+}
 
 .tech-commons-para{
-padding-top: 10px;
+  padding-top: 10px;
+  line-height: 30px;
 }
 
 .card iframe{
@@ -193,6 +206,7 @@ padding-top: 10px;
 
 .computers td{
   padding: 5px;
+  text-align: center;
 }
 
 /*Colapsable Elements*/
@@ -396,7 +410,13 @@ padding-top: 10px;
 .footer-tech-head{
   border-bottom-style: solid;
   border-color: #1b83c4;
+
 }
+
+/*.extend{
+  currently working on - Mikayla
+
+}*/
 
 .background-tech{
   background-color: #125681;
@@ -419,7 +439,7 @@ padding-top: 10px;
 }
 
 .footer-tech-content{
-  color:#125681;
+  color:#1b83c4;
 }
 
 
@@ -464,6 +484,18 @@ padding-top: 10px;
 
 .content li{
   margin-top: .5em;
+}
+.green:hover{
+
+  color: #39611F;
+
+}
+.blue:hover{
+  color: #135C8A;
+}
+
+.red:hover{
+  color: #A11919;
 }
 
 /*Social Media Branding*/
