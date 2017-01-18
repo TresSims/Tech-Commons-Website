@@ -39,6 +39,7 @@ body {
 h2 {
   font-size: 55px;
   font-weight: bold;
+  padding-left: 5px;
 }
 
 h3 {
@@ -85,6 +86,18 @@ small{
 .dropdown-menu a{
   text-shadow: none !important;
 }
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
 
 
 /*.btn-ucf{
@@ -210,6 +223,16 @@ small{
 
 .card-body{
   font-size: 20px;
+  padding-top: 10px;
+}
+
+.intro{
+
+  width:93%;
+
+}
+.col-lg-8{
+  padding-bottom: 2.5em;
 }
 .left-side-para{
   font-size: 16px;
@@ -228,8 +251,9 @@ small{
 }
 
 .card hr{
-  width: 80%;
+  width: 100%;
   border-color: #fc0;
+
 }
 
 .computers{
@@ -462,10 +486,12 @@ small{
   list-style: none;
   margin-top: 2em;
   font-size: 20px;
+
 }
 
 .content li{
   margin-top: .5em;
+  width:50%;
 }
 .green:hover{
 
@@ -478,6 +504,7 @@ small{
 
 .red:hover{
   color: #A11919;
+
 }
 
 /*Social Media Branding*/

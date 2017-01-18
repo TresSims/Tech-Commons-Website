@@ -55,6 +55,17 @@
     });
   </script>
 
+  <script>
+    $(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+
+  </script>
+
 
 <body>
 <div class="nav jumbotron">
@@ -78,31 +89,37 @@
       <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
     </div>
 
-    <div class="nav-Item">
-      <div class="btn-group aligned">
-        <button type="button" class="btn btn-ucf1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <h3><span class="glyphicon glyphicon-off"></span> Services</h3><span class="caret"></span></button>
-        <ul class="dropdown-menu multi-level" role="menu">
-          <li class="dropdown-submenu">
-            <a tabindex="-1" href="#">Labs</a>
-            <ul class="dropdown-menu">
-                  <li>Tech Commons I</li>
-            </ul>
-          </li>
-          <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href="#">Student Support Desk</a></li>
-          <!-- <div class="dropdown-divider"></div> -->
-          <li><a class="dropdown-item" href="ssd.html">Technology Rentals</a></li>
-          <!-- <div class="dropdown-divider"></div> -->
-          <li><a class="dropdown-item" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
-        </ul>
-        </div>
-    </div>
 
   </div>
-
-
-
+<div class="nav-Item">
+  <div class="dropcontainer">
+  <div class="dropdown">
+    <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#">Computer Labs</a></li>
+      <div class="dropdown-divider"></div>
+          <li><a tabindex="-1" href="#">UCF IT Support Center</a></li>
+      <div class="dropdown-divider"></div>
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Student Support Desk <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">Reserve a Room</a></li>
+          <li><a tabindex="-1" href="#">Support & Repair</a></li>
+          <li><a tabindex="-1" href="#">Technology Checkout</a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
       <!--<div class="nav-Item">
       <a href="ssd.html" class="head"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3></a>
     </div>
@@ -142,9 +159,32 @@
     </div>
   </div>
 
-  <div class="row">
 
+  <div class="row">
     <div class="col-lg-4">
+      <div class="card card-highlight">
+        <div class="card-head"><h4>Hours of Operation</h4></div>
+        <div class="card-body">
+          <ul style="list-style: none;">
+            <li>Monday - Friday</li>
+            <li>8:00AM - 5:00PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+      <!--<div class="card card-highlight"> this will make it dark-->
+          <div class="card-head">
+            <h4>Contact Information</h4>
+          </div>
+          <div class="card-body" >
+            <ul style="list-style: none;">
+              <li>TechCommons@ucf.edu</li>
+              <li>(407) 823-HELP</li>
+            </ul>
+          </div>
+      </div>
+
+    <!--<div class="col-lg-4">
       <div class="card card-highlight">
         <h4>Contact Information</h4><hr />
         <div class="card-body">
@@ -153,8 +193,28 @@
             <li>(407) 823-HELP</li>
           </ul>
         </div>
-      </div>
-      <div class="card">
+      </div>-->
+      <!--<div class="card">
+          <div class="card-head">
+            <h4>Spring 2017 - Week 2 Upate</h4>
+          </div>
+          <div class="card-body" >
+            <p>
+              <p>
+                Welcome back to class Knights! Hopefully you are all settled into your classes and looking forward to the semester! <br /> <br />
+                We have some big things happening here at Tech Commons which I am excited to share with you. <br />First, we now have brand new Surface Laptops available for check out from the Student Support Desk in Tech Commons II!
+                They come with a pen, charger, and are pre-loaded with Windows 10 as well as the software you guys are used to seeing on our Dell computers. Check out additional equipment available <a id="equipment-link" href="ssd.html">here</a>.  <br /><br />
+                Additionally, we recently got our brand new 3D printer! We don’t have it quite set up yet, but we are super excited to have that up and running. So make sure you keep checking Facebook and our website for more information about that.
+                <br /><br />
+                That’s all from us for now Knights! Good luck this semester, and stay connected!
+              </p>
+            </p>
+          </div>
+      </div>-->
+
+    </div>
+    <div class="col-lg-8">
+      <div class="intro card">
           <div class="card-head">
             <h4>Spring 2017 - Week 2 Upate</h4>
           </div>
@@ -172,22 +232,16 @@
           </div>
       </div>
 
-    </div>
-    <div class="col-lg-8">
-      <div >
+
+      <!--<div >
       <div class="card">
         <h4>Tech I Lab</h4><hr />
         <div class="card-body">
           <iframe src="https://extranet.cst.ucf.edu/LabWebRcvr/pages/digitalsign.aspx?labid=1" height="900" width="950" border="0"></iframe>
         </div>
       </div>
-      <!-- <div class="card">
-        <h4>Classroom Lab</h4><hr />
-        <div class="card-body">
-          <b>Macs Available:</b> 8 <br />
-          <b>Dells Available:</b> 66
-        </div>
-      </div> -->
+
+
     </div>
     <div >
     <div class="card">
@@ -195,7 +249,7 @@
       <div class="card-body">
         <iframe src="https://extranet.cst.ucf.edu/LabWebRcvr/pages/digitalsign.aspx?labid=2" height="800" width="950" border="0"></iframe>
       </div>
-    </div>
+    </div>-->
 
   </div>
   </div>
@@ -209,7 +263,7 @@
     <div class="row">
       <div class="col-lg-4 footer-help">
         <div class="footer-help-head">
-          <a href="#"><h3>Support Links</h3></a>
+          <h3>Support Links</h3>
         </div>
         <div class="footer-help-content">
           <ul class = "content">
@@ -223,7 +277,7 @@
       </div>
       <div class="col-lg-4 footer-tech">
         <div class = "footer-tech-head">
-          <a href="#"><h3>Technology Commons</h3></a>
+          <h3>Technology Commons</h3>
         </div>
         <div class="footer-tech-content">
           <ul class = "content">
@@ -238,7 +292,7 @@
 
       <div class="col-lg-4 footer-cst">
         <div class="footer-cst-head">
-          <a href="#"><h3>UCF IT</h3></a>
+          <h3>UCF IT</h3>
         </div>
         <div class="footer-cst-content">
           <ul class = "content">
