@@ -8,10 +8,14 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
+
+
   </head>
   <script>
 
-    var hiring = true; //set true to show hiring page at bottom
+
+
+    var hiring = false; //set true to show hiring page at bottom
 
     $(document).ready(function(){
       if(!hiring){
@@ -78,21 +82,26 @@
       <div class="btn-group aligned">
         <button type="button" class="btn btn-ucf1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <h3><span class="glyphicon glyphicon-off"></span> Services</h3><span class="caret"></span></button>
-        <ul class="dropdown-menu multi-level">
-          <li><a tabindex="-1" class="dropdown-submenu" href="#">Labs</a>
+        <ul class="dropdown-menu multi-level" role="menu">
+          <li class="dropdown-submenu">
+            <a tabindex="-1" href="#">Labs</a>
             <ul class="dropdown-menu">
-                  <li><a tabindex="-1" href="#">Tech Commons I</a></li></li>
-                </ul>
+                  <li>Tech Commons I</li>
+            </ul>
+          </li>
           <div class="dropdown-divider"></div>
           <li><a class="dropdown-item" href="#">Student Support Desk</a></li>
-          <div class="dropdown-divider"></div>
+          <!-- <div class="dropdown-divider"></div> -->
           <li><a class="dropdown-item" href="ssd.html">Technology Rentals</a></li>
-          <div class="dropdown-divider"></div>
+          <!-- <div class="dropdown-divider"></div> -->
           <li><a class="dropdown-item" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
         </ul>
         </div>
     </div>
+
   </div>
+
+
 
       <!--<div class="nav-Item">
       <a href="ssd.html" class="head"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3></a>
@@ -116,6 +125,8 @@
     </div>
   </div>
 </div>
+
+
 
 <div class="header-image" style="margin-top: -2.2em;">
   <center>
