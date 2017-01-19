@@ -232,6 +232,17 @@ small{
   border-width: thin;
   border-color: #fc0;
 }
+.card-head2{
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: #fc0;
+  width:20%;
+
+}
+
+.lab-intro{
+  width:50%;
+}
 
 .card-body{
   font-size: 18px;
@@ -246,6 +257,12 @@ small{
 
   width:93%;
 
+}
+.link{
+  text-decoration: underline;
+}
+.link:hover{
+  text-decoration:underline;
 }
 .col-lg-8{
   padding-bottom: 2.5em;
@@ -331,6 +348,10 @@ small{
 
 .filter{
   cursor: pointer;
+}
+
+.panel-body{
+  font-size: 18px;
 }
 
 /*items*/
