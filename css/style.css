@@ -162,6 +162,14 @@ small{
   background-color: #eceeef;
 }
 
+#grid{
+  padding: 6px 12px;
+}
+
+#list{
+  padding: 6px 12px;
+}
+
 /*Header Image*/
 
 .header-image
@@ -226,8 +234,12 @@ small{
 }
 
 .card-body{
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 10px;
+}
+
+.card-info-body{
+  font-size: 16px;
 }
 
 .intro{
@@ -330,7 +342,7 @@ small{
   display: inline-block;
 }
 .item-name{
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
   background-color: #000;
   margin-left: -5%;
