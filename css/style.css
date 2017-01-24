@@ -57,6 +57,40 @@ h4{
   font-size: 25px;
 }
 
+.accordion-help:hover:after{
+  text-decoration: none;
+  color: #333;
+}
+.accordion-help{
+  font-weight: normal;
+
+
+}
+
+.accordion-border{
+
+  border-bottom-style: solid;
+  border-width: thin;
+  border-color: var(--ucf-gold);
+  padding:8px;
+  text-align: left;
+  width: 100%;
+}
+.accordion-help:focus, .accordion-help:hover{
+  color: black;
+  text-decoration: none;
+  text-shadow: none;
+}
+.panel-heading{
+  text-decoration: none;
+  color: #333;
+
+
+}
+.collapsed:after{
+  color: black;
+}
+
 small{
   opacity: 0.8;
 }
