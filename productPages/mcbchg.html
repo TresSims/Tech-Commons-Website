@@ -1,50 +1,28 @@
 <html>
-  <head>
-      <title>Technology Commons</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="..\css\style.css">
-      <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
-  </head>
 
-  <!-- Go to Top Code -->
-  <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up" style="z-index:2000"></span></a>
-  <script>
-    $(window).scroll(function() {
-      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-      } else {
-          $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-      }
-    });
-    $('#return-to-top').click(function() {      // When arrow is clicked
-      $('body,html').animate({
-          scrollTop : 0                       // Scroll to top of body
-      }, 500);
-    });
-  </script>
+<head>
+    <title>Technology Commons</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
-  <script>
+    <script src="../JS/scripts.js"></script>
+</head>
 
-    var hiring = false;
-
-    $(document).ready(function(){
-      if(!hiring){
-        document.getElementById("hiring").style.display = "none";
-      }
-    });
-  </script>
+<!-- Go to Top Code -->
+<a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up" style="z-index:2000"></span></a>
 
 <body>
-<div class="nav jumbotron">
-  <div class="Title">
-    <a href="../index.html" class="head"><h2>Technology Commons</h2></a>
-  </div>
-  <div class="navigation">
-    <!--<div class="nav-Item">
+    <div class="nav jumbotron">
+        <div class="Title">
+            <a href="../index.html" class="head"><h2>Technology Commons</h2></a>
+        </div>
+        <div class="navigation">
+            <!--<div class="nav-Item">
       <div class="dropdown">
         <button class="btn btn-ucf dropdown-toggle" type="button" data-toggle="dropdown">Labs
         <span class="caret"></span></button>
@@ -56,35 +34,35 @@
       </div>
     </div>-->
 
-    <div class="nav-Item">
-      <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
-    </div>
+            <div class="nav-Item">
+                <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
+            </div>
 
 
 
-<div class="nav-Item">
-  <div class="dropcontainer">
-  <div class="dropdown">
-    <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
+            <div class="nav-Item">
+                <div class="dropcontainer">
+                    <div class="dropdown">
+                        <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
     <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a tabindex="-1" href="#">Computer Labs</a></li>
-      <div class="dropdown-divider"></div>
-          <li><a tabindex="-1" href="#">UCF IT Support Center</a></li>
-      <div class="dropdown-divider"></div>
-      <li class="dropdown-submenu">
-        <a class="test" tabindex="-1" href="#">Student Support Desk <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a tabindex="-1" href="#">Reserve a Room</a></li>
-          <li><a tabindex="-1" href="#">Support & Repair</a></li>
-          <li><a tabindex="-1" href="#">Technology Checkout</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-      <!--<div class="nav-Item">
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">Computer Labs</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a tabindex="-1" href="#">UCF IT Support Center</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">Student Support Desk <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" href="#">Reserve a Room</a></li>
+                                    <li><a tabindex="-1" href="#">Support & Repair</a></li>
+                                    <li><a tabindex="-1" href="#">Technology Checkout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="nav-Item">
       <a href="ssd.html" class="head"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3></a>
     </div>
     <div class="nav-Item">
@@ -101,137 +79,139 @@
         </div>
     </div>-->
 
-    <div class="nav-Item">
-      <a href="index.html" class="head"><h3><span class="glyphicon glyphicon-home"></span> Home</h3></a>
-    </div>
-  </div>
-</div>
-
-<div class="header-image" style="margin-top: -2.2em;">
-  <center>
-    <img src="..\Images\Classroom1440.jpg" style="width: 100%;"/>
-  </center>
-</div>
-
-<div class="container" id="body-div">
-
-  <div class="body-head-gaurd">
-    <div class = "body-head">
-      <h2>MacBook Chargers</h2>
-    </div>
-  </div>
-
-  <div class="col-lg-3">
-    <div class="sidebar card">
-      <a href="..\ssd.html" style="color: #0269C2"><h3><b>Back To All Technology</b></h3></a>
-    </div>
-    <div class="card">
-      <div class="card-head">
-        <h3>Quick Info</h3>
-      </div>
-      <br />
-      <ul class="item-info">
-        <li><span class="glyphicon glyphicon-info-sign"></span> Charger</li>
-        <li><span class="glyphicon glyphicon-hourglass"></span> Rented until Close</li>
-        <li><span class="glyphicon glyphicon-user"></span> Students</li>
-        <li><span class="glyphicon glyphicon-home"></span> TCII, CBI</li>
-        <li><span class="glyphicon glyphicon-usd"></span> You Break it, You buy It</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card-head">
-        <h4>Works With</h4>
-      </div>
-      <div class="card-body">
-      <p> We have both new and old versions of the MacBook charger, they will work with any apple laptop.</p>
-    </div>
-    </div>
-  </div>
-
-  <div class="col-lg-9">
-    <div class="card">
-      <div class="card-head">
-        <img src="..\Images\products\mcbchg.jpg" class="img-responsive item-img">
-        <div class="item-title">MacBook Charger
+            <div class="nav-Item">
+                <a href="index.html" class="head"><h3><span class="glyphicon glyphicon-home"></span> Home</h3></a>
+            </div>
         </div>
-      </div>
-      <div class="card-body">
-        <p class="tech-commons-para">Both new and old verisons of the apple MagSafe chargers, will work with any model of apple laptop devices. These are only rented out until the end of the day, and our due back by the time the SSD closes.</p>
-      </div>
     </div>
-  </div>
 
-</div>
+    <div class="header-image" style="margin-top: -2.2em;">
+        <center>
+            <img src="..\Images\Classroom1440.jpg" style="width: 100%;" />
+        </center>
+    </div>
 
-<footer class="footer">
+    <div class="container" id="body-div">
 
-  <div class="container footer-container">
-    <div class="row">
-      <div class="col-lg-4 footer-help">
-        <div class="footer-help-head">
-          <a href="#"><h3>Support Links</h3></a>
+        <div class="body-head-gaurd">
+            <div class="body-head">
+                <h2>MacBook Chargers</h2>
+            </div>
         </div>
-        <div class="background-help"></div>
-        <div class="footer-help-content">
-          <ul class = "content">
-            <li><a href="https://extranet.cst.ucf.edu/PWSelfReset/pages/NidCheck.aspx">NID Reset</a></li>
-            <li><a href="http://www.cst.ucf.edu/wp-content/uploads/Download-Microsoft-Office.pdf">Download MS Office</a></li>
-            <li><a href="http://www.cst.ucf.edu/about/telecommunications/network-services/wireless-for-students-faculty-and-staff/">Connect to UCF Wireless</a></li>
-            <li><a href="http://doodle.com/poll/zp5wqtkxrew77n67">Signup for Adobe Classes</a></li>
-            <li><a href="reservation.html">Reserve a Room</a></li>
-          </ul>
+
+        <div class="col-lg-3">
+            <div class="sidebar card">
+                <a href="..\ssd.html" style="color: #0269C2"><h3><b>Back To All Technology</b></h3></a>
+            </div>
+            <div class="card">
+                <div class="card-head">
+                    <h3>Quick Info</h3>
+                </div>
+                <br />
+                <ul class="item-info">
+                    <li><span class="glyphicon glyphicon-info-sign"></span> Charger</li>
+                    <li><span class="glyphicon glyphicon-hourglass"></span> Rented until Close</li>
+                    <li><span class="glyphicon glyphicon-user"></span> Students</li>
+                    <li><span class="glyphicon glyphicon-home"></span> TCII, CBI</li>
+                    <li><span class="glyphicon glyphicon-usd"></span> You Break it, You buy It</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-head">
+                    <h4>Works With</h4>
+                </div>
+                <div class="card-body">
+                    <p> We have both new and old versions of the MacBook charger, they will work with any apple laptop.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-4 footer-tech">
-        <div class = "footer-tech-head">
-          <a href="#"><h3>Technology Commons</h3></a>
+
+        <div class="col-lg-9">
+            <div class="card">
+                <div class="card-head">
+                    <img src="..\Images\products\mcbchg.jpg" class="img-responsive item-img">
+                    <div class="item-title">MacBook Charger
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p class="tech-commons-para">Both new and old verisons of the apple MagSafe chargers, will work with any model of apple laptop devices. These are only rented out until the end of the day, and our due back by the time the SSD closes.</p>
+                </div>
+            </div>
         </div>
-      <div class="background-tech"></div>
-        <div class="footer-tech-content">
-          <ul class = "content">
-            <li><a href="ssd.html">Student Support Desk</a></li>
-            <li><a href="techII.html">Tech Commons II</a></li>
-            <li><a href="techI.html">Tech Commons I</a></li>
-            <li><a href="cbI.html">Classroom I</a></li>
-            <li><a href="http://cstore.ucf.edu/">Technology Product Center</a></li>
-          </ul>
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col-lg-4 footer-help">
+                    <div class="footer-help-head">
+                        <a href="#"><h3>Support Links</h3></a>
+                    </div>
+                    <div class="background-help"></div>
+                    <div class="footer-help-content">
+                        <ul class="content">
+                            <li><a href="https://extranet.cst.ucf.edu/PWSelfReset/pages/NidCheck.aspx">NID Reset</a></li>
+                            <li><a href="http://www.cst.ucf.edu/wp-content/uploads/Download-Microsoft-Office.pdf">Download MS Office</a></li>
+                            <li><a href="http://www.cst.ucf.edu/about/telecommunications/network-services/wireless-for-students-faculty-and-staff/">Connect to UCF Wireless</a></li>
+                            <li><a href="http://doodle.com/poll/zp5wqtkxrew77n67">Signup for Adobe Classes</a></li>
+                            <li><a href="reservation.html">Reserve a Room</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 footer-tech">
+                    <div class="footer-tech-head">
+                        <a href="#"><h3>Technology Commons</h3></a>
+                    </div>
+                    <div class="background-tech"></div>
+                    <div class="footer-tech-content">
+                        <ul class="content">
+                            <li><a href="ssd.html">Student Support Desk</a></li>
+                            <li><a href="techII.html">Tech Commons II</a></li>
+                            <li><a href="techI.html">Tech Commons I</a></li>
+                            <li><a href="cbI.html">Classroom I</a></li>
+                            <li><a href="http://cstore.ucf.edu/">Technology Product Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 footer-cst">
+                    <div class="footer-cst-head">
+                        <a href="#"><h3>CS & T</h3></a>
+                    </div>
+                    <div class="background-cst"></div>
+                    <div class="footer-cst-content">
+                        <ul class="content">
+                            <li><a href="http://www.cst.ucf.edu/service-desk/about-the-service-desk/">Service Desk</a></li>
+                            <li><a href="http://www.cst.ucf.edu/service-desk/service-desk-help-for-students/">Student Help</a></li>
+                            <li><a href="http://www.cst.ucf.edu/service-desk/service-desk-help-for-facultystaff/">Faculty/Staff Help</a></li>
+                            <li><a href="http://www.cst.ucf.edu/submit-a-ticket/">Submit a Ticket</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <center>
+
+                <div class="social">
+                    <span class="social-img"><a href="https://www.facebook.com/UCFTechCommons"><img src="..\Images\Social\facebook.png" class = "img-fluid social-footer"/></a></span>
+                    <span class="social-img"><a href="https://twitter.com/ucftechcommons"><img src="..\Images\Social\twitter.png" class = "img-fluid social-footer"/></a></span>
+                    <span class="social-img"><a href="mailto:ssd@ucf.edu"><span class="glyphicon glyphicon-envelope"></span></a>
+                    </span>
+                    <span class="social-img" id="hiring"><a href="work.html"><span class = "glyphicon glyphicon-user"></span></a>
+                    </span>
+                </div>
+
+                <div class="copy">
+                    techcommons@ucf.edu &bull; (407) 823-HELP &bull; Copyright Tech Commons 2016
+                </div>
+            </center>
         </div>
-      </div>
-
-      <div class="col-lg-4 footer-cst">
-        <div class="footer-cst-head">
-          <a href="#"><h3>CS & T</h3></a>
-        </div>
-        <div class="background-cst"></div>
-        <div class="footer-cst-content">
-          <ul class = "content">
-            <li><a href="http://www.cst.ucf.edu/service-desk/about-the-service-desk/">Service Desk</a></li>
-            <li><a href="http://www.cst.ucf.edu/service-desk/service-desk-help-for-students/">Student Help</a></li>
-            <li><a href="http://www.cst.ucf.edu/service-desk/service-desk-help-for-facultystaff/">Faculty/Staff Help</a></li>
-            <li><a href="http://www.cst.ucf.edu/submit-a-ticket/">Submit a Ticket</a></li>
-          </ul>
-        </div>
-      </div>
-  </div>
-
-  <center>
-
-  <div class="social">
-    <span class="social-img"><a href="https://www.facebook.com/UCFTechCommons"><img src="..\Images\Social\facebook.png" class = "img-fluid social-footer"/></a></span>
-    <span class="social-img"><a href="https://twitter.com/ucftechcommons"><img src="..\Images\Social\twitter.png" class = "img-fluid social-footer"/></a></span>
-    <span class="social-img" ><a href="mailto:ssd@ucf.edu"><span class="glyphicon glyphicon-envelope"></span></a></span>
-    <span class="social-img" id="hiring"><a href="work.html"><span class = "glyphicon glyphicon-user"></span></a></span>
-  </div>
-
-  <div class="copy">
-    techcommons@ucf.edu &bull; (407) 823-HELP &bull; Copyright Tech Commons 2016
-  </div>
-</center>
-</div>
 
 
 
-</footer>
+    </footer>
 
 </body>
 

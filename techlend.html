@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="JS\scripts.js"></script>
+    <script src="JS\techlend.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
@@ -13,266 +15,6 @@
 
 <!-- Go to Top Code -->
 <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up" style="z-index:2000"></span></a>
-<script>
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200); // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200); // Else fade out the arrow
-        }
-    });
-    $('#return-to-top').click(function() { // When arrow is clicked
-        $('body,html').animate({
-            scrollTop: 0 // Scroll to top of body
-        }, 500);
-    });
-</script>
-
-<script>
-    var hiring = false;
-
-    $(document).ready(function() {
-        if (!hiring) {
-            document.getElementById("hiring").style.display = "none";
-        }
-
-
-        var colapse1Size = $("#colapse-1-body").height();
-        $("#colapse-1-head").click(function() {
-            if ($("#colapse-1-body").css("height") != "0px") {
-                $("#colapse-1-body").animate({
-                    height: "0px"
-                }, 100);
-                $("#colapse-1-icon").html("<span class='glyphicon glyphicon-minus-sign'></span>");
-            } else {
-                $("#colapse-1-body").animate({
-                    height: colapse1Size + "px"
-                }, 100);
-                $("#colapse-1-icon").html("<span class='glyphicon glyphicon-plus-sign'></span>");
-            }
-
-        });
-
-        var colapse2Size = $("#colapse-2-body").height();
-        $("#colapse-2-head").click(function() {
-            if ($("#colapse-2-body").css("height") != "0px") {
-                $("#colapse-2-body").animate({
-                    height: "0px"
-                }, 100);
-                $("#colapse-2-icon").html("<span class='glyphicon glyphicon-minus-sign'></span>");
-            } else {
-                $("#colapse-2-body").animate({
-                    height: colapse2Size + "px"
-                }, 100);
-                $("#colapse-2-icon").html("<span class='glyphicon glyphicon-plus-sign'></span>");
-            }
-
-        });
-
-        var colapse3Size = $("#colapse-3-body").height();
-        $("#colapse-3-head").click(function() {
-            if ($("#colapse-3-body").css("height") != "0px") {
-                $("#colapse-3-body").animate({
-                    height: "0px"
-                }, 100);
-                $("#colapse-3-icon").html("<span class='glyphicon glyphicon-minus-sign'></span>");
-            } else {
-                $("#colapse-3-body").animate({
-                    height: colapse3Size + "px"
-                }, 100);
-                $("#colapse-3-icon").html("<span class='glyphicon glyphicon-plus-sign'></span>");
-            }
-
-        });
-
-
-        var active = "grid";
-        $("#grid").click(function() {
-            console.log("grid");
-            if (active != "grid") {
-                active = "grid";
-                $("#grid").removeClass("btn-default");
-                $("#grid").addClass("btn-primary");
-                $("#list").removeClass("btn-primary");
-                $("#list").addClass("btn-default");
-
-                $("#grid-content").css("display", "block");
-                $("#list-content").css("display", "none");
-            }
-        });
-        $("#list").click(function() {
-            console.log("list")
-            if (active != "list") {
-                active = "list";
-                $("#list").removeClass("btn-default");
-                $("#list").addClass("btn-primary");
-                $("#grid").removeClass("btn-primary");
-                $("#grid").addClass("btn-default");
-
-                $("#list-content").css("display", "block");
-                $("#grid-content").css("display", "none");
-            }
-        });
-        $("#list-content").css("display", "none");
-
-
-        function filterBy(type) {
-            $(".filter").each(function() {
-                $(this).addClass("invisible");
-            });
-            if (type == "") {
-                $(".filter").each(function() {
-                    $(this).removeClass("invisible");
-                });
-            } else {
-                $(type).each(function() {
-                    $(this).removeClass("invisible");
-                });
-            }
-            anyResults();
-        }
-
-        function removeFilter() {
-            $(".choice").each(function() {
-                $(this).removeClass("filtering-by");
-            });
-        }
-
-        function anyResults() {
-            $("#no-results").addClass("invisible");
-            var results = false;
-            $(".filter").each(function() {
-                var invis = $(this).hasClass("invisible");
-                if (!invis) {
-                    results = true;
-                }
-            });
-            if (!results) {
-                console.log("nothing here");
-                $("#no-results").removeClass("invisible");
-            }
-        }
-
-        $("#tc2").click(function() {
-            filterBy('.tc2');
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#cb1").click(function() {
-            filterBy('.cb1');
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#1d").click(function() {
-            filterBy(".1d");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#3d").click(function() {
-            filterBy(".3d");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#7d").click(function() {
-            filterBy(".7d");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#cam").click(function() {
-            filterBy(".cam");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#tab").click(function() {
-            filterBy(".tab");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#chg").click(function() {
-            filterBy(".chg");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#clo").click(function() {
-            filterBy(".clo");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#lap").click(function() {
-            filterBy(".lap");
-            removeFilter();
-            $(this).addClass("filtering-by");
-        });
-
-        $("#all").click(function() {
-            filterBy("");
-            removeFilter();
-        });
-
-        //go to product page
-        $(".dellOld").click(function() {
-            window.location.href = "productPages\\dellOld.html";
-        });
-
-        $(".mac").click(function() {
-            window.location.href = "productPages\\mac.html";
-        });
-
-        $(".dellNew").click(function() {
-            window.location.href = "productPages\\dellNew.html";
-        });
-
-        $(".hero").click(function() {
-            window.location.href = "productPages\\hero.html";
-        });
-
-        $(".surface").click(function() {
-            window.location.href = "productPages\\surface.html";
-        });
-
-        $(".appleNew").click(function() {
-            window.location.href = "productPages\\appleNew.html";
-        });
-
-        $(".appleOld").click(function() {
-            window.location.href = "productPages\\appleOld.html";
-        });
-
-        $(".andchg").click(function() {
-            window.location.href = "productPages\\andchg.html";
-        });
-
-        $(".aplchg").click(function() {
-            window.location.href = "productPages\\aplchg.html";
-        });
-
-        $(".mcbchg").click(function() {
-            window.location.href = "productPages\\mcbchg.html";
-        });
-        $(".pcchg").click(function() {
-            window.location.href = "productPages\\pcchg.html";
-        });
-
-    });
-</script>
-
-<!-- Tooltips -->
-<script>
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip({
-            html: true
-        });
-    });
-</script>
 
 <body>
     <div class="nav jumbotron">
@@ -281,17 +23,20 @@
         </div>
         <div class="navigation">
 
+
             <div class="nav-Item">
                 <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
             </div>
+
+
 
             <div class="nav-Item">
                 <div class="dropcontainer">
                     <div class="dropdown">
                         <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
-          <span class="caret"></span></button>
+  <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="computerlabs.html">Computer Labs</a></li>
+                            <li><a tabindex="-1" href="#">Computer Labs</a></li>
                             <div class="dropdown-divider"></div>
                             <li><a tabindex="-1" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
                             <div class="dropdown-divider"></div>
@@ -300,20 +45,35 @@
                                 <ul class="dropdown-menu">
                                     <li><a tabindex="-1" href="#">Reserve a Room</a></li>
                                     <li><a tabindex="-1" href="#">Support & Repair</a></li>
-                                    <li><a tabindex="-1" href="techlend.html">Technology Lending</a></li>
+                                    <li><a tabindex="-1" href="#">Technology Checkout</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <!--<div class="nav-Item">
+    <a href="ssd.html" class="head"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3></a>
+  </div>
+  <div class="nav-Item">
+    <div class="dropdown">
+      <a href="#" class="head btn btn-ucf1 dropdown-toggle" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3><span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Labs</a></li>
+        <div class="dropdown-divider"></div>
+        <li><a class="dropdown-item" href="#">Student Support Desk</a></li>
+        <div class="dropdown-divider"></div>
+        <li><a class="dropdown-item" href="ssd.html">Technology Rentals</a></li>
+        <div class="dropdown-divider"></div>
+        <li><a class="dropdown-item" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
+      </div>
+  </div>-->
 
             <div class="nav-Item">
                 <a href="index.html" class="head"><h3><span class="glyphicon glyphicon-home"></span> Home</h3></a>
             </div>
         </div>
     </div>
-
     <div class="header-image" style="margin-top: -2.2em;">
         <center>
             <img src="Images\Classroom1440.jpg" style="width: 100%;" />
@@ -322,7 +82,7 @@
     <div class="container">
         <div class="body-head-gaurd">
             <div class="body-head">
-                <h2>Technology Lending</h2>
+                <h2>Technology Checkout</h2>
             </div>
         </div>
 
@@ -380,7 +140,7 @@
                     </div>
                 </div>
 
-                <div class="card-info-body">
+                <div class="card-body">
                     <div class="grid" id="grid-content">
                         <div class="container">
                             <div class="row">
