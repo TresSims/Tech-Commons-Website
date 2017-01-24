@@ -9,34 +9,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
+
+    <script src="JS/scripts.js"></script>
 </head>
 
 <!-- Go to Top Code -->
 <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up" style="z-index:2000"></span></a>
-<script>
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200); // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200); // Else fade out the arrow
-        }
-    });
-    $('#return-to-top').click(function() { // When arrow is clicked
-        $('body,html').animate({
-            scrollTop: 0 // Scroll to top of body
-        }, 500);
-    });
-</script>
-
-<script>
-    var hiring = false;
-
-    $(document).ready(function() {
-        if (!hiring) {
-            document.getElementById("hiring").style.display = "none";
-        }
-    });
-</script>
 
 <body>
     <div class="nav jumbotron">
@@ -153,33 +131,33 @@
                             </tr>
                         </table>
                     </div>-->
+            </div>
+            <div class="card card-highlight">
+                <div class="card-head">
+                    <h4>Hours of Operation</h4></div>
+                <div class="card-body">
+                    <p>Monday - Friday </br>8:00AM - 5:00PM</p>
                 </div>
-                <div class="card card-highlight" >
-                    <div class="card-head">
-                        <h4>Hours of Operation</h4></div>
-                    <div class="card-body">
-                        <p>Monday - Friday </br>8:00AM - 5:00PM</p>
-                    </div>
+            </div>
+            <div class="card ">
+                <div class="card-head">
+                    <h4>Computers</h4></div>
+                <div class="card-body" style="display:flex;justify-content:center;align-items:center;">
+                    <table class="computers">
+                        <tr>
+                            <th>Computer Type</th>
+                            <th>Number of Computers</th>
+                        </tr>
+                        <tr>
+                            <td>Macs</td>
+                            <td>12 Computers</td>
+                        </tr>
+                        <tr>
+                            <td>Windows</td>
+                            <td>58 Computers</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="card ">
-                    <div class="card-head">
-                        <h4>Computers</h4></div>
-                    <div class="card-body" style="display:flex;justify-content:center;align-items:center;">
-                        <table class="computers">
-                            <tr>
-                                <th>Computer Type</th>
-                                <th>Number of Computers</th>
-                            </tr>
-                            <tr>
-                                <td>Macs</td>
-                                <td>12 Computers</td>
-                            </tr>
-                            <tr>
-                                <td>Windows</td>
-                                <td>58 Computers</td>
-                            </tr>
-                        </table>
-                    </div>
 
             </div>
         </div>
@@ -193,10 +171,10 @@
 
 
 
-        </div>
+    </div>
 
 
-        <!--  <div class="card">
+    <!--  <div class="card">
     <div class="card-head">
       <h4>Installed Software</h4>
     </div>
@@ -296,115 +274,115 @@
       </tr>
     </table>
   </div>-->
-          <div class="card col-lg-7">
-            <h4>Technology Commons I Lab - Available Seating</h4>
-            <hr />
-            <div class="card-head">
-                <iframe src="https://extranet.cst.ucf.edu/LabWebRcvr/pages/digitalsign.aspx?labid=1" height="900" width="950" border="0"></iframe>
-            </div>
+    <div class="card col-lg-7">
+        <h4>Technology Commons I Lab - Available Seating</h4>
+        <hr />
+        <div class="card-head">
+            <iframe src="https://extranet.cst.ucf.edu/LabWebRcvr/pages/digitalsign.aspx?labid=1" height="900" width="950" border="0"></iframe>
         </div>
-        <div class="col-lg-4">
-        <div class="card">
-          <div class="card-head">
-            <h4>Installed Software</h4>
-          </div>
-         <table class="item-list" style="margin-left: auto">
-            <tr>
-              <th>Windows: Running Windows 10</th>
-            </tr>
-            <tr>
-              <td>Adobe Acrobat DC</td>
-            </tr>
-            <tr>
-              <td>Adobe Creative Cloud 2015</td>
-            </tr>
-            <tr>
-              <td>Audacity</td>
-            </tr>
-            <tr>
-              <td>ArcGIS</td>
-            </tr>
-            <tr>
-              <td>Code BLocks 16.01</td>
-            </tr>
-            <tr>
-              <td>FileZilla</td>
-            </tr>
-            <tr>
-              <td>Firefox</td>
-            </tr>
-            <tr>
-              <td>Google Chrome</td>
-            </tr>
-            <tr>
-              <td>ImgBurn</td>
-            </tr>
-            <tr>
-              <td>Microsoft Access 2016</td>
-            </tr>
-            <tr>
-              <td>Microsoft Excell 2016</td>
-            </tr>
-            <tr>
-              <td>Microsoft Power Point 2016</td>
-            </tr>
-            <tr>
-              <td>Microsoft Project 2016</td>
-            </tr>
-            <tr>
-              <td>Microsoft Visio 2016</td>
-            </tr>
-            <tr>
-              <td>Microsoft Word 2016</td>
-            </tr>
-            <tr>
-              <td>Notepad++</td>
-            </tr>
-            <tr>
-              <td>Paint.net</td>
-            </tr>
-            <tr>
-              <td>PuTTY</td>
-            </tr>
-            <tr>
-              <td>SecondLife</td>
-            </tr>
-            <tr>
-              <td>Skype</td>
-            </tr>
-            <tr>
-              <td>SPSS 23.0</td>
-            </tr>
-            <tr>
-              <td>VLC</td>
-            </tr>
-            <tr>
-              <td>7-Zip</td>
-            </tr>
-
-            <tr>
-              <th>MacOS: Running OSX 10.11 El Capitan</th>
-            </tr>
-            <tr>
-              <td>Google Chrome</td>
-            </tr>
-            <tr>
-              <td>Microsoft Excell</td>
-            </tr>
-            <tr>
-              <td>Microsoft PowerPoint</td>
-            </tr>
-            <tr>
-              <td>Microsoft Word</td>
-            </tr>
-            <tr>
-              <td>SecondLife</td>
-            </tr>
-            <tr>
-              <td>Xcode</td>
-            </tr>
-          </table>
     </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-head">
+                <h4>Installed Software</h4>
+            </div>
+            <table class="static-list" style="margin-left: auto">
+                <tr>
+                    <th>Windows: Running Windows 10</th>
+                </tr>
+                <tr>
+                    <td>Adobe Acrobat DC</td>
+                </tr>
+                <tr>
+                    <td>Adobe Creative Cloud 2015</td>
+                </tr>
+                <tr>
+                    <td>Audacity</td>
+                </tr>
+                <tr>
+                    <td>ArcGIS</td>
+                </tr>
+                <tr>
+                    <td>Code BLocks 16.01</td>
+                </tr>
+                <tr>
+                    <td>FileZilla</td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                </tr>
+                <tr>
+                    <td>Google Chrome</td>
+                </tr>
+                <tr>
+                    <td>ImgBurn</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Access 2016</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Excell 2016</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Power Point 2016</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Project 2016</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Visio 2016</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Word 2016</td>
+                </tr>
+                <tr>
+                    <td>Notepad++</td>
+                </tr>
+                <tr>
+                    <td>Paint.net</td>
+                </tr>
+                <tr>
+                    <td>PuTTY</td>
+                </tr>
+                <tr>
+                    <td>SecondLife</td>
+                </tr>
+                <tr>
+                    <td>Skype</td>
+                </tr>
+                <tr>
+                    <td>SPSS 23.0</td>
+                </tr>
+                <tr>
+                    <td>VLC</td>
+                </tr>
+                <tr>
+                    <td>7-Zip</td>
+                </tr>
+
+                <tr>
+                    <th>MacOS: Running OSX 10.11 El Capitan</th>
+                </tr>
+                <tr>
+                    <td>Google Chrome</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Excell</td>
+                </tr>
+                <tr>
+                    <td>Microsoft PowerPoint</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Word</td>
+                </tr>
+                <tr>
+                    <td>SecondLife</td>
+                </tr>
+                <tr>
+                    <td>Xcode</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     </div>

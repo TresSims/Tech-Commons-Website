@@ -401,6 +401,28 @@ small{
   text-shadow: none !important;
 }
 
+.static-list{
+  margin: 3em;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3;
+  width: 90%;
+}
+
+.static-list th{
+  background-color: #fff;
+  border-bottom: solid;
+  border-bottom-width: thin;
+}
+
+.static-list td, th{
+  padding: 10px;
+}
+
+.static-list tr:nth-child(even){
+  background-color: #f0f0f0;
+}
+
 .item-list{
   margin: 3em;
   border-style: solid;
