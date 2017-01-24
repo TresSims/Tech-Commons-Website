@@ -402,7 +402,9 @@ small{
 }
 
 .item-list{
-  margin: 3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-right: 3em;
   border-style: solid;
   border-width: thin;
   border-radius: 3;
@@ -417,10 +419,30 @@ small{
 
 .item-list td, th{
   padding: 10px;
+  border: 1px solid #dddddd;
 }
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+    text-decoration: none;
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+
+
 
 .item-list tr:nth-child(even){
   background-color: #f0f0f0;
+}
+.item-list tr:nth-child(odd){
+  background-color: #fdfdfd;
 }
 
 .item-list tr:hover{
