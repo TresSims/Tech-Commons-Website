@@ -328,10 +328,28 @@ small{
 
 }
 
+.lab-anchor{
+
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right-style: solid;
+  border-right-width: thin;
+  border-right-color:var(--ucf-gold);
+  text-decoration: underline;
+
+}
+.lab-anchor:hover{
+  color: #333;
+  text-decoration: underline;
+}
+
 .computers{
-
-  margin-top: 20px;
-
+  margin-top: 15px;
+  margin-bottom: 15px;
   border-top-style: solid;
   border-bottom-style: solid;
 }
@@ -344,7 +362,37 @@ small{
 .computers td{
   padding: 5px;
   text-align: center;
+
 }
+
+.small-chart{
+  border: none;
+  text-align: center;
+}
+
+.hours{
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+.hours tr{
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.hours td{
+  padding: 5px;
+  text-align: center;
+}
+
+.small-chart{
+  border: none;
+
+}
+
 
 /*Colapsable Elements*/
 
@@ -478,9 +526,7 @@ small{
   border: 1px solid #dddddd;
 }
 
-.small-chart{
-  border: none;
-}
+
 
 .panel-heading .accordion-toggle:after {
     /* symbol for "opening" panels */
