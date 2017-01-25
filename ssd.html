@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="JS\scripts.js"></script>
-    <script src="JS\techlend.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
-</head>
 
-<!-- Go to Top Code -->
+    <script src="JS\scripts.js"></script>
+
+
+</head>
 <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up" style="z-index:2000"></span></a>
+
 
 <body>
     <div class="nav jumbotron">
@@ -22,36 +23,21 @@
             <a href="index.html" class="head"><h2>Technology Commons</h2></a>
         </div>
         <div class="navigation">
-            <!--<div class="nav-Item">
-      <div class="dropdown">
-        <button class="btn btn-ucf dropdown-toggle" type="button" data-toggle="dropdown">Labs
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li><a href="techI.html">Tech Commons I</a></li>
-          <li><a href="techII.html">Tech Commons II</a></li>
-          <li><a href="cbI.html">Classroom I</a></li>
-        </ul>
-      </div>
-    </div>-->
-
             <div class="nav-Item">
                 <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
             </div>
-
-
-
             <div class="nav-Item">
                 <div class="dropcontainer">
                     <div class="dropdown">
                         <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
-    <span class="caret"></span></button>
+        <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="techlabs.html">Computer Labs</a></li>
+                            <li><a tabindex="-1" href="techItest.html">Computer Labs</a></li>
                             <div class="dropdown-divider"></div>
                             <li><a tabindex="-1" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
                             <div class="dropdown-divider"></div>
                             <li class="dropdown-submenu">
-                                <a class="test" tabindex="-1" href="#">Student Support Desk <span class="caret"></span></a>
+                                <a class="test" tabindex="-1" href="ssd.html">Student Support Desk <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a tabindex="-1" href="reservation.html">Reserve a Room</a></li>
                                     <li><a tabindex="-1" href="#">Support & Repair</a></li>
@@ -62,28 +48,15 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="nav-Item">
-      <a href="ssd.html" class="head"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3></a>
-    </div>
-    <div class="nav-Item">
-      <div class="dropdown">
-        <a href="#" class="head btn btn-ucf1 dropdown-toggle" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3><span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Labs</a></li>
-          <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href="#">Student Support Desk</a></li>
-          <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href="ssd.html">Technology Rentals</a></li>
-          <div class="dropdown-divider"></div>
-          <li><a class="dropdown-item" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
-        </div>
-    </div>-->
 
             <div class="nav-Item">
                 <a href="index.html" class="head"><h3><span class="glyphicon glyphicon-home"></span> Home</h3></a>
             </div>
         </div>
     </div>
+
+
+
     <div class="header-image" style="margin-top: -2.2em;">
         <center>
             <img src="Images\Classroom1440.jpg" style="width: 100%;" />
@@ -92,268 +65,73 @@
     <div class="container">
         <div class="body-head-gaurd">
             <div class="body-head">
-                <h2>Technology Checkout</h2>
+                <h2>Student Support Desk</h2>
             </div>
         </div>
 
-
-        <div class="col-lg-3">
-            <div class="sidebar card">
-                <div class="card-head">
-                    <h4>Sort By:</h4></div>
-                <h4 style="cursor: pointer;" id="all">All Technology</h4>
-                <div class="colapse">
-                    <div class="colapse-head" id="colapse-1-head">
-                        Location<span id="colapse-1-icon"><span class="glyphicon glyphicon-plus-sign"></span></span>
-                    </div>
-                    <div class="colapse-body" id="colapse-1-body">
-                        <ul>
-                            <li class="choice" id="tc2">Tech Commons II</li>
-                            <li class="choice" id="cb1">Classroom I</li>
-                        </ul>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="card">
+                    <div class="card-head">
+                        <h4>Welcome to the Student Support Desk</h4></div>
+                    <div class="card-body">
+                        <p class="tech-commons-para">
+                            Hello Knights! This is the student support desk. Here we offer a plethora of services to you, most of which are completely FREE! WE provide help for all types of computers, on issues ranging from WiFi support to full on computer repairs. In addition to
+                            this we have several labs available for you to use aswell as colaboration areas, and a green screen recording studio.
+                        </p>
                     </div>
                 </div>
-                <div class="colapse">
-                    <div class="colapse-head" id="colapse-2-head">
-                        Product<span id="colapse-2-icon"><span class="glyphicon glyphicon-plus-sign"></span></span>
-                    </div>
-                    <div class="colapse-body" id="colapse-2-body">
-                        <ul>
-                            <li class="choice" id="lap">Laptops</li>
-                            <li class="choice" id="cam">Cameras</li>
-                            <li class="choice" id="tab">Tablets</li>
-                            <li class="choice" id="chg">Chargers</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="colapse">
-                    <div class="colapse-head" id="colapse-3-head">
-                        Rental Period<span id="colapse-3-icon"><span class="glyphicon glyphicon-plus-sign"></span></span>
-                    </div>
-                    <div class="colapse-body" id="colapse-3-body">
-                        <ul>
-                            <li class="choice" id="clo">Until Closing</li>
-                            <li class="choice" id="1d">24 Hours</li>
-                            <li class="choice" id="3d">Three Days</li>
-                            <li class="choice" id="7d">Seven Days</li>
-                        </ul>
+                <div class="card">
+                    <div class="card-head">
+                        <h4>Where Are We located?</h4></div>
+                    <div class="card-body">
+                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCocWCVMXoSdixfKzWnMA-lp2gJs5FDGE8
+    &q=Technology+Commons" allowfullscreen>
+                            </iframe>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-9">
-            <div class="card">
-                <div>
-                    <div class="btn-group">
-                        <div class="btn btn-primary" id="grid"><span class="glyphicon glyphicon-th"></span><b> Grid</b></div>
-                        <div class="btn btn-default" id="list"><span class="glyphicon glyphicon-th-list"></span><b> List</b></div>
+            <div class="col-lg-3">
+                <div class="card card-highlight">
+                    <div class="card-head">
+                        <h4>Hours of Operation</h4></div>
+                    <div class="card-body">
+                        <p>
+                            Monday: 8:00AM - 10:00PM<br /> Tuesday: 8:00AM - 10:00PM<br /> Wednesday: 8:00AM - 10:00PM<br /> Thursday: 8:00AM - 10:00PM<br /> Friday: 8:00AM - 5:00PM<br />
+                        </p>
                     </div>
                 </div>
-
-                <div class="card-body">
-                    <div class="grid" id="grid-content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="Item filter cb1 tc2 1d lap mac">
-                                    <img src="Images\products\mac.jpg" class="img-responsive" />
-                                    <div class="item-name">MacBook Air</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Laptop</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 24 Hours</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter tc2 cb1 lap 1d dellOld">
-                                    <img src="Images\products\dellOld.jpg" class="img-responsive" />
-                                    <div class="item-name">Dell Latitude (2014)</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Laptop</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 24 Hours</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter tc2 cb1 lap 1d dellNew">
-                                    <img src="Images\products\dellNew.jpg" class="img-responsive" />
-                                    <div class="item-name">Dell Latitude (2016)</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Laptop</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 24 Hours</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 cam 3d hero">
-                                    <img src="Images\products\hero.jpg" class="img-responsive" />
-                                    <div class="item-name">Go Pro HERO 4</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Camera</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 3 Days</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 lap 1d tab surface">
-                                    <img src="Images\products\surface.jpg" class="img-responsive" />
-                                    <div class="item-name">Microsoft Surface</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Laptop/Tablet</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 24 Hours</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 7d tab appleNew">
-                                    <img src="Images\products\appleNew.jpg" class="img-responsive" />
-                                    <div class="item-name">Apple iPad Air</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Tablet</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 7 Days</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 7d tab appleOld">
-                                    <img src="Images\products\appleOld.jpg" class="img-responsive" />
-                                    <div class="item-name">Apple iPad Pro</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Tablet</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> 7 Days</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 clo chg andchg">
-                                    <img src="Images\products\andchg.jpg" class="img-responsive" />
-                                    <div class="item-name">Android Phone Chargers</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Chargers</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> Until Closing</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 clo chg aplchg">
-                                    <img src="Images\products\aplchg.jpg" class="img-responsive" />
-                                    <div class="item-name">iPad/iPhone Chargers</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Chargers</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> Until Closing</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 clo chg mcbchg">
-                                    <img src="Images\products\mcbchg.JPG" class="img-responsive" />
-                                    <div class="item-name">Macbook Chargers</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Chargers</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> Until Closing</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                                <div class="Item filter cb1 tc2 clo chg pcchg">
-                                    <img src="Images\products\pcchg.jpg" class="img-responsive" />
-                                    <div class="item-name">Windows Computer Chargers</div>
-                                    <ul class="item-info">
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a> Chargers</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-hourglass"></span></a> Until Closing</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Eligable Users"><span class="glyphicon glyphicon-user"></span></a> Students, staff</li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-home"></span></a> TCII, CBI</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="list" id="list-content">
-                        <table class="item-list">
+                <div class="card">
+                    <div class="card-head">
+                        <h4>Our Services</h4></div>
+                    <div class="card-body">
+                        <table class="static-list">
                             <tr>
-                                <th><span class="glyphicon glyphicon-info-sign"></span> Item Name</th>
-                                <th><span class="glyphicon glyphicon-hourglass"></span> Rental Duration</th>
-                                <th><span class="glyphicon glyphicon-user"></span> Eligible Users</th>
-                                <th><span class="glyphicon glyphicon-home"></span> Lab Locations</th>
+                                <td>WiFi Support</td>
                             </tr>
-                            <tr class="filter cb1 tc2 1d lap mac">
-                                <td><img src="Images\products\mac.jpg" class="img-responsive" /> Macbook Air</td>
-                                <td>24 Hour Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
+                            <tr>
+                                <td>IT Support</td>
                             </tr>
-                            <tr class="filter lap tab 1d tc2 cb1 surface">
-                                <td><img src="Images\products\surface.jpg" class="img-responsive" /> Microsoft Surface</td>
-                                <td>24 Hour Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
+                            <tr>
+                                <td>Computer Repair</td>
                             </tr>
-                            <tr class="filter lap tc2 cb1 1d dellOld">
-
-                                <td><img src="Images\products\dellOld.jpg" class="img-responsive" /> Dell Latitude(2014)</td>
-                                <td>24 Hour Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
-
+                            <tr>
+                                <td>Adobe Classes</td>
                             </tr>
-                            <tr class="filter tc2 cb1 1d lap dellNew">
-                                <td><img src="Images\products\dellNew.jpg" class="img-responsive" /> Dell Latitude(2016)</td>
-                                <td>24 Hour Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
+                            <tr>
+                                <td>Room Reservation</td>
                             </tr>
-                            <tr class="filter tc2 cb1 7d tab appleNew">
-                                <td><img src="Images\products\appleNew.jpg" class="img-responsive" /> Apple iPad Pro</td>
-                                <td>7 Day Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
+                            <tr>
+                                <td>Technology Checkout</td>
                             </tr>
-                            <tr class="filter tc2 cb1 7d tab">
-                                <td><img src="Images\products\appleOld.jpg" class="img-responsive" /> Apple iPad</td>
-                                <td>7 Day Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
-                            </tr>
-                            <tr class="filter tc2 cb1 3d cam hero">
-                                <td><img src="Images\products\hero.jpg" class="img-responsive" /> GoPro HERO 4</td>
-                                <td>3 Day Loan</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
-                            </tr>
-                            <tr class="filter tc2 cb1 clo chg andchg">
-                                <td><img src="Images\products\andchg.jpg" class="img-responsive" /> Android Chargers</td>
-                                <td>Until Close</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
-                            </tr>
-                            <tr class="filter tc2 cb1 clo chg aplchg">
-                                <td><img src="Images\products\aplchg.jpg" class="img-responsive" /> iPad/iPhone Chargers</td>
-                                <td>Until Close</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
-                            </tr>
-                            <tr class="filter tc2 cb1 clo chg mcbchg">
-                                <td><img src="Images\products\mcbchg.JPG" class="img-responsive" /> Macbook Chargers</td>
-                                <td>Until Close</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
-                            </tr>
-                            <tr class="filter tc2 cb1 clo chg pcchg">
-                                <td><img src="Images\products\pcchg.JPG" class="img-responsive" /> Windows Computer Chargers</td>
-                                <td>Until Close</td>
-                                <td>Students</td>
-                                <td>TCII, CBI</td>
+                            <tr>
+                                <td>Directions to the Bathroom</td>
                             </tr>
                         </table>
-
-
-                    </div>
-                    <div class="no-results invisible" id="no-results">
-                        <center><span class="glyphicon glyphicon-remove-sign"></span><br />
-                            <h1>Theres nothing here.</h1>
                     </div>
                 </div>
+
+
             </div>
         </div>
 

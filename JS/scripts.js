@@ -42,3 +42,17 @@ $(window).scroll(function() {
         $('#return-to-top').fadeOut(200); // Else fade out the arrow
     }
 });
+
+
+function urlExists(url, callback){
+  $.ajax({
+    type: 'HEAD',
+    url: url,
+    success: function(){
+      callback(true);
+    },
+    error: function() {
+      callback(false);
+    }
+  });
+}
