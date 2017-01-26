@@ -394,7 +394,8 @@ small{
 }
 
 .hours td:nth-child(even){
-  background-color: rgba(255,255,255,.34)
+  /*background-color: rgba(255,255,255,.34)*/
+  color: var(--ucf-gold);
 }
 
 .small-chart{
