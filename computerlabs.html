@@ -11,8 +11,32 @@
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
     <script src="JS\scripts.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-    
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 
 <!-- Go to Top Code -->
@@ -98,7 +122,7 @@
                     <div class="card-body">
                         <p class="tech-commons-para">The Computer Labs here at UCF offer a rich suite of amenities for students and faculty to make use of. Tech Commons I, Tech Commons II, and Classroom Building I each have a large computer lab, with both Windows & Mac computers,
                             that can be accessed anytime the respective buildings are open. They are distributed on a first come first serve basis, so make sure to click on one of the "Current Vacant Computers" below to view each lab's available seats!
-                            Additionally, to reserve a larger conference room, please visit the Student Support Desk located in TCI, or reserve one online by clicking <a href="reservation.html">here</a>.
+                            Additionally, to reserve a larger conference room, please visit the <a href="ssd.html">Student Support Desk</a> located in Technology Commons II.
                     </div>
                     <div class="card-body" style="display:flex;justify-content:left;align-items:left;">
                         <table style="margin-top:1em;">
@@ -106,7 +130,7 @@
                                 <td class="small-chart" style="padding-right: 20px;"><strong>Current Vacant Computers:</strong></td>
                                 <td><a class="lab-anchor" href="#anchor1" style="border-left-style: solid; border-left-width: thin; border-left-color:var(--ucf-gold);">Technology Commons I</a></td>
                                 <td><a class="lab-anchor" href="#anchor2">Technology Commons II</a></td>
-                                <td><a class="lab-anchor" href="#anchor3">Classroom Building I</a></td>
+                                <!-- <td><a class="lab-anchor" href="#anchor3">Classroom Building I</a></td> -->
                             </tr>
                         </table>
                     </div>
@@ -149,18 +173,18 @@
                         </table>
                     </div>
                 </div>
-                <a name="anchor1"></a>
+                <a name="anchor1" id="anchor1"></a>
                 <div class="card">
-                    <h4>Tech I Lab</h4>
+                    <h4>Technology Commons I Lab</h4>
                     <hr />
                     <div class="card-body">
                         <iframe src="https://extranet.cst.ucf.edu/LabWebRcvr/pages/digitalsign.aspx?labid=1" height="900" width="950" border="0"></iframe>
                     </div>
                 </div>
 
-                <a name="anchor2"></a>
+                <a name="anchor2" id="anchor2"></a>
                 <div class="card">
-                    <h4>Tech II Lab</h4>
+                    <h4>Technology Commons II Lab</h4>
                     <hr />
                     <div class="card-body">
                         <iframe src="https://extranet.cst.ucf.edu/LabWebRcvr/pages/digitalsign.aspx?labid=2" height="900" width="950" border="0"></iframe>
@@ -222,7 +246,7 @@
                     <div class="panel-group" id="collapse">
 
                         <div class="panel-heading ">
-                            <h4 class="accordion-border">        Installed Software        <a class="accordion-toggle accordion-help" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">        </a></h4>
+                            <h4 class="accordion-border">        Installed Software        <a class="accordion-toggle accordion-help" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="return false;">        </a></h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <table class="item-list" style="margin-left: auto; font-size: 14px;">
