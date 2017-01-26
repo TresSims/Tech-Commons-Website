@@ -393,9 +393,6 @@ small{
   text-align: center;
 }
 
-.hours td:nth-child(even){
-  background-color: rgba(255,255,255,.34)
-}
 
 .small-chart{
   border: none;
