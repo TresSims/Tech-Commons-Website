@@ -9,7 +9,7 @@
   /*NOTE THESE DO NOT FUNCTION WITH THE LATEST BUILD OF INTERNET EXPLORER, YOU WILL NEED TO UPDATE CODE HERE AS WELL AS IN THE BODY*/
   --ucf-gold: #fc0;
   --tech-grey: #0D171F;
-  --tech-shadow: #ddd;
+  --tech-shadow: rgba(95,97,117,.5);
   --tech-blue: #0269C2;
 }
 
@@ -505,8 +505,9 @@ small{
 }
 
 .static-list{
-  margin-top: 1em;
+  margin-top: .5em;
   margin-bottom: 1em;
+  margin-right: 3em;
   border-style: solid;
   border-width: thin;
   border-radius: 3;
@@ -573,9 +574,9 @@ small{
   background-color: #fdfdfd;
 }
 
-/*.item-list tr:hover{
+.item-list tr:hover{
   background-color: #dedede;
-}*/
+}
 
 .item-list img{
   height: 50px;
