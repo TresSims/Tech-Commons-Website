@@ -5,6 +5,8 @@
 /*Base Elements*/
 
 :root{
+
+  /*NOTE THESE DO NOT FUNCTION WITH THE LATEST BUILD OF INTERNET EXPLORER, YOU WILL NEED TO UPDATE CODE HERE AS WELL AS IN THE BODY*/
   --ucf-gold: #fc0;
   --tech-grey: #0D171F;
   --tech-shadow: #ddd;
@@ -15,6 +17,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: var(--tech-grey);
+  color: #0d171f;
 }
 
 a:hover{
