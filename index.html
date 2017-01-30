@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
     <script src="JS\scripts.js"></script>
+    <script src="JS\bootstrap.js"></script>
 
 
 </head>
@@ -24,7 +28,7 @@
         </div>
         <div class="navigation">
             <div class="nav-Item">
-                <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
+                <a href="blog.html" class="head navbar-help"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
             </div>
             <div class="nav-Item">
                 <div class="dropcontainer">
@@ -98,11 +102,45 @@
                 <div class="card card-highlight">
                     <div class="card-head">
                         <h4>Hours of Operation</h4></div>
-                    <div class="card-body">
-                        <ul style="list-style: none;">
-                            <li>Monday - Friday</li>
-                            <li>8:00AM - 5:00PM</li>
-                        </ul>
+                    <div class="card-body" style="display:flex;justify-content:center;align-items:center;">
+                        <table class="hours">
+                            <tr>
+                                <th class="small-chart"></th>
+                                <th class="small-chart">Tech Commons I</th>
+                                <th class="small-chart">Tech Commons II</th>
+                                <th class="small-chart">Classroom Building I</th>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Monday &nbsp; &nbsp;</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
+                                <td style="text-align:center;">8:00am-6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Tuesday &nbsp; &nbsp;</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
+                                <td style="text-align:center;">8:00am-6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Wednesday &nbsp; &nbsp;</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Thursday &nbsp; &nbsp;</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
+                                <td style="text-align:center;">8:00am-6:00pm</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">Friday &nbsp; &nbsp;</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
                 <div class="card">

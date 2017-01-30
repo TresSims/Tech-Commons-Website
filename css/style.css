@@ -36,7 +36,9 @@ a:active{
 a:ABOM{
   SADFJH;
 }
-
+.navbar-help{
+  color: #000;
+}
 
 html {
   position: relative;
@@ -51,7 +53,7 @@ body {
 h2 {
   font-size: 55px;
   font-weight: bold;
-  padding-left: 5px;
+  //padding-left: 5px;
 }
 
 h3 {
@@ -106,7 +108,7 @@ small{
   background-color: var(--ucf-gold);
   font-family: 'Arvo', serif;
   font-weight: bold !important;
-  color: #1C3144;
+  color: #000;
 }
 
 .navigation{
@@ -297,8 +299,14 @@ small{
   font-size: 16px;
 }
 
-.intro{
+.smallcard{
+  /*margin-right: 4em;*/
 
+  text-align: left;
+}
+
+.intro{
+  /*margin-bottom: 2em;*/
   width:93%;
 
 }
@@ -393,6 +401,10 @@ small{
   text-align: center;
 }
 
+.hours td:nth-child(even){
+  /*background-color: rgba(255,255,255,.34)*/
+  /*color: var(--ucf-gold);*/
+}
 
 .small-chart{
   border: none;
@@ -490,7 +502,8 @@ small{
 }
 
 .static-list{
-  margin: 3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-style: solid;
   border-width: thin;
   border-radius: 3;

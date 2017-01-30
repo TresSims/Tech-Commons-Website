@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
     <script src="JS\scripts.js"></script>
@@ -65,7 +67,7 @@
     </div>
     <div class="container">
         <div class="body-head-gaurd">
-            <div class="body-head">
+            <div class="body-head" >
                 <h2>Student Support Desk</h2>
             </div>
         </div>
@@ -77,8 +79,8 @@
                         <h4>Welcome to the Student Support Desk</h4></div>
                     <div class="card-body">
                         <p class="tech-commons-para">
-                            Hello Knights! This is the student support desk. Here we offer a plethora of services to you, most of which are completely FREE! WE provide help for all types of computers, on issues ranging from WiFi support to full on computer repairs. In addition to
-                            this we have several labs available for you to use aswell as colaboration areas, and a green screen recording studio.
+                            Hello Knights! This is the student support desk. Here we offer a plethora of services to you, most of which are completely FREE! We provide help for all types of computers, on issues ranging from WiFi support to full on computer repairs. In addition to
+                            this, we have several labs available for you to use as well as colaboration areas, and a green screen recording studio.
                         </p>
                     </div>
                 </div>
@@ -92,20 +94,53 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="card card-highlight">
-                    <div class="card-head">
-                        <h4>Hours of Operation</h4></div>
-                    <div class="card-body">
-                        <p>
-                            Monday: 8:00AM - 10:00PM<br /> Tuesday: 8:00AM - 10:00PM<br /> Wednesday: 8:00AM - 10:00PM<br /> Thursday: 8:00AM - 10:00PM<br /> Friday: 8:00AM - 5:00PM<br />
-                        </p>
-                    </div>
-                </div>
+              <div class="card card-highlight">
+                  <div class="card-head">
+                      <h4>Hours of Operation</h4></div>
+                  <div class="card-body" style="display:flex;justify-content:center;align-items:center;">
+                      <table class="hours">
+                          <tr>
+                            <td class="small-chart"><strong>Student Support Desk</strong></td>
+                              <th class="small-chart"></th>
+
+                            </tr>
+                          <tr>
+                              <td style="text-align: left;">Monday &nbsp; &nbsp;</td>
+
+                              <td style="text-align:center;">8:00am-10:00pm</td>
+
+                          </tr>
+                          <tr>
+                              <td style="text-align: left;">Tuesday &nbsp; &nbsp;</td>
+
+                              <td style="text-align:center;">8:00am-10:00pm</td>
+
+                          </tr>
+                          <tr>
+                              <td style="text-align: left;">Wednesday &nbsp; &nbsp;</td>
+
+                              <td style="text-align:center;">8:00am-10:00pm</td>
+
+                          </tr>
+                          <tr>
+                            <td style="text-align: left;">Thursday &nbsp; &nbsp;</td>
+
+                              <td style="text-align:center;">8:00am-10:00pm</td>
+
+                          </tr>
+                          <tr>
+                              <td style="text-align: left;">Friday &nbsp; &nbsp;</td>
+                              <td style="text-align:center;">8:00am-5:00pm</td>
+
+                          </tr>
+                      </table>
+                  </div>
+              </div>
                 <div class="card">
                     <div class="card-head">
                         <h4>Our Services</h4></div>
-                    <div class="card-body">
-                        <table class="static-list">
+                    <div class="card-body smallcard">
+                        <table class="static-list" align=center>
                             <tr>
                                 <td>WiFi Support</td>
                             </tr>
@@ -124,11 +159,11 @@
                             <tr>
                                 <td>Technology Checkout</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td>Directions to the Bathroom</td>
-                            </tr>
+                            </tr> -->
                             <tr>
-                                <td>3d Printing</td>
+                                <td>3D Printing</td>
                             </tr>
                         </table>
                     </div>
