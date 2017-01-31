@@ -14,32 +14,7 @@
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
     <script src="JS\scripts.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
 </head>
 
 <!-- Go to Top Code -->
@@ -85,7 +60,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a tabindex="-1" href="techlend.html">Technology Checkout</a></li>
                                     <!-- <li><a tabindex="-1" href="#">Reserve a Room</a></li> -->
-                                    <li><a tabindex="-1" href="#">Support & Repair</a></li>
+                                    <li><a tabindex="-1" href="repairs">Support & Repair</a></li>
                                     <li><a tabindex="-1" href="printing.html">Printing</a></li>
 
                                 </ul>
@@ -115,11 +90,11 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row flex-container wrap-reverse">
 
 
 
-            <div class="col-lg-7">
+            <div class="col-lg-7 flex-item">
                 <div class="card">
                     <div class="card-head">
                         <h4>At a Glance</h4></div>
@@ -132,8 +107,8 @@
                         <table style="margin-top:1em;">
                             <tr>
                                 <td class="small-chart" style="padding-right: 20px;"><strong>Current Vacant Computers:</strong></td>
-                                <td><a class="lab-anchor" href="#anchor1" style="border-left-style: solid; border-left-width: thin; border-left-color:var(--ucf-gold);">Technology Commons I</a></td>
-                                <td><a class="lab-anchor" href="#anchor2">Technology Commons II</a></td>
+                                <td><a class="lab-anchor" href="#anchor1" id="scroll" style="border-left-style: solid; border-left-width: thin; border-left-color:var(--ucf-gold);">Technology Commons I</a></td>
+                                <td><a class="lab-anchor" href="#anchor2" id="scroll2">Technology Commons II</a></td>
                                 <!-- <td><a class="lab-anchor" href="#anchor3">Classroom Building I</a></td> -->
                             </tr>
                         </table>
@@ -177,7 +152,7 @@
                         </table>
                     </div>
                 </div>
-                <a name="anchor1" id="anchor1"></a>
+                <a href="javascript:" name="anchor1" id="anchor1"></a>
                 <div class="card">
                     <h4>Technology Commons I Lab</h4>
                     <hr />
@@ -186,7 +161,7 @@
                     </div>
                 </div>
 
-                <a name="anchor2" id="anchor2"></a>
+                <a href="javascript:" name="anchor2" id="anchor2"></a>
                 <div class="card">
                     <h4>Technology Commons II Lab</h4>
                     <hr />
@@ -200,7 +175,7 @@
             </div>
             <!--end of col-lg7-->
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 flex-item">
                 <div class="card card-highlight">
                     <div class="card-head">
                         <h4>Hours of Operation</h4></div>
@@ -251,10 +226,10 @@
                     <div class="panel-group" id="collapse">
 
                         <div class="panel-heading ">
-                            <h4 class="accordion-border">        Installed Software        <a class="accordion-toggle accordion-help" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="return false;">        </a></h4>
+                            <h4 class="accordion-border">Installed Software<a class="accordion-toggle accordion-help" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="return false;">        </a></h4>
                         </div>
-                        <div id="collapseOne" class="panel-collapse collapse in">
-                            <table class="static-list" style="margin-left: auto; font-size: 14px;">
+                        <div id="collapseOne" class="panel-collapse collapse in smallcard">
+                            <table class="static-list" style="margin-left: auto; font-size: 14px;" align="center">
                                 <tr>
                                     <th colspan="2">Windows: Running Windows 10</th>
                                 </tr>
@@ -307,7 +282,7 @@
                                     <td></td>
                                 </tr>
                             </table>
-                            <table class="static-list" style="margin-left: auto; font-size: 14px;">
+                            <table class="static-list" style="margin-left: auto; font-size: 14px;" align="center">
                                 <tr>
                                     <th>MacOS: Running OSX 10.11 El Capitan</th>
                                 </tr>

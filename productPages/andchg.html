@@ -35,7 +35,7 @@
                         <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
     <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">Computer Labs</a></li>
+                            <li><a tabindex="-1" href="../computerlabs.html">Computer Labs</a></li>
                             <div class="dropdown-divider"></div>
                             <li><a tabindex="-1" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
                             <div class="dropdown-divider"></div>
@@ -43,7 +43,7 @@
                                 <a class="test" tabindex="-1" href="../ssd.html">Student Support Desk <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <!-- <li><a tabindex="-1" href="#">Reserve a Room</a></li> -->
-                                    <li><a tabindex="-1" href="#">Support & Repair</a></li>
+                                    <li><a tabindex="-1" href="../repairs">Support & Repair</a></li>
                                     <li><a tabindex="-1" href="../techlend.html">Technology Checkout</a></li>
                                     <li><a tabindex="-1" href="../printing.html">Printing</a></li>
                                 </ul>
@@ -91,23 +91,29 @@
                 </ul>
             </div>
             <div class="card">
-                <div class="card-head">
-                    <h4>Works With</h4>
+
+                <div class="panel-group" id="collapse">
+
+                    <div class="panel-heading ">
+                        <h4 class="accordion-border">Works With<a class="accordion-toggle accordion-help" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="return false;">        </a></h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in smallcard">
+                        <table class="static-list" align="center">
+                            <tr>
+                                <td>Samsung</td>
+                            </tr>
+                            <tr>
+                                <td>Sony</td>
+                            </tr>
+                            <tr>
+                                <td>HTC</td>
+                            </tr>
+                            <tr>
+                                <td>Google</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <table class="static-list" style="margin-left: auto">
-                    <tr>
-                        <td>Samsung</td>
-                    </tr>
-                    <tr>
-                        <td>Sony</td>
-                    </tr>
-                    <tr>
-                        <td>HTC</td>
-                    </tr>
-                    <tr>
-                        <td>Google</td>
-                    </tr>
-                </table>
             </div>
         </div>
 

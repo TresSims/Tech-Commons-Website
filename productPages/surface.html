@@ -46,7 +46,7 @@
                         <button class="btn btn-ucf1 dropdown-toggle" type="button" data-toggle="dropdown"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
     <span class="caret"></span></button>
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">Computer Labs</a></li>
+                            <li><a tabindex="-1" href="../computerlabs.html">Computer Labs</a></li>
                             <div class="dropdown-divider"></div>
                             <li><a tabindex="-1" href="https://ucf.service-now.com/ucfit">UCF IT Support Center</a></li>
                             <div class="dropdown-divider"></div>
@@ -54,7 +54,7 @@
                                 <a class="test" tabindex="-1" href="../ssd.html">Student Support Desk <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <!-- <li><a tabindex="-1" href="#">Reserve a Room</a></li> -->
-                                    <li><a tabindex="-1" href="#">Support & Repair</a></li>
+                                    <li><a tabindex="-1" href="../repairs">Support & Repair</a></li>
                                     <li><a tabindex="-1" href="../techlend.html">Technology Checkout</a></li>
                                     <li><a tabindex="-1" href="../printing.html">Printing</a></li>
                                 </ul>
@@ -118,42 +118,49 @@
                 </ul>
             </div>
             <div class="card">
-                <div class="card-head">
-                    <h4>Installed Software</h4>
+
+                <div class="panel-group" id="collapse">
+
+                    <div class="panel-heading ">
+                        <h4 class="accordion-border">Installed Software<a class="accordion-toggle accordion-help" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="return false;">        </a></h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in smallcard">
+                        <table class="static-list" align="center">
+                            <tr>
+                                <td>Windows: Running Windows 10</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft Word 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft PowerPoint 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft Excel 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Adobe Acrobat DC</td>
+                            </tr>
+                            <tr>
+                                <td>Google Chrome</td>
+                            </tr>
+                            <tr>
+                                <td>Paint.net</td>
+                            </tr>
+                            <tr>
+                                <td>PuTTY</td>
+                            </tr>
+                            <tr>
+                                <td>VLC</td>
+                            </tr>
+                            <tr>
+                                <td>CodeBlocks 16.01</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <table class="static-list" style="margin-left: auto">
-                    <tr>
-                        <td>Windows: Running Windows 10</td>
-                    </tr>
-                    <tr>
-                        <td>Microsoft Word 2016</td>
-                    </tr>
-                    <tr>
-                        <td>Microsoft PowerPoint 2016</td>
-                    </tr>
-                    <tr>
-                        <td>Microsoft Excel 2016</td>
-                    </tr>
-                    <tr>
-                        <td>Adobe Acrobat DC</td>
-                    </tr>
-                    <tr>
-                        <td>Google Chrome</td>
-                    </tr>
-                    <tr>
-                        <td>Paint.net</td>
-                    </tr>
-                    <tr>
-                        <td>PuTTY</td>
-                    </tr>
-                    <tr>
-                        <td>VLC</td>
-                    </tr>
-                    <tr>
-                        <td>CodeBlocks 16.01</td>
-                    </tr>
-                </table>
             </div>
+
         </div>
 
         <div class="col-lg-9">
@@ -164,8 +171,8 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="tech-commons-para"> The Mircrosoft Surface is a great 2-in-1 tablet computer that can handle any of your needs, from illustration, to note taking, to browsing the web. <br /> The rental period is 24 hours, and includes a charger and pen that must be returned
-                        with the table. If tech commons will be closed when your item would normally be due it is due before tech commons closes on that day or it <b>WILL</b> be considered late.</p>
+                    <p class="tech-commons-para"> The Mircrosoft Surface is a great 2-in-1 tablet computer that can handle any of your needs, from illustration, to note taking, to browsing the web. <br /></br> The rental period is 24 hours, and includes a charger and pen that must
+                        be returned with the tablet. If tech commons will be closed when your item would normally be due, it is due before tech commons closes on that day or it <b>WILL</b> be considered late.</p>
                 </div>
             </div>
         </div>

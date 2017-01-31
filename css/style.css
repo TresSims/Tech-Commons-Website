@@ -260,6 +260,20 @@ small{
 }
 /*Body Main*/
 
+.flex-container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+.wrap-reverse         {
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
 .card{
   border-style: solid;
   border-radius: 10px;
@@ -305,7 +319,11 @@ small{
 .smallcard{
   /*margin-right: 4em;*/
 
-  text-align: left;
+  text-align: center;
+}
+.smallcard table{
+  margin: 1em auto;
+
 }
 
 .intro{
@@ -377,7 +395,9 @@ small{
 
 .computers td{
   padding: 5px;
-  text-align: center;
+  text-align: left;
+  padding-left: 1em;
+  padding-right: 1em;
 
 }
 
@@ -507,7 +527,7 @@ small{
 .static-list{
   margin-top: .5em;
   margin-bottom: 1em;
-  margin-right: 3em;
+  /*margin-right: 3em;*/
   border-style: solid;
   border-width: thin;
   border-radius: 3;
@@ -518,10 +538,12 @@ small{
   background-color: #fff;
   border-bottom: solid;
   border-bottom-width: thin;
+
 }
 
 .static-list td, th{
   padding: 10px;
+  border: 1px solid #dddddd;
 }
 
 .static-list tr:nth-child(even){
@@ -531,7 +553,7 @@ small{
 .item-list{
   margin-top: .5em;
   margin-bottom: 1em;
-  margin-right: 3em;
+  /*margin-right: 2.5em;*/
   border-style: solid;
   border-width: thin;
   border-radius: 3;
@@ -542,13 +564,39 @@ small{
   background-color: #fff;
   border-bottom: solid;
   border-bottom-width: thin;
+
 }
 
 .item-list td, th{
   padding: 10px;
   border: 1px solid #dddddd;
 }
+.general-list{
+  margin-top: .5em;
+  margin-bottom: 1em;
+  margin-right: 2.5em;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3;
+  width: 90%;
 
+}
+.general-list th{
+  background-color: #fff;
+  border-bottom: solid;
+  border-bottom-width: thin;
+}
+
+.general-list td, th{
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+.general-list tr:nth-child(even){
+  background-color: #f0f0f0;
+}
+.general-list tr:nth-child(odd){
+  background-color: #fdfdfd;
+}
 
 
 .panel-heading .accordion-toggle:after {
