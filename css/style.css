@@ -259,6 +259,23 @@ small{
   box-shadow: 2px, 2px, 5px, var(--tech-shadow);
 }
 /*Body Main*/
+.flex-techlend-container {
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+}
+.flex-tech-item        {
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+/*.flex-start{
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}*/
 
 .flex-container {
   -ms-box-orient: horizontal;
@@ -273,6 +290,8 @@ small{
   -webkit-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
+
+
 
 .card{
   border-style: solid;
@@ -488,10 +507,11 @@ small{
   box-shadow: 1px 1px 5px var(--tech-shadow);
   margin: 1%;
   width: 22%;
-  display: inline-block;
+
+  /*display: inline-block;*/
 }
 .item-name{
-  font-size: 20px;
+  font-size: 19px;
   color: #fff;
   background-color: #000;
   margin-left: -5%;
@@ -517,8 +537,17 @@ small{
 .item-img{
   /*margin: 10px;*/
 }
+.item-info {
+  margin-top: .75em;
+  margin-bottom: .75em;
+  
+
+}
 .item-info li{
   list-style: none;
+  font-size: 16px;
+  margin-top: .25em;
+
 }
 .item-info a:hover{
   text-shadow: none !important;
