@@ -1,0 +1,10 @@
+<div class = "Item filter lol vga">
+<img src="Images\products\vga.jpg" class="img-responsive" />
+<div class = "item-name">Mini Display Port To VGA</div>
+<ul class="item-info">
+<li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Type"><span class="glyphicon glyphicon-info-sign"></span></a>Cables</li>
+<li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Duration"><span class="glyphicon glyphicon-info-sign"></span></a>Until Closing</li>
+<li><a href="#" data-toggle="tooltip" data-placement="right" title="Rental Eligability"><span class="glyphicon glyphicon-info-sign"></span></a>Students</li>
+<li><a href="#" data-toggle="tooltip" data-placement="right" title="Locations"><span class="glyphicon glyphicon-info-sign"></span></a>TC2 CB1</li>
+</ul>
+</div>

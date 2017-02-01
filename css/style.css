@@ -234,6 +234,10 @@ small{
   margin-bottom: -200px;
 }
 
+.header-image img{
+  width: 100%;
+}
+
 .body-head{
 
   width: 100%;
@@ -540,7 +544,7 @@ small{
 .item-info {
   margin-top: .75em;
   margin-bottom: .75em;
-  
+
 
 }
 .item-info li{

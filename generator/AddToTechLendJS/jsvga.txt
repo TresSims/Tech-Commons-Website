@@ -1,0 +1,3 @@
+$(".vga").click(function() {
+    window.location.href = "productPages\\vga.html";
+});

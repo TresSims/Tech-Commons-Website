@@ -63,7 +63,7 @@ $(document).ready(function() {
         }
     });
     $("#list").click(function() {
-        console.log("list")
+        console.log("list");
         if (active != "list") {
             active = "list";
             $("#list").removeClass("btn-default");
@@ -183,16 +183,23 @@ $(document).ready(function() {
     $("#acc").click(function() {
         filterBy(".acc");
         removeFilter();
+        $(this).addClass("filtering-by");
     });
     $("#cab").click(function() {
         filterBy(".cab");
         removeFilter();
+        $(this).addClass("filtering-by");
     });
 
     //go to product page
     $(".dellOld").click(function() {
         window.location.href = "productPages\\dellOld.html";
     });
+
+    $(".vga").click(function() {
+      window.location.href = "productPages\\vga.html";
+    });
+
 
     $(".mac").click(function() {
         window.location.href = "productPages\\mac.html";
@@ -233,7 +240,7 @@ $(document).ready(function() {
         window.location.href = "productPages\\pcchg.html";
     });
     $(".cintiq").click(function() {
-        window.location.href = "productPages\\cintiq.html";
+      window.location.href = "productPages\\cintiq.html";
     });
     $(".markers").click(function() {
         window.location.href = "productPages\\markers.html";
