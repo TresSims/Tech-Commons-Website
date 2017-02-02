@@ -211,6 +211,8 @@ echo. 2>AddToTechLendJS/js%pageName%.txt
 @echo                 ^</div^>
 @echo                 ^<div class="card-body"^>
 @echo                     ^<p class="tech-commons-para"^>%description%^</p^>
+@echo                     ^<p class="tech-commons-para"^>Visit the ^<a href="../ssd.html"^>Student Support Desk^</a^> in either Tech Commons II or Classroom Building I to find out about availability.  
+@echo                     ^</p^>
 @echo                 ^</div^>
 @echo             ^</div^>
 @echo         ^</div^>

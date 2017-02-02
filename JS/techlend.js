@@ -196,6 +196,20 @@ $(document).ready(function() {
         window.location.href = "productPages\\dellOld.html";
     });
 
+    $(".hdmi").click(function() {
+        window.location.href = "productPages\\hdmi.html";
+    });
+
+    $(".keyboard").click(function() {
+        window.location.href = "productPages\\keyboard.html";
+    });
+
+    $(".markers").click(function() {
+        window.location.href = "productPages\\markers.html";
+    });
+
+
+
     $(".vga").click(function() {
       window.location.href = "productPages\\vga.html";
     });
@@ -242,27 +256,12 @@ $(document).ready(function() {
     $(".cintiq").click(function() {
       window.location.href = "productPages\\cintiq.html";
     });
-    $(".markers").click(function() {
-        window.location.href = "productPages\\markers.html";
-    });
-    $(".vga").click(function() {
-        window.location.href = "productPages\\vga.html";
-    });
+
+
     $(".dvi").click(function() {
         window.location.href = "productPages\\dvi.html";
     });
-    $(".hdmi").click(function() {
-        window.location.href = "productPages\\hdmi.html";
-    });
-    $(".usb").click(function() {
-        window.location.href = "productPages\\usb.html";
-    });
-    $(".usb-a").click(function() {
-        window.location.href = "productPages\\usbA.html";
-    });
-    $(".usb-c").click(function() {
-        window.location.href = "productPages\\usbC.html";
-    });
+
     $(".keyboard").click(function() {
         window.location.href = "productPages\\keyboard.html";
     });

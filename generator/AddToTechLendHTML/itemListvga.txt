@@ -1,6 +1,0 @@
-<tr class="filter lol vga">
-    <td><img src="Images\products\vga.jpg" class="img-responsive" /> Mini Display Port To VGA</td>
-    <td>Until Closing</td>
-    <td> Students </td>
-    <td>TC2 CB1</td>
-</tr>
