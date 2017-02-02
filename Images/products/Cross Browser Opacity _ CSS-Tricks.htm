@@ -1,0 +1,2823 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://css-tricks.com/snippets/css/cross-browser-opacity/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <meta name="viewport" content="width=device-width">
+
+  
+  <title>Cross Browser Opacity | CSS-Tricks</title>
+
+  <link rel="apple-touch-icon" href="https://cdn.css-tricks.com/apple-touch-icon.png">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="https://cdn.css-tricks.com/mstile-144x144.png">
+
+  <meta property="fb:pages" content="124436167285">
+
+  <link rel="search" type="application/opensearchdescription+xml" href="https://cdn.css-tricks.com/opensearch.xml" title="CSS-Tricks Search">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/CssTricks">
+
+  <!--[if !IE]><!-->
+  <link rel="stylesheet" href="./Cross Browser Opacity _ CSS-Tricks_files/style.css">
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-15/css/oldie.css">
+  <![endif]-->
+  <!--[if IE 9]>
+  <link rel="stylesheet" href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-15/style.css?v=9.4>
+  <![endif]-->
+
+  
+    
+  
+<!-- This site is optimized with the Yoast SEO plugin v4.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="These days, you really don&#39;t have to worry about opacity being a difficult thing cross-browser. You just use the opacity property, like this: .thing { opac">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="https://css-tricks.com/snippets/css/cross-browser-opacity/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cross Browser Opacity | CSS-Tricks">
+<meta property="og:description" content="These days, you really don&#39;t have to worry about opacity being a difficult thing cross-browser. You just use the opacity property, like this: .thing { opac">
+<meta property="og:url" content="https://css-tricks.com/snippets/css/cross-browser-opacity/">
+<meta property="og:site_name" content="CSS-Tricks">
+<meta property="article:publisher" content="https://www.facebook.com/CSSTricks">
+<meta property="article:section" content="Article">
+<meta property="og:image" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="These days, you really don&#39;t have to worry about opacity being a difficult thing cross-browser. You just use the opacity property, like this: .thing { opac">
+<meta name="twitter:title" content="Cross Browser Opacity | CSS-Tricks">
+<meta name="twitter:site" content="@Real_CSS_Tricks">
+<meta name="twitter:image" content="https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png">
+<meta name="twitter:creator" content="@chriscoyier">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="CSS-Tricks » Cross Browser Opacity Comments Feed" href="https://css-tricks.com/snippets/css/cross-browser-opacity/feed/">
+<link rel="https://api.w.org/" href="https://css-tricks.com/wp-json/">
+<link rel="shortlink" href="https://css-tricks.com/?p=3243">
+<link rel="alternate" type="application/json+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fcross-browser-opacity%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fcss%2Fcross-browser-opacity%2F&amp;format=xml">
+<!-- Better Art Direction Styles -->
+
+
+
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://jetpack.wordpress.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://public-api.wordpress.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+
+<script id="twitter-wjs" src="./Cross Browser Opacity _ CSS-Tricks_files/widgets.js"></script><script async="" src="./Cross Browser Opacity _ CSS-Tricks_files/analytics.js"></script><script async="" src="./Cross Browser Opacity _ CSS-Tricks_files/bsa.js"></script><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed, .fluid-width-video-wrapper video {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script type="text/javascript" id="_bsap_js_3469a2a501a9e18091036aa0c89f9dcb" src="./Cross Browser Opacity _ CSS-Tricks_files/s_3469a2a501a9e18091036aa0c89f9dcb.js" async="async"></script><script type="text/javascript" src="./Cross Browser Opacity _ CSS-Tricks_files/pro.js" id="_bsap_premium_pro"></script><script type="text/javascript" charset="utf-8" async="" src="./Cross Browser Opacity _ CSS-Tricks_files/button.57411deb997a43b27baa13b432c7631e.js"></script><script type="text/javascript" id="_bsaPRO_js" src="./Cross Browser Opacity _ CSS-Tricks_files/saved_resource" async="async"></script></head>
+
+<body class="page-template page-template-page-snippet page-template-page-snippet-php page page-id-3243 page-child parent-pageid-3222">
+
+  <script>
+    (function(){
+      var bsa = document.createElement('script');
+         bsa.async = true;
+         bsa.src = "//s3.buysellads.com/ac/bsa.js";
+      (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+    })();
+  </script>
+
+  <nav class="main-nav" id="main-nav">
+
+  <ul>
+    <li class="home">
+      <a href="https://css-tricks.com/">
+        Home
+      </a>
+    </li>
+    <li class="videos">
+      <a href="https://css-tricks.com/video-screencasts/">
+        Videos
+      </a>
+    </li>
+    <li class="almanac">
+      <a href="https://css-tricks.com/almanac/">
+        Almanac
+      </a>
+    </li>
+    <li class="gallery">
+      <a href="https://css-tricks.com/gallery/">
+        Gallery
+      </a>
+    </li>
+    <li class="snippets">
+      <a href="https://css-tricks.com/snippets/">
+        Snippets
+      </a>
+    </li>
+    <li class="forums">
+      <a href="https://css-tricks.com/forums/">
+        Forums
+      </a>
+    </li>
+    <li class="shop">
+      <a href="https://css-tricks.com/shop/">
+        Shop
+      </a>
+    </li>
+    <li class="newsletter">
+      <a href="https://css-tricks.com/newsletters/">
+        Newsletter
+      </a>
+    </li>
+    <li class="jobs">
+      <a href="https://css-tricks.com/jobs/">
+        Jobs
+      </a>
+    </li>
+  </ul>
+
+  <div class="user-account-area">
+
+    <img alt="" src="./Cross Browser Opacity _ CSS-Tricks_files/saved_resource(1)" srcset="https://secure.gravatar.com/avatar/?s=92&amp;d=retro&amp;r=pg 2x" class="avatar avatar-46 photo avatar-default" height="46" width="46">
+    <ul class="user-dropdown">
+
+      
+      <li>
+        <a href="https://css-tricks.com/wp-login.php">Log In</a>
+      </li>
+      <li>
+        <a href="https://css-tricks.com/wp-login.php?action=register">Sign Up</a>
+      </li>
+
+      
+    </ul>
+
+  </div>
+
+</nav>
+<header class="site-header">
+
+  <svg viewBox="0 0 1000 200" preserveAspectRatio="none" class="site-header-background">
+    <defs>
+      <lineargradient id="header-gradient" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#FBDA61"></stop>
+        <stop offset="100%" stop-color="#F76B1C"></stop>
+      </lineargradient>
+    </defs>
+<!--     <path class="jagged-top" id="jagged-top" fill="url(#header-gradient)" d="M-4,-4 L1004,-4 L1004,90 L804,90 L604,90 L404,90 L204,90 L-4,90 L-4,90 L-4,-4 Z" /> -->
+    <path class="jagged-top" id="jagged-top" fill="url(#header-gradient)" d="M-4,-4 L1004,-4 L1004,100 L810,103 L711,103 L447,139 L262,159 L198,115 L-4,100 L-4,-4 Z"></path>
+  </svg>
+
+  <div class="header-content">
+
+    <button id="mobile-menu-toggle" class="button button-header mobile-menu-toggle">
+      <svg class="icon-menu" width="26px" height="26px">
+        <use xlink:href="#icon-menu"></use>
+      </svg>
+    </button>
+
+    <button id="search-opener" class="button button-header search-opener-button">
+      <svg class="icon-search" width="26px" height="26px">
+        <use xlink:href="#icon-search"></use>
+      </svg>
+      <svg class="icon-close" width="26px" height="26px">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+
+    <a href="https://css-tricks.com/" class="logo-link">
+      CSS-Tricks
+    </a>
+
+    <div class="search" role="search" id="search-area">
+
+      <form id="search-form" class="search-form" action="https://css-tricks.com/search-results/">
+
+        <div class="flexy-search">
+
+          <label for="q" id="search-label" class="screen-reader">
+            Search
+          </label>
+
+          <input aria-labelledby="search-label" id="q" required="" type="search" name="q" class="search-field" value="">
+
+          <button type="submit" class="button button-header search-button">
+            <svg class="icon-search" width="26px" height="26px">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</header>
+
+<header class="mega-header breadcrumbs-header breadcrumbs-last-updated" id="snippets-breadcrumbs">
+  <span><span xmlns:v="http://rdf.data-vocabulary.org/#"><span rel="v:child" typeof="v:Breadcrumb"><a href="https://css-tricks.com/snippets/" rel="v:url" property="v:title">Code Snippets</a> » <span rel="v:child" typeof="v:Breadcrumb"><a href="https://css-tricks.com/snippets/css/" rel="v:url" property="v:title">CSS</a> » <strong class="breadcrumb_last">Cross Browser Opacity</strong></span></span></span></span>
+  <p class="author-byline">
+    <span class="author-byline-inside">
+      By
+      <a href="https://css-tricks.com/author/chriscoyier/">
+        <span class="p-author">
+          Chris Coyier        </span>
+      </a>
+      Last Updated On
+      <time datetime="2009-08-06" class="dt-published">
+        December 2, 2014      </time>
+    </span>
+  </p>
+
+  
+</header>
+
+<div class="page-wrap page-wrap-article">
+
+  <div class="main-and-sidebar-wrap">
+
+    <main class="main-col">
+
+      <div class="module-main">
+
+        <h1 class="screen-reader">Cross Browser Opacity</h1>
+
+        <article id="post-3243">
+
+          <p>These days, you really don't have to worry about opacity being a difficult thing cross-browser. You just use the opacity property, like this:</p>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector"><span class="token class">.thing</span> </span><span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>0 is totally transparent (will not be visible at all, like visibility: hidden;) and 1 is totally opaque (default). Anything in between is partially transparent.</p>
+<p>For historical reasons, this is how is we used to do it:</p>
+<pre rel="CSS" class=" language-css"><code class=" language-css"><span class="token selector"><span class="token class">.transparent_class</span> </span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">/* IE 8 */</span>
+  <span class="token property">-ms-filter</span><span class="token punctuation">:</span> <span class="token string">"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">/* IE 5-7 */</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">alpha</span><span class="token punctuation">(</span>opacity=<span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">/* Netscape */</span>
+  <span class="token property">-moz-opacity</span><span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">/* Safari 1.x */</span>
+  <span class="token property">-khtml-opacity</span><span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">/* Good browsers */</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+
+          
+        </article>
+
+      </div>
+
+    </main>
+
+    <aside class="entry-unrelated sidebar sidebar-article">
+
+        <div class="module module-ad module-padded">
+    <div id="bsap_1279518" class="bsap bsap_1279518" data-serve="CV7DPKT">
+<style type="text/css">
+div.bsap_1279518{width:100%;display:block;}div.bsap_1279518 a{width:200px;}div.bsap_1279518 a img{padding:0;}div.bsap_1279518 a em{font-style:normal;}div.bsap_1279518 a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0 4px 10px 0;text-align:center;text-decoration:none;overflow:hidden;float:left;}
+div.bsap_1279518 img{border:0;clear:right;}
+div.bsap_1279518 a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}
+div.bsap_1279518 a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}div.bsap_1279518 a{line-height:100%;}div.bsap_1279518 a.adhere{width:200px;height:200px;line-height:1600%;}html>body div.bsap_1279518 a.adhere{width:198px;height:198px;}div.bsap_1279518 img.s{height:0;width:0;}
+</style>
+<iframe width="200" height="200" id="ad_1279518_backfill1_frame" src="./Cross Browser Opacity _ CSS-Tricks_files/raw_29cd5278eae948003527526bcf0cb06e.html" frameborder="0" class="bsap_adframe" scrolling="no"></iframe>
+
+<script type="text/javascript" id="auto_1" class="ignoreme"> if (typeof(_bsap_serving_callback) !== 'undefined') _bsap_serving_callback(62977, 'CV7DPKT', ''); </script>
+<script type="text/javascript" id="auto_2" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+  </div>
+  
+      <div class="module module-ad wufoo-ad-6">
+
+  <a href="https://ad.doubleclick.net/ddm/clk/303181152;128762502;s" id="wufoo-ad-6">
+
+    <svg viewBox="0 0 612 412" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g class="wufoo-logo">
+        <path id="w" d="M106,177.61L61.82,78.31l29.92-5.82,13.52,37.39c4.19,11.67,8.74,25.19,12.51,35.5l0.31-.06c-0.74-12-1-24.93-1.16-38l-0.81-39.54L145.87,62l14.28,38.84c4.16,11.52,7.62,21.89,11.29,33.34l0.31-.06C171,122.2,170.49,109.51,170,97L168.7,57.51,196.92,52l-5.37,108.93-30.38,5.91L146.3,127.5c-3.31-8.8-6.59-18.25-10.38-30.31l-0.31.06c0.7,12.67,1.21,22.65,1.16,32.27l0,42.09Z" stroke="#231f20" style="stroke-dashoffset: 270.45; stroke-dasharray: 828.254px, 838.254px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="u" d="M231.82,81.64l-8.34,59.42c-2.23,15.87,1.95,25.65,13,27.2,11.2,1.57,17.8-5.91,20.14-22.55l8.34-59.42,28.16,4L285,148.11c-4.54,32.36-23,46.42-52.41,42.29-28.78-4-41.66-21.87-36.92-55.63l8-57.09Z" stroke="#231f20" style="stroke-dashoffset: 263.24; stroke-dasharray: 515.951px, 525.951px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="f" d="M286.14,65.84l67.77-5.65,1.92,23-39.44,3.29L318,106.05,355.11,103l1.9,22.85-37.09,3.09L323.26,169l-28.33,2.36Z" stroke="#231f20" style="stroke-dashoffset: 310.918; stroke-dasharray: 423.193px, 433.193px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="o-1" d="M461,130.16c0,34.1-20.43,55.78-53.11,55.78-32.84,0-50.91-24.67-50.91-54.05,0-30.8,20.27-55.31,52.64-55.31C443.75,76.58,461,101.88,461,130.16Zm-74,1.26c0,19.8,8.64,32.06,22.31,32.06S431,150.12,431,131.1C431,112.88,422.85,99,409.18,99,395.67,99,387,111.93,387,131.42Z" stroke="#231f20" style="stroke-dashoffset: 515.074; stroke-dasharray: 0px, 999999px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+        <path id="o-2" d="M550.18,104.47c0,34.1-20.43,55.78-53.11,55.78-32.84,0-50.91-24.67-50.91-54.05,0-30.8,20.27-55.31,52.64-55.31C532.9,50.89,550.18,76.19,550.18,104.47Zm-74,1.26c0,19.8,8.64,32.06,22.31,32.06s21.68-13.36,21.68-32.37c0-18.23-8.17-32.06-21.84-32.06C484.81,73.36,476.17,86.25,476.17,105.73Z" stroke="#231f20" style="stroke-dashoffset: 514.997; stroke-dasharray: 0px, 999999px; fill: transparent; stroke: rgb(0, 0, 0);"></path>
+      </g>
+
+      <rect x="60" y="331" width="490" height="63" fill="#fff" stroke="#231f20"></rect>
+
+      <text transform="translate(59 315)" font-size="31" fill="#231f20" font-weight="700">Build custom web forms easily.</text>
+      <text transform="translate(77 371)" font-size="31" fill="#969696">Let's get started!</text>
+
+      <g id="dino">
+        <path fill="#E41E26" d="M533.6,232.7c-0.3-0.1-0.6-0.2-0.9-0.3C533,232.5,533.3,232.6,533.6,232.7z M535.1,233.1
+  		c-0.3,0-0.6-0.1-0.9-0.2C534.5,233,534.7,233,535.1,233.1z M536.6,233.2c-0.3,0-0.7,0-1-0.1C535.9,233.2,536.3,233.2,536.6,233.2z
+  		 M531.2,231.7c0.3,0.1,0.6,0.3,0.8,0.4C531.8,232,531.5,231.8,531.2,231.7z M538.6,233.2c-0.5,0.1-1,0.1-1.5,0.1
+  		C537.6,233.3,538.1,233.3,538.6,233.2z M528.4,229.9c0.3,0.2,0.6,0.4,0.8,0.6C528.9,230.3,528.7,230.1,528.4,229.9z M524.2,226.1
+  		c0.3,0.3,0.6,0.6,0.9,0.9C524.8,226.7,524.5,226.4,524.2,226.1z M527,228.8c0.3,0.2,0.6,0.5,0.8,0.7
+  		C527.5,229.2,527.3,229,527,228.8z M525.6,227.5c0.3,0.3,0.6,0.5,0.8,0.8C526.1,228,525.9,227.8,525.6,227.5z M518.7,219.4
+  		c0.3,0.5,0.7,0.9,1,1.4C519.4,220.3,519.1,219.9,518.7,219.4z M517.4,217.4c0.4,0.5,0.7,1.1,1.1,1.6
+  		C518.1,218.5,517.8,218,517.4,217.4z M520.1,221.2c0.3,0.4,0.6,0.8,0.9,1.2L520.1,221.2z M521.4,223c0.3,0.4,0.6,0.8,0.9,1.1
+  		C522,223.7,521.7,223.3,521.4,223z M522.8,224.6c0.3,0.3,0.6,0.7,0.9,1C523.4,225.2,523.1,224.9,522.8,224.6z M529.8,230.9
+  		c0.3,0.2,0.6,0.3,0.8,0.5C530.4,231.2,530.1,231,529.8,230.9z"></path>
+        <path fill="#8EC23F" d="M536.6,233.2c-0.3,0-0.7,0-1-0.1C535.9,233.2,536.3,233.2,536.6,233.2z M535.1,233.1
+  		c-0.3,0-0.6-0.1-0.9-0.2C534.5,233,534.7,233,535.1,233.1z M533.6,232.7c-0.3-0.1-0.6-0.2-0.9-0.3
+  		C533,232.5,533.3,232.6,533.6,232.7z M531.2,231.7c0.3,0.1,0.6,0.3,0.8,0.4C531.8,232,531.5,231.8,531.2,231.7z M538.6,233.2
+  		c-0.5,0.1-1,0.1-1.5,0.1C537.6,233.3,538.1,233.3,538.6,233.2z M525.6,227.5c0.3,0.3,0.6,0.5,0.8,0.8
+  		C526.1,228,525.9,227.8,525.6,227.5z M524.2,226.1c0.3,0.3,0.6,0.6,0.9,0.9C524.8,226.7,524.5,226.4,524.2,226.1z M528.4,229.9
+  		c0.3,0.2,0.6,0.4,0.8,0.6C528.9,230.3,528.7,230.1,528.4,229.9z M522.8,224.6c0.3,0.3,0.6,0.7,0.9,1
+  		C523.4,225.2,523.1,224.9,522.8,224.6z M521.4,223c0.3,0.4,0.6,0.8,0.9,1.1C522,223.7,521.7,223.3,521.4,223z M517.4,217.4
+  		c0.4,0.5,0.7,1.1,1.1,1.6C518.1,218.5,517.8,218,517.4,217.4z M518.7,219.4c0.3,0.5,0.7,0.9,1,1.4
+  		C519.4,220.3,519.1,219.9,518.7,219.4z M520.1,221.2c0.3,0.4,0.6,0.8,0.9,1.2L520.1,221.2z M527,228.8c0.3,0.2,0.6,0.5,0.8,0.7
+  		C527.5,229.2,527.3,229,527,228.8z M529.8,230.9c0.3,0.2,0.6,0.3,0.8,0.5C530.4,231.2,530.1,231,529.8,230.9z"></path>
+
+        <lineargradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="643.465" y1="316.6403" x2="597.6864" y2="82.4081" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="6.000000e-03" style="stop-color:#1E7086"></stop>
+          <stop offset="0.176" style="stop-color:#33839D"></stop>
+          <stop offset="0.348" style="stop-color:#4192B1"></stop>
+          <stop offset="0.473" style="stop-color:#4699BA"></stop>
+          <stop offset="0.613" style="stop-color:#4293B2"></stop>
+          <stop offset="0.792" style="stop-color:#3685A0"></stop>
+          <stop offset="0.991" style="stop-color:#207187"></stop>
+          <stop offset="1" style="stop-color:#1E7086"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_2_)" d="M639.5,190.8c-3.4-36.5,17.6-118.2-108.5-109.7l0,0c0,0-23.1,1-21.9,23.3
+  		c1.2,22.4,6.2,36.9,9.6,50.4c0,0-21.8,20.1-16.1,33.8c5.7,13.7,20.7,46.7,35.9,44.6c15.3-2.1,48.4-15.3,61.4-23.1
+  		c0,0,7,72.4,9.4,99.9c0.7,7.9,2.1,22.4,5.2,41.2c18.6-9.2,37.3-18.3,56.1-27.2C654.3,275.8,641.9,216.3,639.5,190.8z"></path>
+
+        <ellipse transform="matrix(0.9533 -0.3021 0.3021 0.9533 -15.9028 180.912)" fill="#FFFFFF" cx="576.9" cy="141.9" rx="13" ry="22.9"></ellipse>
+
+        <ellipse transform="matrix(0.9533 -0.3021 0.3021 0.9533 -16.5344 179.6383)" fill="#231815" cx="572.5" cy="143.3" rx="8.3" ry="14.7"></ellipse>
+        <path fill="#85BFD2" d="M621.6,237.7c-1.1-8.9-9.4-42.7-11.6-46.2c-2.1-3.4-4.9-18.6-47.2,7.1c-31.2,18.9-42.9,18.3-46.8,16.7
+  		c6.5,10.3,14.5,18.9,22.5,17.8c15.2-2.1,48.4-15.3,61.4-23.1c0,0,7,72.4,9.4,99.9c0.7,7.9,2.1,22.4,5.2,41.2
+  		c8.1-4,16.2-8,24.3-11.9C627.4,287.8,622.2,242.4,621.6,237.7z"></path>
+        <g opacity="0.6">
+
+          <lineargradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="506.196" y1="467.0849" x2="553.5162" y2="428.8841" gradientTransform="matrix(0.9533 -0.3021 -0.3021 -0.9533 134.293 798.5026)">
+            <stop offset="0" style="stop-color:#7AB3C4"></stop>
+            <stop offset="0.87" style="stop-color:#7AB3C4"></stop>
+            <stop offset="1" style="stop-color:#7AB3C4"></stop>
+          </lineargradient>
+          <path fill="url(#SVGID_3_)" d="M517.3,217.2c-0.4-0.6-0.8-1.2-1.2-1.8c0,0,0,0,0,0C516.5,216,516.9,216.6,517.3,217.2z"></path>
+
+          <lineargradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="553.1611" y1="525.1908" x2="600.4362" y2="487.0253" gradientTransform="matrix(0.9533 -0.3021 -0.3021 -0.9533 134.293 798.5026)">
+            <stop offset="0" style="stop-color:#7AB3C4"></stop>
+            <stop offset="0.87" style="stop-color:#7AB3C4"></stop>
+            <stop offset="1" style="stop-color:#7AB3C4"></stop>
+          </lineargradient>
+          <path fill="url(#SVGID_4_)" d="M538.2,100c12.1-9.4,47.7-11.3,71-6c-16-9.9-40.5-15.4-78.2-12.9c0,0-23.1,1-21.9,23.3
+  			s6.2,36.9,9.6,50.4c0,0-21.8,20.1-16.1,33.8c2.7,6.5,7.5,17.4,13.5,26.7c3.5,1.4,13,2,36.6-10.9c-0.4-1.7-1.2-4-2.6-6.8
+  			c-6-11.7-16.1-20.8-6.2-35.3C553.8,147.8,524.3,110.8,538.2,100z"></path>
+        </g>
+        <path fill="#1E7086" d="M533.8,137.1c2.6,9.5,1.4,13-1,13.7c-2.4,0.7-5-1.8-7.6-11.3c-2.6-9.5-2.8-17.7-0.4-18.4
+  		C527.1,120.5,531.2,127.6,533.8,137.1z"></path>
+
+        <lineargradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="681.5992" y1="201.3821" x2="624.5172" y2="323.9237" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="0" style="stop-color:#7AB3C4"></stop>
+          <stop offset="0.86" style="stop-color:#7AB3C4"></stop>
+          <stop offset="1" style="stop-color:#7AB3C4"></stop>
+        </lineargradient>
+        <path opacity="0.4" fill="url(#SVGID_5_)" d="M639.8,193.5c-3.4,3.6-9,11.7-7,23.6
+  		c0,0,7.2,57.4,25.2,112.9c4.2-2,8.3-4,12.5-6C654.9,277.5,642.7,220.3,639.8,193.5z"></path>
+
+        <lineargradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="611.5856" y1="236.8385" x2="647.111" y2="236.8385" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="0" style="stop-color:#4699BA"></stop>
+          <stop offset="0.951" style="stop-color:#4699BA"></stop>
+          <stop offset="1" style="stop-color:#4699BA"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_6_)" d="M623.9,218.4c-3.2-25.8-11.1-40.6-11.1-40.6c3.7-7.1-2.9-17.7-2.9-17.7
+  		c5.7,13.7-27.3,27.3-27.3,27.3l-0.2,0.9c23.7-10.1,25.8,0.5,27.6,3.3c2.1,3.4,10.5,37.3,11.6,46.2c0.6,4.7,5.8,50.1,17.2,101.6
+  		c2.3-1.1,4.5-2.2,6.8-3.3C637.6,304.6,626.9,242.5,623.9,218.4z"></path>
+
+        <lineargradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="540.0744" y1="428.1269" x2="622.0959" y2="428.1269" gradientTransform="matrix(0.9533 -0.3021 -0.3021 -0.9533 134.293 798.5026)">
+          <stop offset="0" style="stop-color:#FFFFFF"></stop>
+          <stop offset="0.87" style="stop-color:#FFFFFF"></stop>
+          <stop offset="1" style="stop-color:#FFFFFF"></stop>
+        </lineargradient>
+        <path opacity="0.35" fill="url(#SVGID_7_)" d="M538.6,233.2c15.3-2.1,48.4-15.3,61.4-23.1
+  		c0.3-11.9-18.7,0-33,3.6c-9.6,2.4-14-3.9-15.8-8.4c-22.5,12-31.6,11.4-35.1,10C522.6,225.7,530.5,234.3,538.6,233.2z"></path>
+
+        <lineargradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="592.8458" y1="312.0763" x2="606.6599" y2="312.0763" gradientTransform="matrix(0.9533 -0.3021 0.3021 0.9533 -50.5851 215.0953)">
+          <stop offset="0" style="stop-color:#FFFFFF"></stop>
+          <stop offset="1" style="stop-color:#FFFFFF"></stop>
+        </lineargradient>
+        <path opacity="0.35" fill="url(#SVGID_8_)" d="M617.7,315.7l-8.1-1.9c0.8,8.3,2.2,21.3,4.8,37.4
+  		c3.1-1.5,6.3-3.1,9.4-4.6C619.5,327.7,617.7,315.7,617.7,315.7z"></path>
+      </g>
+    </svg>
+
+    <div style="padding: 35px;">
+      <span class="button full-width-button">
+        Sign Up Now!
+      </span>
+    </div>
+
+  </a>
+
+  <img src="./Cross Browser Opacity _ CSS-Tricks_files/B7043538.128762502" alt="">
+
+</div>  
+</aside>
+    <aside class="entry-unrelated sidebar sidebar-right">
+
+  
+  
+  <div class="module module-padded module-jobs">
+
+  <h4 class="h4">Front-End Jobs</h4>
+
+  
+  <ul class="job-list">
+
+        <li>
+            <a href="http://codepen.io/url/job/Zjeapz">
+        <strong>
+          Gimlet Media        </strong>
+        is hiring a
+        Alexa Skill Developer      </a>
+    </li>
+        <li>
+            <a href="http://codepen.io/url/job/zWbMJn">
+        <strong>
+          Cloudtech        </strong>
+        is hiring a
+        Frontend / AngularJS Developer      </a>
+    </li>
+        <li>
+            <a href="http://codepen.io/url/job/ZbdYLn">
+        <strong>
+          LeapYear        </strong>
+        is hiring a
+        Software Engineer - Front-End      </a>
+    </li>
+    
+  </ul>
+
+  <div class="button-wrap">
+    <a href="https://css-tricks.com/jobs/" class="button">See More Jobs</a>
+    &nbsp;
+    <a href="http://codepen.io/jobs/post/" class="button button-bold">Post a Job</a>
+  </div>
+
+</div>
+  <!--?php# if (!has_category(508)) { ?-->
+    <!--?php# include_once("ads/mt/1.php"); ?-->
+  <!--?php# } ?-->
+
+</aside>
+
+  </div>
+
+</div>
+
+<div class="end-of-article-ads">
+      <div class="bsap-doubles side-by-side">
+      <div id="bsap_1250418" class="bsap bsap_1250418" data-serve="CV7DV5V">
+<div class="bsa_it one"><div class="bsa_it_ad ad0 odd ">
+<a target="_blank" href="https://srv.buysellads.com/ads/click/x/GTND423YCYYDPK7JF67LYKQWFTSDT53LCVBD4Z3JCEADP5Q7CWAIEKJKC6BDE2JECWYI6K3EHJNCLSIZ" rel="nofollow">
+<span class="bsa_it_i">
+<img alt="The Divi Theme" src="./Cross Browser Opacity _ CSS-Tricks_files/293805-1444204566.png" width="120" height="90">
+</span>
+</a>
+<a target="_blank" href="https://srv.buysellads.com/ads/click/x/GTND423YCYYDPK7JF67LYKQWFTSDT53LCVBD4Z3JCEADP5Q7CWAIEKJKC6BDE2JECWYI6K3EHJNCLSIZ" rel="nofollow">
+<span class="bsa_it_t">The Divi Theme</span>
+<span class="bsa_it_d">Download the Ultimate WordPress Theme including our advanced Drag &amp; Drop builder</span>
+</a>
+<div style="clear:both"></div>
+</div><!-- no ad --><span class="bsa_it_p">
+<a href="http://www.buysellads.com/buy/detail/1098/zone/1250418?utm_source=site_1098&amp;utm_medium=website&amp;utm_campaign=imagetext&amp;utm_content=zone_1250418">ads by BSA</a>
+</span>
+</div>
+
+<script type="text/javascript" id="auto_3" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+    </div>
+  </div>
+
+<div class="comments-col">
+      <div class="module-comments">
+      <section id="comments">
+
+
+
+  <h2 class="comments-title">
+    Comments
+  </h2>
+
+  <ol class="commentlist group">
+    
+    <li class="comment even thread-even depth-1" id="li-comment-59875">
+
+      <div class="grid group comment-wrap" id="comment-59875">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="./Cross Browser Opacity _ CSS-Tricks_files/f3b3021adc0017648718b7fee8693543" width="50" height="50" class="lazyload-gravatar" alt="User Avatar">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">DN</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-59875"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2009-08-21T02:11:23+00:00">August 21, 2009</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Actually missed the IE8 opacity brouhaha. Thanks for including that!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=59875#respond" onclick="return addComment.moveForm( &quot;comment-59875&quot;, &quot;59875&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to DN">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-61394">
+
+      <div class="grid group comment-wrap" id="comment-61394">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="./Cross Browser Opacity _ CSS-Tricks_files/c2449a109fbd80c9ec11a1e8e3fc96fe" width="50" height="50" class="lazyload-gravatar" alt="User Avatar">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">abajan</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-61394"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2009-09-13T01:48:59+00:00">September 13, 2009</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Yep. I didn’t know about that one either. The only issue I have with this snippet is that it’s not valid CSS.</p>
+<p>Nevertheless, I’m gonna use it.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-286995">
+
+      <div class="grid group comment-wrap" id="comment-286995">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="./Cross Browser Opacity _ CSS-Tricks_files/6777705910b0d843f567f19dbc1d8d98" width="50" height="50" class="lazyload-gravatar" alt="User Avatar">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Amr SubZero</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-286995"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-02-18T20:23:27+00:00">February 18, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>add display:inline-block will fix that. xD</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt depth-2" id="li-comment-1600593">
+
+      <div class="grid group comment-wrap" id="comment-1600593">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="./Cross Browser Opacity _ CSS-Tricks_files/7683c1c5af047ff71fe21bef80360f83" width="50" height="50" class="lazyload-gravatar" alt="User Avatar">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">The Right Way</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1600593"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-03-29T12:16:19+00:00">March 29, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Che Guevara Killer!</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment byuser comment-author-maieutiquer even depth-2" id="li-comment-1605343">
+
+      <div class="grid group comment-wrap" id="comment-1605343">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="./Cross Browser Opacity _ CSS-Tricks_files/6c3d9850d9350116a9ed2c2842366844" width="50" height="50" class="lazyload-gravatar" alt="User Avatar">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">maieutiquer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1605343"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-12-01T05:58:26+00:00">December 1, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>@Amr SubZero<br>
+I created an account only to thank you, this fixes the issue of IE where an element was not passing opacity down to its children.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-60702">
+
+      <div class="grid group comment-wrap" id="comment-60702">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/0d2375ca4c9bf5a3e0e294ce1779e832?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Helge-Kristoffer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-60702"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2009-09-03T14:06:47+00:00">September 3, 2009</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Usefull :) Thanks!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=60702#respond" onclick="return addComment.moveForm( &quot;comment-60702&quot;, &quot;60702&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Helge-Kristoffer">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-60797">
+
+      <div class="grid group comment-wrap" id="comment-60797">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/33b8d8a6fb4b2cc61c3dafee78feec58?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">FJ</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-60797"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2009-09-04T00:35:43+00:00">September 4, 2009</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>attention – sequence</p>
+<p>.yourselector {<br>
+	background:#000;<br>
+	opacity: .75; /* standard: ff gt 1.5, opera, safari */<br>
+	-ms-filter: “alpha(opacity=75)”; /* ie 8 */<br>
+	filter: alpha(opacity=75); /* ie lt 7 */<br>
+	-khtml-opacity: .75; /* safari 1.x */<br>
+	-moz-opacity: .75; /* ff lt 1.5, netscape */<br>
+}</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=60797#respond" onclick="return addComment.moveForm( &quot;comment-60797&quot;, &quot;60797&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to FJ">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-61395">
+
+      <div class="grid group comment-wrap" id="comment-61395">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/553e41a78b878745494a6142e1b8cb6b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Hilbrand Edskes</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-61395"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2009-09-13T01:58:28+00:00">September 13, 2009</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>If you want opacity to also work in IE8’s emulating IE7 mode, the order should be:</p>
+<p>-ms-filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=50)”; // first<br>
+filter: alpha(opacity=50); // second</p>
+<p>If you don’t use this order, IE8 emulating IE7 doesn’t apply the opacity, although IE8 and IE7 native do.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=61395#respond" onclick="return addComment.moveForm( &quot;comment-61395&quot;, &quot;61395&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Hilbrand Edskes">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-81040">
+
+      <div class="grid group comment-wrap" id="comment-81040">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/dd51d796fad769066498a169417cc77e?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mike</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-81040"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-08-02T07:29:26+00:00">August 2, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>What about keeping the text inside the layer normal?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=81040#respond" onclick="return addComment.moveForm( &quot;comment-81040&quot;, &quot;81040&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Mike">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-84282">
+
+      <div class="grid group comment-wrap" id="comment-84282">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/994eee8938dbad7eb0f30e132236048e?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mike2</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-84282"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-10-14T21:01:47+00:00">October 14, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>yeah! I’m wondering how to do this too..</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even depth-2" id="li-comment-91002">
+
+      <div class="grid group comment-wrap" id="comment-91002">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/77f8a148434ca03000086c56aa824ca1?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jim</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-91002"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-04-06T11:12:20+00:00">April 6, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>If you set a parent container to an opacity less than 100%, all of its children will also be less than 100%, not because it cascades, but because the parent is dimmed.  If the parent is dimmed to 75%, even if you give the child 100% opacity, it will only be 100% of 75%, which is 75%.</p>
+<p>What I do is just use a semi-transparent PNG as a background image for the parent, and then the children can have full opacity.</p>
+<p>inb4 IE6 doesn’t render 24bit pngs…  Eff ie6, I’m done pandering to ie6, and enabling everyone who still uses it.  The use of a semi transparent png is not going to break the site, but it will certainly affect the prettyness, which is all the more reason for people to upgrade.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt depth-2" id="li-comment-197801">
+
+      <div class="grid group comment-wrap" id="comment-197801">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/40a9710ff0e378887ca2db2bab42f403?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">LUkas</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-197801"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-10-16T07:22:16+00:00">October 16, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Use rgba</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-85420">
+
+      <div class="grid group comment-wrap" id="comment-85420">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7b4a7788cb86a31ec7f4f8fa0f8d6d1f?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">James</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-85420"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-11-18T10:32:49+00:00">November 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>You need to prevent the style from cascading… you need to wrap your text in an element with an opacity of 100.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=85420#respond" onclick="return addComment.moveForm( &quot;comment-85420&quot;, &quot;85420&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to James">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-85421">
+
+      <div class="grid group comment-wrap" id="comment-85421">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7b4a7788cb86a31ec7f4f8fa0f8d6d1f?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">James</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-85421"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2010-11-18T10:37:17+00:00">November 18, 2010</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I was wrong: <a href="http://css-tricks.com/non-transparent-elements-inside-transparent-elements/" rel="nofollow">http://css-tricks.com/non-transparent-elements-inside-transparent-elements/</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=85421#respond" onclick="return addComment.moveForm( &quot;comment-85421&quot;, &quot;85421&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to James">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-88930">
+
+      <div class="grid group comment-wrap" id="comment-88930">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/bfce5165b7074b47263b3beee2bb42da?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Matthew Simmons</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-88930"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-02-17T14:17:28+00:00">February 17, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I find that I use this snippet more than any other on the site.  Thanks! =D</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=88930#respond" onclick="return addComment.moveForm( &quot;comment-88930&quot;, &quot;88930&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Matthew Simmons">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-88997">
+
+      <div class="grid group comment-wrap" id="comment-88997">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1201636d903681fd5ee9cd972196dffc?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Web Design DC</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-88997"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-02-19T23:41:04+00:00">February 19, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Is this ok for IE9?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=88997#respond" onclick="return addComment.moveForm( &quot;comment-88997&quot;, &quot;88997&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Web Design DC">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-199192">
+
+      <div class="grid group comment-wrap" id="comment-199192">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/8d77ca67ad79698819c09a869e613bcc?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">waka</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-199192"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-10-20T10:05:56+00:00">October 20, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>ie9 support “opacity: 0.5;” like chrome and firefox</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-89978">
+
+      <div class="grid group comment-wrap" id="comment-89978">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/cf9cb254911bfdde830be11e164db78f?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Beben Koben</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-89978"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-03-08T11:27:46+00:00">March 8, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>thanks for update coded^^</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=89978#respond" onclick="return addComment.moveForm( &quot;comment-89978&quot;, &quot;89978&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Beben Koben">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-90752">
+
+      <div class="grid group comment-wrap" id="comment-90752">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/faa57aad421a5421dfe33d07f711de79?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">asdasdasd</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-90752"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-03-28T18:15:16+00:00">March 28, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Awesome “Submit Comment From”. Congratulations, the best i have ever find surfing in the internet world for years…</p>
+<p>But I have one question…<br>
+Why all of you “webmasters”, keep asking email , hum??? If i want an answer I just put my email or even better I contact you. If not I will just SIMPLY LIE! And use one like this one: <a href="mailto:dfbjhsbdjfhbsdjfhbdsjhfbsd@gmail.com">dfbjhsbdjfhbsdjfhbdsjhfbsd@gmail.com</a><br>
+Take off this “required fields”. I hate this mass standardization and globalization, it’s so kitsch and so predictable, is a false sentence to evoke a mystified concept from it.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=90752#respond" onclick="return addComment.moveForm( &quot;comment-90752&quot;, &quot;90752&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to asdasdasd">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-92322">
+
+      <div class="grid group comment-wrap" id="comment-92322">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d675b686a79e6c21e411d2a324b3a30c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Chase</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-92322"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-05-04T10:13:04+00:00">May 4, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Webmasters ask for emails to help identify spam, as well as uniquely identify users.  If you don’t want to enter your email, then have faith that your posts will be removed as spam, and that you really can’t contribute, because you’re not anything more than a few “asdf”s</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=92322#respond" onclick="return addComment.moveForm( &quot;comment-92322&quot;, &quot;92322&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Chase">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-93948">
+
+      <div class="grid group comment-wrap" id="comment-93948">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/957c5f19cd1db1bd983073b1dcc1eeae?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Your Mom</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-93948"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-05-15T14:49:23+00:00">May 15, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I LOLD when i read the “good browsers” thing</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=93948#respond" onclick="return addComment.moveForm( &quot;comment-93948&quot;, &quot;93948&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Your Mom">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-177817">
+
+      <div class="grid group comment-wrap" id="comment-177817">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/2f3a60a44fc24b1bdb50f55a45cd454d?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Frank</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-177817"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-06-19T09:15:26+00:00">June 19, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>That my man is because you are an idiot</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-96316">
+
+      <div class="grid group comment-wrap" id="comment-96316">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d349ab1780855895546527e2c3334469?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Buat Info</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-96316"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-06-09T09:48:22+00:00">June 9, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>good information, very helpful. Thanks..</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=96316#respond" onclick="return addComment.moveForm( &quot;comment-96316&quot;, &quot;96316&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Buat Info">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-103184">
+
+      <div class="grid group comment-wrap" id="comment-103184">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/357a20e8c56e69d6f9734d23ef9517e8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">David</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-103184"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-08-10T13:55:43+00:00">August 10, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>@asdasdasd: you should view this awesome submit form in IE8.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=103184#respond" onclick="return addComment.moveForm( &quot;comment-103184&quot;, &quot;103184&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to David">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-113749">
+
+      <div class="grid group comment-wrap" id="comment-113749">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/6618e6435e3027e72b1b934cbdd4ac91?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Luuk</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-113749"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-10-11T08:19:35+00:00">October 11, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I tryed this on a PNG but then it get a black bar arround it.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=113749#respond" onclick="return addComment.moveForm( &quot;comment-113749&quot;, &quot;113749&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Luuk">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-114080">
+
+      <div class="grid group comment-wrap" id="comment-114080">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/8fe3f328d5d2576d7d9425e3ce3697b3?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Adam</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-114080"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-10-12T08:16:29+00:00">October 12, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks this is a big help!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=114080#respond" onclick="return addComment.moveForm( &quot;comment-114080&quot;, &quot;114080&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Adam">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-115223">
+
+      <div class="grid group comment-wrap" id="comment-115223">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/49061e8503ca321a8045c9065963a8c6?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Krinkle</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-115223"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-10-18T06:03:33+00:00">October 18, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>As Chris wrote here: <a href="http://css-tricks.com/64-css-transparency-settings-for-all-broswers/" rel="nofollow">http://css-tricks.com/64-css-transparency-settings-for-all-broswers/</a></p>
+<p>Use the following anno 2011:</p>
+<pre><code>
+.foobar {
+        zoom: 1;  filter: alpha(opacity=50);
+        opacity: 0.5;
+}
+</code></pre>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=115223#respond" onclick="return addComment.moveForm( &quot;comment-115223&quot;, &quot;115223&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Krinkle">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-127412">
+
+      <div class="grid group comment-wrap" id="comment-127412">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/0ad6932093b65b9aa69dc3305bb83a15?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">B</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-127412"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-11-27T17:25:38+00:00">November 27, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>All my text is invisible because it is supposed to be completely transparent  against a semi-opaque background… but I can’t get the opacity to work in IE 7/8. It’s nested inside a P that’s it.</p>
+<p>I tried zoom:1 &amp; Hilbrand’s fix for opacity and I still can’t get it to work.  Am I doing something wrong or anyone know a code snippet to fix it?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=127412#respond" onclick="return addComment.moveForm( &quot;comment-127412&quot;, &quot;127412&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to B">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-127677">
+
+      <div class="grid group comment-wrap" id="comment-127677">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ffe6841d63379f51bab2014b03c6c95b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Web Design Inverness</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-127677"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-11-28T13:11:11+00:00">November 28, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Had to laugh at the reference to ‘Good Browsers’ – I’m glad things like this don’t need to be a long article as all the answers are in your snippet, which is great. :)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=127677#respond" onclick="return addComment.moveForm( &quot;comment-127677&quot;, &quot;127677&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Web Design Inverness">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-127934">
+
+      <div class="grid group comment-wrap" id="comment-127934">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/af62cdffcd6cdc0852b6783ebff753e8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Andrew</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-127934"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-11-29T04:02:51+00:00">November 29, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks this has saved me hours!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=127934#respond" onclick="return addComment.moveForm( &quot;comment-127934&quot;, &quot;127934&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Andrew">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-131033">
+
+      <div class="grid group comment-wrap" id="comment-131033">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/4a16e21dddfdd166f952692eeed8fb12?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Pawel</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-131033"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-12-07T08:45:32+00:00">December 7, 2011</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Good Browsers you got that one right!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=131033#respond" onclick="return addComment.moveForm( &quot;comment-131033&quot;, &quot;131033&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Pawel">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-152850">
+
+      <div class="grid group comment-wrap" id="comment-152850">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/3b0cf105e755929525136373a276ca5c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Sandie</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-152850"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-02-23T11:58:45+00:00">February 23, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>“it’s so kitsch and so predictable, is a false sentence to evoke a mystified concept from it” You should have been a writer! Haha.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=152850#respond" onclick="return addComment.moveForm( &quot;comment-152850&quot;, &quot;152850&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Sandie">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-154697">
+
+      <div class="grid group comment-wrap" id="comment-154697">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a64e832ce557e6a08885ffcd963f2c01?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Dylan</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-154697"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-02-29T18:45:13+00:00">February 29, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>The  /* Good browsers */  comment made me laugh!</p>
+<p>Thanks for the post, I use this snippet of code all the time when designing :)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=154697#respond" onclick="return addComment.moveForm( &quot;comment-154697&quot;, &quot;154697&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Dylan">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-161328">
+
+      <div class="grid group comment-wrap" id="comment-161328">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/be0b82c1f93269965994da836f0b8c7b?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jon Spencer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-161328"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-03-27T14:20:32+00:00">March 27, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Just have to say thanks for this. I continually refer to it!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=161328#respond" onclick="return addComment.moveForm( &quot;comment-161328&quot;, &quot;161328&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Jon Spencer">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-164988">
+
+      <div class="grid group comment-wrap" id="comment-164988">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/82100b20eb4e48f0b25a14e7a3ed09c8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eric</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-164988"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-04-13T15:42:23+00:00">April 13, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This works great for me except for IE6 &amp; IE7.  It turns out that you need to capitalize the “A” and “O” like this:</p>
+<p>filter: Alpha(Opacity=50);</p>
+<p>Cheers!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=164988#respond" onclick="return addComment.moveForm( &quot;comment-164988&quot;, &quot;164988&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Eric">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-164990">
+
+      <div class="grid group comment-wrap" id="comment-164990">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/82100b20eb4e48f0b25a14e7a3ed09c8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eric</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-164990"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-04-13T15:47:47+00:00">April 13, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>my mistake!  my last post was incorrect.  using lower case works correctly in IE6 &amp; IE7</p>
+<p>filter: alpha(opacity=50);</p>
+<p>Thanks again!</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-169219">
+
+      <div class="grid group comment-wrap" id="comment-169219">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/56763063ffa64feab177a735492c7273?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">mugaz</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-169219"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-07T02:38:35+00:00">May 7, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>-ms-filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=50)”; </p>
+<p>This not works in IE8</p>
+<p>What i have to do work it in IE8 &amp; 7</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=169219#respond" onclick="return addComment.moveForm( &quot;comment-169219&quot;, &quot;169219&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to mugaz">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-169220">
+
+      <div class="grid group comment-wrap" id="comment-169220">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/f5f7ef995545b2a977ffa43a77c6f7be?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">mugaz</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-169220"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-07T02:47:41+00:00">May 7, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>-ms-filter:”progid:DXImageTransform.Microsoft.Alpha(Opacity=50)”;</p>
+<p>This not works in IE8</p>
+<p>What i have to do work it in IE8 &amp; 7</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=169220#respond" onclick="return addComment.moveForm( &quot;comment-169220&quot;, &quot;169220&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to mugaz">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-171526">
+
+      <div class="grid group comment-wrap" id="comment-171526">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ffdbcb78293db67b06904473db80ab8e?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jack</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-171526"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-18T23:08:49+00:00">May 18, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi,</p>
+<p>I have used css pie for rounded corner but one problem is that for opacity i have used the above code but i can’t see the opacity. </p>
+<p>if i remove csspie behavior then i see the opacity in IE8.</p>
+<p>so is it problematic to include csspie? i dont find any solution pls help.</p>
+<p>Thanks</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=171526#respond" onclick="return addComment.moveForm( &quot;comment-171526&quot;, &quot;171526&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Jack">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-171574">
+
+      <div class="grid group comment-wrap" id="comment-171574">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/6da7be0a53e182d411d302dbd5b8cb10?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Umar Farooque</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-171574"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-19T05:59:25+00:00">May 19, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Have you created all these snippets as wordpress’ dynamic pages unlike wordpress posts?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=171574#respond" onclick="return addComment.moveForm( &quot;comment-171574&quot;, &quot;171574&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Umar Farooque">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment even depth-2" id="li-comment-171751">
+
+      <div class="grid group comment-wrap" id="comment-171751">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ffdbcb78293db67b06904473db80ab8e?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jack</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-171751"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-05-20T20:56:01+00:00">May 20, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>No.. actually i have used this snippets in my html page and css.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-178496">
+
+      <div class="grid group comment-wrap" id="comment-178496">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/b2b06474f8888c4f2186a20ebdb50ae0?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Reza Baiat</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-178496"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-06-23T00:16:22+00:00">June 23, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi<br>
+every time I need to design a css style, I come here. thanks a lot Chris</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=178496#respond" onclick="return addComment.moveForm( &quot;comment-178496&quot;, &quot;178496&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Reza Baiat">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-178903">
+
+      <div class="grid group comment-wrap" id="comment-178903">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fd26826935c0970edc41a3ee12aa56f1?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mark III</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-178903"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-06-25T22:17:17+00:00">June 25, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>how bout -webkit-opacity? Is it for google chrome?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=178903#respond" onclick="return addComment.moveForm( &quot;comment-178903&quot;, &quot;178903&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Mark III">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-1596645">
+
+      <div class="grid group comment-wrap" id="comment-1596645">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/86692de254ea7ceb9117ba3946174852?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Michael O'Mara</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1596645"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-08-27T04:04:15+00:00">August 27, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Any update on this?</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-191049">
+
+      <div class="grid group comment-wrap" id="comment-191049">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/91cf7a42bdc0de56c9e0ad73d39433e8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Markavitch</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-191049"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-09-13T03:29:04+00:00">September 13, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>The is an issue with using the opacity property and images:hover. This causes the images to “jump” a pixel for a strange reason. however the following fix works (I have no idea why):</p>
+<p>box-shadow: #000 0em 0em 0em;</p>
+<p>for more information: <a href="http://stackoverflow.com/questions/9581071/jquery-fading-images-with-html-resize-makes-them-move-sometimes" rel="nofollow">http://stackoverflow.com/questions/9581071/jquery-fading-images-with-html-resize-makes-them-move-sometimes</a></p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=191049#respond" onclick="return addComment.moveForm( &quot;comment-191049&quot;, &quot;191049&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Markavitch">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1 buried" id="li-comment-191304">
+
+      <div class="grid group comment-wrap" id="comment-191304">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/bb1f6b996e3d1a151889c2f006665a01?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">John Brine</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-191304"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-09-14T01:08:52+00:00">September 14, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Good Job Mr.</p>
+<p>Helps me a lot specially in IE issues</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=191304#respond" onclick="return addComment.moveForm( &quot;comment-191304&quot;, &quot;191304&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to John Brine">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-194318">
+
+      <div class="grid group comment-wrap" id="comment-194318">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/265847acb3c82f829568db93a2b32d88?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eugene_n</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-194318"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-09-30T23:39:33+00:00">September 30, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>there is a better way found:</p>
+<p>background-color: transparent;<br>
+    background-color: rgba(0,0,0,0.3);<br>
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000);<br>
+    -ms-filter: “progid:DXImageTransform.Microsoft.gradient(startColorstr=#30000000,endColorstr=#30000000)”;</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=194318#respond" onclick="return addComment.moveForm( &quot;comment-194318&quot;, &quot;194318&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Eugene_n">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-1586255">
+
+      <div class="grid group comment-wrap" id="comment-1586255">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/102dbe17d8140ad1fe1d57ab35fdf571?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">mydhili</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1586255"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-10-27T22:31:23+00:00">October 27, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>how to measure background size in IE8 when ms-filter not worked</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-194319">
+
+      <div class="grid group comment-wrap" id="comment-194319">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/265847acb3c82f829568db93a2b32d88?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Eugene_n</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-194319"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-09-30T23:40:48+00:00">September 30, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>sorry wrong post, that’s for transparent background only, but works without isolating ie7 8 files</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=194319#respond" onclick="return addComment.moveForm( &quot;comment-194319&quot;, &quot;194319&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Eugene_n">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-196696">
+
+      <div class="grid group comment-wrap" id="comment-196696">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/d1f74d3de1bf7f954608e699deecb8c7?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Muhammed Athimannil</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-196696"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-10-11T12:17:33+00:00">October 11, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Unfortunately I’m facing black border around button in IE7 while using opacity.</p>
+<p>does any one have solution for this ?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=196696#respond" onclick="return addComment.moveForm( &quot;comment-196696&quot;, &quot;196696&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Muhammed Athimannil">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-196922">
+
+      <div class="grid group comment-wrap" id="comment-196922">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/777e1be639fd9a2a926a2d3f4c1aec11?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Rafael</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-196922"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-10-12T06:55:16+00:00">October 12, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks, perfect :D</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=196922#respond" onclick="return addComment.moveForm( &quot;comment-196922&quot;, &quot;196922&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Rafael">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1 buried" id="li-comment-197764">
+
+      <div class="grid group comment-wrap" id="comment-197764">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/5e680e11a424725bbc63c4908d13e4c5?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Jacob T. Nielsen</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-197764"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-10-16T05:06:29+00:00">October 16, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks a million Chris. This helped me a lot :)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=197764#respond" onclick="return addComment.moveForm( &quot;comment-197764&quot;, &quot;197764&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Jacob T. Nielsen">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-203747">
+
+      <div class="grid group comment-wrap" id="comment-203747">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7f24cbc31eec9b7fd3733723115787f8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Aaron</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-203747"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2012-11-01T11:56:03+00:00">November 1, 2012</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>For IE7 you really to ensure it has a few of these as well…<br>
+  position: relative;<br>
+  z-index: 99;<br>
+  zoom: 1;<br>
+  overflow: visible;</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=203747#respond" onclick="return addComment.moveForm( &quot;comment-203747&quot;, &quot;203747&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Aaron">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1 buried" id="li-comment-279884">
+
+      <div class="grid group comment-wrap" id="comment-279884">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/022cf2486f5beb87676b7d393824473c?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Mahsa</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-279884"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-02-08T17:24:59+00:00">February 8, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks. it was useful.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=279884#respond" onclick="return addComment.moveForm( &quot;comment-279884&quot;, &quot;279884&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Mahsa">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1 buried" id="li-comment-309036">
+
+      <div class="grid group comment-wrap" id="comment-309036">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/164192d7b7a04f5028294c5c1d9ac033?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">naresh</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-309036"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-03-19T23:38:45+00:00">March 19, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>was really helpful</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=309036#respond" onclick="return addComment.moveForm( &quot;comment-309036&quot;, &quot;309036&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to naresh">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-454969">
+
+      <div class="grid group comment-wrap" id="comment-454969">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/0d876120c9a9d0b8cb6c41db8c6f2dae?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Aaron Gray</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-454969"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-06-04T10:33:07+00:00">June 4, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hmm. This only seems to work when I drop the quotes around each filter.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=454969#respond" onclick="return addComment.moveForm( &quot;comment-454969&quot;, &quot;454969&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Aaron Gray">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-471969">
+
+      <div class="grid group comment-wrap" id="comment-471969">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a2f169aed85b27deb260ee6d5d04e150?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Sadhik</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-471969"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-06-26T06:02:23+00:00">June 26, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi, IE9 compatibility mode the opacity not working. Is there any specific code for that…</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=471969#respond" onclick="return addComment.moveForm( &quot;comment-471969&quot;, &quot;471969&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Sadhik">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment odd alt depth-2" id="li-comment-1583274">
+
+      <div class="grid group comment-wrap" id="comment-1583274">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/fb1b3fe2560f094142b976107121b9f0?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Zielak</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1583274"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-06-30T01:28:19+00:00">June 30, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Why would you use compatibility mode in IE9? Simple users don’t use that. Test on real IE8 if you want IE8 compatibility.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-545691">
+
+      <div class="grid group comment-wrap" id="comment-545691">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/a462795c1a337e9402c1961a8dc53355?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Parvez</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-545691"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-09-12T14:20:01+00:00">September 12, 2013</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>still laughing  at the comment  /* Good browsers */</p>
+<p>. . . but that’s the truth :)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=545691#respond" onclick="return addComment.moveForm( &quot;comment-545691&quot;, &quot;545691&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Parvez">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1179134">
+
+      <div class="grid group comment-wrap" id="comment-1179134">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/1351c24e08908a71d028f2905c5bfe17?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Shahbaz</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1179134"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-02-21T03:20:15+00:00">February 21, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>This code is not working on IE8. Anyone tell me the perfect solution. thanks</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1179134#respond" onclick="return addComment.moveForm( &quot;comment-1179134&quot;, &quot;1179134&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Shahbaz">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-1580031">
+
+      <div class="grid group comment-wrap" id="comment-1580031">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/e992a2ec5fca727a0e14cc9593f5c731?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">tomByrer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1580031"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-04-18T17:59:28+00:00">April 18, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/CSS/opacity</a><br>
+“Firefox 3.5 and later do not support -moz-opacity”</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1580031#respond" onclick="return addComment.moveForm( &quot;comment-1580031&quot;, &quot;1580031&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to tomByrer">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1581648">
+
+      <div class="grid group comment-wrap" id="comment-1581648">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/aac9973385ec757837bf04b2114d528d?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Yves</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1581648"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-05-24T23:16:06+00:00">May 24, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>The best place to find css tricks. IE8?! what were they thinking, MS, seriously?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1581648#respond" onclick="return addComment.moveForm( &quot;comment-1581648&quot;, &quot;1581648&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Yves">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-1583610">
+
+      <div class="grid group comment-wrap" id="comment-1583610">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7a0852b76b8277101f06906f2b8d68d0?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Dave Poore</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1583610"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-07-10T06:39:37+00:00">July 10, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Thanks for this! Gotta love still supporting IE8! ;)</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1583610#respond" onclick="return addComment.moveForm( &quot;comment-1583610&quot;, &quot;1583610&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Dave Poore">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1585280">
+
+      <div class="grid group comment-wrap" id="comment-1585280">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/715eea13b8e56836f44918b1a05e0907?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Vipin</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1585280"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-09-15T04:29:49+00:00">September 15, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>need a solution for ie8 :|</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1585280#respond" onclick="return addComment.moveForm( &quot;comment-1585280&quot;, &quot;1585280&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Vipin">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-even depth-1" id="li-comment-1587225">
+
+      <div class="grid group comment-wrap" id="comment-1587225">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ea18468457d16acb5be8feb5bb3aca8f?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Kristopher</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1587225"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-12-02T13:45:43+00:00">December 2, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Can we get this page updated or off the internet, please? This shit is ancient.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1587225#respond" onclick="return addComment.moveForm( &quot;comment-1587225&quot;, &quot;1587225&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Kristopher">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  <ul class="children">
+
+    <li class="comment byuser comment-author-chriscoyier bypostauthor odd alt depth-2" id="li-comment-1587228">
+
+      <div class="grid group comment-wrap" id="comment-1587228">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/e6e3b0dc1a26476da301047fb70784e5?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Chris Coyier</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1587228"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-12-02T16:02:46+00:00">December 2, 2014</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>I’ll update it to be more clear and suggest the most modern simplest way.</p>
+
+            <div class="reply">
+                          </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1595851">
+
+      <div class="grid group comment-wrap" id="comment-1595851">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/838e3a929a502c3f35ffa030b47985d6?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Silviu</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1595851"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-07-14T08:10:49+00:00">July 14, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi Chris, you put <code>filter: alpha(opacity=50);</code> under IE 5-7, but it works just fine in IE8, no need for that complicated line of code with DirectX… for IE8.</p>
+<p>Am I missing something? It’s true I am testing this on IE11 emulating IE8.</p>
+<p>Thanks</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1595851#respond" onclick="return addComment.moveForm( &quot;comment-1595851&quot;, &quot;1595851&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Silviu">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1597764">
+
+      <div class="grid group comment-wrap" id="comment-1597764">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/87282c97b770aca54c556b4a798ae400?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Observer</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1597764"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-10-30T03:21:55+00:00">October 30, 2015</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Stop supporting legacy browsers.</p>
+<p>Make a huge notification window when someone is trying to connect to the website through one of them, notifying him that he’s using a dinosaur-old web browser and that he should update. Even Microsoft is trying to get rid of IE!</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1597764#respond" onclick="return addComment.moveForm( &quot;comment-1597764&quot;, &quot;1597764&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Observer">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1601429">
+
+      <div class="grid group comment-wrap" id="comment-1601429">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/3d62e28078df819ef2c61b3ddf5dc25d?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">RizonBarns</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1601429"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-05-08T19:52:30+00:00">May 8, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>It’s so ridiculous for IE 8, not support opacity, even filter:alpha(opacity=56). And why must use -ms-filter:”progid:DXImageTransform…bla.bla.bla”?</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1601429#respond" onclick="return addComment.moveForm( &quot;comment-1601429&quot;, &quot;1601429&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to RizonBarns">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment odd alt thread-even depth-1" id="li-comment-1602949">
+
+      <div class="grid group comment-wrap" id="comment-1602949">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/f0478eb082f4db97484ec9134bc9e8f8?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">AlexUnipro</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1602949"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-07-20T06:06:30+00:00">July 20, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Silviu is correct… filter: alpha(opacity=50); works fine on IE8</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1602949#respond" onclick="return addComment.moveForm( &quot;comment-1602949&quot;, &quot;1602949&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to AlexUnipro">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+
+    <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1604267">
+
+      <div class="grid group comment-wrap" id="comment-1604267">
+
+        <div class="comment-avatar grid-1-5">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/71d13cc106a954e0229c0ad612bb02dd?s=160&amp;d=retro&amp;r=pg">
+        </div>
+
+        <div class="comment-body group grid-4-5">
+
+          <div class="comment-author-wrap vcard">
+            <div class="comment-author">Janani</div> <div class="comment-time"><a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#comment-1604267"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2016-09-22T07:08:00+00:00">September 22, 2016</time></div>
+            
+          </div>
+          
+          <div class="comment-content">
+
+            <p>Hi,</p>
+<p>Opacity is working fine in IE11 and Chrome but fails in IE11 – ENTERPRISE MODE. Kindly advice if any body had tried opacity for IE in enterprise mode and the issue is the background is completely grey in color which works fine in other browsers.<br>
+have used {opacity: .3; filter: Alpha(Opacity=30)}. Kindly share a solution.</p>
+
+            <div class="reply">
+              <a rel="nofollow" class="comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/?replytocom=1604267#respond" onclick="return addComment.moveForm( &quot;comment-1604267&quot;, &quot;1604267&quot;, &quot;respond&quot;, &quot;3243&quot; )" aria-label="Reply to Janani">Reply ↓</a>            </div><!-- .reply -->
+
+          </div>
+        </div>
+      </div>
+    
+  </li><!-- #comment-## -->
+  </ol>
+
+
+
+  <div id="respond" class="respond group">
+
+    
+      <div class="grid">
+
+        <div class="grid-1-2 comment-reminders">
+
+          <div>
+            <h4>Posting Code</h4>
+
+            <p>You may write comments in <strong>Markdown</strong>. This makes code easy to post, as you can write inline code like `&lt;div&gt;this&lt;/div&gt;` or multiline blocks of code in triple backtick fences (```) with double new lines before and after.</p>
+          </div>
+
+          <div>
+            <h4>Code of Conduct</h4>
+
+            <p>Absolutely anyone is welcome to submit a comment here. But not all comments will be posted. Think of it like writing a letter to the editor. All submitted comments will be read, but not all published. Published comments will be on-topic, helpful, and further the discussion or debate.</p>
+          </div>
+
+          <div>
+            <h4>Want to tell us something privately?</h4>
+
+            <p>Feel free to use our <a href="https://css-tricks.com/contact/">contact form</a>. That's a great place to let us know about typos or anything off-topic.</p>
+          </div>
+
+        </div>
+
+        <div class="grid-1-2">
+
+          <form action="https://css-tricks.com/wp-comments-post.php" method="post" id="comment-form" class="group comment-form">
+
+            <h2>
+              Submit a Comment
+            </h2>
+
+            
+              <div class="grid nopadding group commenter-inputs">
+
+                <div class="grid-1-2">
+                  <label for="author" class="screen-reader">Name*</label>
+                  <input type="text" placeholder="Name (required)" required="" name="author" id="author" value="" class="infoput">
+                </div>
+
+                <div class="grid-1-2">
+                  <label for="email" class="screen-reader">Email</label>
+                  <input placeholder="Email (required)" required="" type="email" name="email" id="email" value="" class="infoput">
+                </div>
+
+              </div>
+              
+              <div class="comment-wrap">
+                <label for="comment" class="screen-reader">Comment</label>
+                <textarea name="comment" id="comment" cols="100" rows="10" placeholder="Your comment here. Be cool."></textarea><div id="markdown_comment" class="comment-content markdown-comment-preview"></div><div class="preview-buttons" id="preview-buttons">          <a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#0" id="writeCommentButton" class="commentPreviewButton active">Write</a>          <a href="https://css-tricks.com/snippets/css/cross-browser-opacity/#0" id="previewCommentButton" class="commentPreviewButton">Preview</a></div>
+              </div>
+
+              <input type="hidden" name="comment_post_ID" value="3243" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+
+              <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="be14755987"></p>		<p class="antispam-group antispam-group-q" style="clear: both; display: none;">
+			<label>Copy and paste this code: <strong class="antspmpro-input-a">micuno</strong> <span class="required">*</span></label>
+			<input type="hidden" name="antspmpro-a" class="antispam-control antispam-control-a" value="micuno">
+			<input type="text" name="antspmpro-q-luwele" class="antispam-control antispam-control-q" value="4.1">
+		</p>
+		<p class="antispam-group antispam-group-e" style="display: none;">
+			<label>Leave this field empty</label>
+			<input type="text" name="antspmpro-e-email-url-website-luwele" class="antispam-control antispam-control-e" value="">
+		</p>
+<p style="display: none;"></p><!-- MailChimp for WordPress v4.0.12 - https://mc4wp.com/ --><input type="hidden" name="_mc4wp_subscribe_wp-comment-form" value="0"><p class="mc4wp-checkbox mc4wp-checkbox-wp-comment-form"><label><input type="checkbox" name="_mc4wp_subscribe_wp-comment-form" value="1" checked="checked"><span>Get the CSS-Tricks newsletter</span></label></p><!-- / MailChimp for WordPress -->
+              <div class="comment-form-button-wrap">
+                <input name="submit" type="submit" class="button" id="submit" value="Submit Comment">
+
+                <a rel="nofollow" id="cancel-comment-reply-link" href="https://css-tricks.com/snippets/css/cross-browser-opacity/#respond" style="display:none;">Cancel Reply</a>              </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    
+  </div>
+
+</section>    </div>
+  </div>
+
+  <footer class="newsletter-footer flex-grid">
+
+    <div class="media-temple-footer-ad">
+
+      <h4>Wanna do a workshop at your&nbsp;company?</h4>
+
+      <div class="mt-flex-grid">
+
+        <div>
+          <svg viewBox="0 0 921.17 1200" class="clip-path-svg">
+            <defs>
+              <clippath id="chris-clip">
+                <path d="M35.16,873.71s-22.77-24.76-23-31,4-53,4-53,2.5-72.24,6-88,28-92,28-92v-5s-3.49-3.74-3-7,10.72-40.31,11-48,16.59-61.81,24-76,38.23-51.48,44-56a106,106,0,0,1,12-8s5-14.53,13-20,31-18,31-18,3.63-14.48,9-16,28-1,28-1,10.58-12.12,15-14,49-26,49-26l25-20v-17s-14.07-25.47-16-50c0,0-13.31-2.71-14-26s-9-37-9-37-1.91-12.86,3-18c5.36-5.61,11,7,11,7s-1.11-47.19,6-69,7.89-32.44,32-52,42.82-25.47,60-30,34.69-4.91,62,11,50.37,29,59,58,13.15,59.55,12,70,0,1,0,1v2s7.42-3.31,10,2,.59,10.36-2,16-2.7,23.45-3,26-3.06,28-5,31-5,7-5,7-4.35,29.82-8,34l5,17s13.78,1.83,23,8,10.49,3.59,15,8,17,14,17,14,8.59,1.21,15,7,11.39,9.37,15,9,16.72,5.89,23,10,22,13,22,13l9,5a25.68,25.68,0,0,1,18,4c8.52,5.88,27,24,27,24s14.16,11.38,17,15,62.22,72.75,69,88,0,1,0,1l14,29,20,37s6.62,6,7,9a58.39,58.39,0,0,0,2,8l5,6s4.77,0,5,7c0,0,4.38,7.62,7,10s4,8,4,8l-1,3s26.5,33.86,41,59,30,68.74,32,77,6,31,6,31l3,29s.44,28.62-4,33-58,38-58,38l-47,25s25.09,24.56,29,36,5,16,5,16l2,11s5.72,17.29,4,23-6.1,14.79-6,18,2,18,2,18v29s-2.29,27.86-2,33,1,66,1,66l-2,109s.31,23.39,3,35,4,50,4,50l4,43-855,30s-2.61-46.15,0-63,9-53,9-53l5-15-2-115s2.39-56.82,5-70l2-29-1-13a68.41,68.41,0,0,1-3-16c-.33-7.88-.15-17.89,2-26s16-34,16-34-3.46-12.2-3-16a52,52,0,0,1,2-10c.71-1.72,15-31,15-31l8-17Z"></path>
+                <path d="M669.16,806.71s-.93-30.56-3-39-12.58-17.52-10-30,3.83-30.23,4-33-1-12.42,0-18,10-26,10-26,7.33,18.68,10,23,10,13,10,13l7,16s26.08,37.28,36,44,1,1,1,1l1,3S679.45,794.69,669.16,806.71Z"></path>
+              </clippath>
+            </defs>
+            <image xlink:href="https://cdn.css-tricks.com/wp-content/themes/CSS-Tricks-15/images/chris-footer.jpg" x="0" y="0" clip-path="url(#chris-clip)">
+          </image></svg>
+        </div>
+
+        <div>
+          <p>Thanks to Media Temple, I'm heading to one lucky
+ company's office for a day, for <strong>free</strong>! It could be yours!</p>
+
+          <a href="http://www2.mediatemple.net/csstrickscontest" class="button full-width-button" style="position: relative; z-index: 999;">
+            Go Enter Today
+          </a>
+
+          <div class="mt-logo-wrap">
+            <img src="./Cross Browser Opacity _ CSS-Tricks_files/mt-logo.svg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-newsletter-block">
+
+      <h4>We have a pretty good<sup>*</sup> newsletter.</h4>
+
+      <form action="https://chriscoyier.us2.list-manage.com/subscribe/post?u=155f5a9ccc4e24c318130cace&amp;id=197f127a68" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+
+        <p class="mc-field-group flexy-search">
+          <label for="mce-EMAIL" class="screen-reader">Email Address</label>
+          <input type="email" name="EMAIL" class="required email mailchimp-email-input" id="mce-EMAIL">
+          <svg class="icon-email" width="20px" height="15px">
+            <use xlink:href="#icon-email"></use>
+          </svg>
+          <input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="button subscribe-button">
+        </p>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_155f5a9ccc4e24c318130cace_197f127a68" value=""></div>
+
+      </form>
+
+    </div>
+
+  </footer>
+
+  <footer class="site-footer">
+
+    <div class="site-footer-inside">
+
+      <div class="colophon">
+        <p>CSS-Tricks* is created, written by, and maintained by <a href="http://chriscoyier.net/">Chris Coyier</a> and <a href="https://css-tricks.com/about/">a team</a> of swell people. It is built on <a href="http://wordpress.org/">WordPress</a>, hosted by <a href="http://bit.ly/1n2DZjU">Media Temple</a>, and the assets are served by <a href="http://tracking.maxcdn.com/c/13088/3982/378">MaxCDN</a>. The fonts are Source Sans Pro and Cooper Hewitt. It is made possible through <a href="https://css-tricks.com/advertising/">sponsorships</a> from products and services we like.</p>
+
+        <p class="mega-big-time-warning"><small>*May or may not contain any actual "CSS" or "Tricks".</small></p>
+
+        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="./Cross Browser Opacity _ CSS-Tricks_files/follow_button.b8b8e09be0884a395c5ae18831ce1cc0.en.html" style="position: static; visibility: visible; width: 252px; height: 20px;" data-screen-name="Real_CSS_Tricks"></iframe>
+      </div>
+
+      <nav>
+        <a href="https://css-tricks.com/contact/">Contact</a>
+        <a href="https://css-tricks.com/about/">About</a>
+        <a href="https://css-tricks.com/archives/">Archives</a>
+        <a href="https://css-tricks.com/advertising/">Advertise</a>
+        <a href="https://css-tricks.com/jobs/">Jobs</a>
+      </nav>
+
+      <nav>
+        <a href="https://css-tricks.com/guest-posting/">Guest Posting</a>
+        <a href="https://css-tricks.com/license/">License</a>
+        <a href="https://css-tricks.com/shop/">Shop</a>
+        <a href="https://css-tricks.com/subscription-options/">Subscribe</a>
+        <a href="https://css-tricks.com/feed/">RSS</a>
+      </nav>
+
+    </div>
+
+    <svg viewBox="0 0 1000 600" preserveAspectRatio="none" class="site-footer-links-background">
+      <defs>
+        <lineargradient id="footer-links-gradient" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FBDA61"></stop>
+          <stop offset="100%" stop-color="#DBA0D2"></stop>
+        </lineargradient>
+        <filter id="blur-filter" x="0" y="-10" width="200" height="200">
+          <fegaussianblur in="SourceGraphic" stdDeviation="20"></fegaussianblur>
+        </filter>
+      </defs>
+      <path class="jagged-top-links" id="jagged-top-links-shadow" fill="rgba(0, 0, 0, 0.5)" d="M1004,100 L902,145 L735,184 L476,176 L311,161 L39,146 L-4,90 L-4,604 L1004,604 L1004,90 Z" filter="url(#blur-filter)"></path>
+      <path class="jagged-top-links" id="jagged-top-links" fill="url(#footer-links-gradient)" d="M1004,100 L902,145 L735,184 L476,176 L311,161 L39,146 L-4,90 L-4,604 L1004,604 L1004,90 Z"></path>
+    </svg>
+
+  </footer>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none"><symbol id="icon-close" viewBox="0 0 95.08 95.09"><title>icon-close</title><path d="M58.31 47.47l34.58-34.58a7.63 7.63 0 0 0 0-10.69 7.63 7.63 0 0 0-10.69 0L47.62 36.78 13 2.19a7.63 7.63 0 0 0-10.69 0 7.63 7.63 0 0 0 0 10.69l34.6 34.6L2.33 82.07a7.29 7.29 0 0 0 0 10.69 7.63 7.63 0 0 0 10.69 0l34.6-34.6 34.6 34.6a7.27 7.27 0 0 0 10.68 0 7.63 7.63 0 0 0 0-10.69z" data-name="Layer 1"></path></symbol><symbol id="icon-email" viewBox="0 0 100 68.89"><title>icon-email</title><path d="M36.25 38.44L47.74 49.1a3.33 3.33 0 0 0 4.51 0l11.5-10.66 24.69 23.78H11.56zM93.33 11v46.6L68.68 33.85zM6.67 11l24.65 22.85L6.67 57.64zm5.1-4.37h76.46L50 42.12zM4.44 0A4.51 4.51 0 0 0 0 4.44v60a4.51 4.51 0 0 0 4.44 4.44h91.12a4.51 4.51 0 0 0 4.44-4.44v-60A4.51 4.51 0 0 0 95.56 0z" data-name="Layer 1"></path></symbol><symbol id="icon-link" viewBox="0 0 100 58.84"><title>icon-link</title><path d="M78.47 48H49.21a10.66 10.66 0 0 1-9-4.91h10.58A21.57 21.57 0 0 0 71.7 26.64h6.76a10.67 10.67 0 0 1 0 21.33zm-67.6-26.47a10.67 10.67 0 0 1 10.67-10.66H50.8A10.59 10.59 0 0 1 58.34 14a10.94 10.94 0 0 1 1.43 1.79H49.21a21.57 21.57 0 0 0-20.92 16.4h-6.76a10.67 10.67 0 0 1-10.66-10.66zm39.92 10.66H39.86a10.68 10.68 0 0 1 9.35-5.54h10.93a10.67 10.67 0 0 1-9.35 5.54zM100 37.31a21.53 21.53 0 0 0-21.53-21.53h-6.92A21.53 21.53 0 0 0 50.8 0H21.54a21.53 21.53 0 0 0 0 43.06h6.83v-.31A21.41 21.41 0 0 0 34 52.53a21.4 21.4 0 0 0 15.2 6.31h29.26A21.56 21.56 0 0 0 100 37.31z"></path></symbol><symbol id="icon-menu" viewBox="0 0 100 68.42"><title>icon-menu</title><path d="M94.73 10.53H5.27c-7 0-7-10.53 0-10.53h89.46c6.88.14 6.88 10.38 0 10.53zm0 18.42H5.27c-7 0-7 10.53 0 10.53h89.46c6.86-.17 6.86-10.38 0-10.53zm0 28.94H5.27c-7 0-7 10.53 0 10.53h89.46c7.03 0 7.03-10.53 0-10.53z" data-name="Layer 1"></path></symbol><symbol id="icon-search" viewBox="0 0 100 100"><title>icon-search</title><path d="M80.65 66.78a33.55 33.55 0 0 1-47.44-47.44 33.55 33.55 0 1 1 47.44 47.44zm6.73-54.16a43.06 43.06 0 0 0-65.32 55.71L2 88.39A6.8 6.8 0 0 0 11.61 98l20.06-20.06a43.06 43.06 0 0 0 55.71-65.32z"></path></symbol><symbol id="icon-star" viewBox="0 0 100 95.52"><title>icon-star</title><path d="M64.19 28.77a5.17 5.17 0 0 0 3.9 2.83s29.27-3 31.74 4.61-23 22.39-23 22.39a5.17 5.17 0 0 0-1.49 4.58s11.91 26.9 5.42 31.61S52.4 79.87 52.4 79.87a5.21 5.21 0 0 0-2.41-.6 5.14 5.14 0 0 0-2.41.6S25.68 99.5 19.2 94.79s5.42-31.61 5.42-31.61a5.18 5.18 0 0 0-1.49-4.58S-2.31 43.83.17 36.21s31.74-4.61 31.74-4.61a5.19 5.19 0 0 0 3.9-2.83S42 0 50 0s14.19 28.77 14.19 28.77z" data-name="Layer 1"></path></symbol><symbol id="icon-tag" viewBox="0 0 100 99.98"><title>icon-tag</title><path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0 0-5-2.25L8 0a7.55 7.55 0 0 0-8 7v1l2.5 41a7.11 7.11 0 0 0 2.25 4.75l43.49 44a7.2 7.2 0 0 0 5.24 2.25 6.81 6.81 0 0 0 5.25-2.25L97.72 59A7.47 7.47 0 0 0 98 48.5z"></path></symbol></svg>
+  <script type="text/javascript" src="./Cross Browser Opacity _ CSS-Tricks_files/form.js"></script>
+<script>var pollsL10n = {"ajax_url":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"0","show_fading":"1"};</script><script>var markdownify = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"71507569dd"};</script><script>var antispampro_vars = {"code":"micuno","input_name_suffix":"luwele"};</script><script>var bblpAJAX = {"ajaxurl":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php"};</script><script type="text/javascript" src="./Cross Browser Opacity _ CSS-Tricks_files/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./Cross Browser Opacity _ CSS-Tricks_files/wp-embed.min.js"></script>
+<script type="text/javascript" src="./Cross Browser Opacity _ CSS-Tricks_files/minqueue-89355811-5ae0f954.js"></script>
+
+  
+<script>
+  __remote_addr = "100.14.53.90";
+</script>
+
+<script src="./Cross Browser Opacity _ CSS-Tricks_files/global-libs-min.js"></script>
+<script src="./Cross Browser Opacity _ CSS-Tricks_files/global-min.js"></script>
+<script async="" src="./Cross Browser Opacity _ CSS-Tricks_files/ei.js"></script>
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68528-29', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./Cross Browser Opacity _ CSS-Tricks_files/saved_resource.html"></iframe></body></html>

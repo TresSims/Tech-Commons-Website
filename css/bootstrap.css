@@ -38,12 +38,12 @@ audio:not([controls]) {
 .card-head{
   border-bottom-style: solid;
   border-width: thin;
-  border-color: #fc0;
+  border-color: #ffc904;
 }
 .body-head-gaurd{
   border-bottom-style: solid;
   border-width: thick;
-  border-color: #fc0;
+  border-color: #ffc904;
 }
 a {
     background-color: transparent
@@ -5147,7 +5147,7 @@ a.badge:focus, a.badge:hover {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: #000;
-    background-color: #fc0;
+    background-color: #ffc904;
 }
 
 /*.jumbotron .h1, .jumbotron h1 {

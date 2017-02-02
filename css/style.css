@@ -257,11 +257,33 @@ small{
   border-width: thick;
   border-color: var(--ucf-gold);
   margin-top: -200px;
-
+  color: #000;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 
   box-shadow: 2px, 2px, 5px, var(--tech-shadow);
+
+
+
+
+
+  /*padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: .5em;
+  position: relative;
+  float: right;
+  background-color: #fff;
+  width: 33%;
+  z-index: 1000;
+  border-bottom-style: solid;
+  border-width: thick;
+  border-color: var(--ucf-gold);
+  margin-top: -200px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  box-shadow: 2px, 2px, 5px, var(--tech-shadow);*/
 }
 /*Body Main*/
 .flex-techlend-container {
@@ -321,6 +343,7 @@ small{
   border-width: thin;
   border-color: var(--ucf-gold);
 }
+
 .card-head2{
   border-bottom-style: solid;
   border-width: thin;
