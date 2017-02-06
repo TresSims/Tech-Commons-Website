@@ -116,7 +116,9 @@ small{
 
 .navigation{
   float: right;
+
 }
+
 .title{
   float: left;
 }
@@ -133,6 +135,10 @@ small{
 .dropdown{
   padding-top: .5em;
 }
+.dropdown:hover .dropdown-submenu {
+display: block;
+
+}
 
 .dropdown-menu a{
   text-shadow: none !important;
@@ -140,6 +146,7 @@ small{
 
 .dropdown-submenu {
     position: relative;
+
 }
 
 .dropdown-submenu .dropdown-menu {
@@ -202,16 +209,18 @@ small{
 
 }
 .dropdown-toggle:hover{
-  background-color: var(--ucf-gold);
+  /*background-color: var(--ucf-gold);*/
 
 }
 
 .dropdown-divider{
 
   height: 1px;
-  margin: .5rem 0;
+  /*margin: .5rem 0;*/
   overflow: hidden;
   background-color: #eceeef;
+
+
 }
 
 #grid{
@@ -355,7 +364,7 @@ small{
 
 
 .card-body{
-  font-size: 18px;
+  font-size: 17px;
   padding-top: 10px;
 }
 
@@ -408,6 +417,44 @@ small{
   border-color: var(--ucf-gold);
 
 }
+/*.ssd-title {
+    /*width:500px;
+    text-align:center;
+}
+/*.ssd-title hr{
+    margin-right:auto;
+    width:40%;
+}
+.right-hr {
+  float:right;
+  width: 55%;
+}
+
+
+.divider {
+    width:1000px;;
+    text-align:left;
+}
+
+/*.divider hr {
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+
+
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+.ssd-description{
+  margin-top: 1em;
+  /*width: 100%;
+}*/
 
 .lab-anchor{
 

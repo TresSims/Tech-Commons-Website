@@ -204,6 +204,21 @@ td, th {
     padding: 0
 }
 
+/*Addional style to help in Safari*/
+
+.lab-anchor{
+  border-left-color:#ffc904;
+  border-right-color:#ffc904;
+}
+
+.ssd-hr{
+  border-top-color: #ffc904;
+}
+
+.right-arrow{
+  font-size: 10px;
+}
+
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
@@ -216,7 +231,7 @@ td, th {
         box-shadow: none!important
     }
     a, a:visited {
-        text-decoration: underline
+        /*text-decoration: underline*/
     }
     a[href]:after {
         content: " (" attr(href) ")"
@@ -1371,8 +1386,8 @@ a {
 }
 
 a:focus, a:hover {
-    color: #23527c;
-    text-decoration: underline
+    color: #000;
+    /*text-decoration: underline*/
 }
 
 a:focus {
@@ -3538,8 +3553,8 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-link:focus, .btn-link:hover {
-    color: #23527c;
-    text-decoration: underline;
+    color: #000;
+    /*text-decoration: underline;*/
     background-color: transparent
 }
 
@@ -3652,19 +3667,24 @@ tbody.collapse.in {
     display: none;
     float: left;
     min-width: 160px;
-    padding: 5px 0;
+    padding: 0;
     margin: 2px 0 0;
     font-size: 14px;
     text-align: left;
     list-style: none;
+    /*was #fff*/
     background-color: #fff;
+    /*background-color: #000;*/
+    /*background-color: #ffc904;*/
+
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .450);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .450)
+
 }
 
 .dropdown-menu.pull-right {
@@ -3676,23 +3696,32 @@ tbody.collapse.in {
     height: 1px;
     margin: 9px 0;
     overflow: hidden;
-    background-color: #e5e5e5
+    background-color: #ffc904
 }
 
+
 .dropdown-menu>li>a {
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     display: block;
-    padding: 3px 20px;
+    padding: 8px 15px;
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: #333;
-    white-space: nowrap
+    /*color: #ffc904;*/
+    color: #000;
+    /*color: #fff;*/
+    font-size: 15px;
+    white-space: nowrap;
+    transition: all 150ms linear;
+
 }
+
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     color: #262626;
     text-decoration: none;
-    background-color: #f5f5f5
+    background: #ffc904;
+
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
@@ -4924,7 +4953,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
     z-index: 2;
-    color: #23527c;
+    color: #000;
     background-color: #eee;
     border-color: #ddd
 }
@@ -5147,6 +5176,11 @@ a.badge:focus, a.badge:hover {
     padding-bottom: 30px;
     margin-bottom: 30px;
     color: #000;
+    background: -webkit-gradient(linear, 60% 0%, 50% 100%, color-stop(0%, #ffc904), color-stop(100%, #e6b000));
+	background: -webkit-linear-gradient(#ffc904, #e6b000);
+	background: -moz-linear-gradient(#ffc904, #e6b000);
+	background: -o-linear-gradient(#ffc904, #e6b000);
+	background: linear-gradient(#ffc904, #e6b000);
     background-color: #ffc904;
 }
 
@@ -5839,12 +5873,16 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
 
 .panel-default>.panel-heading {
     color: #333;
-    background-color: #f5f5f5;
-    border-color: #ddd
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fff), color-stop(100%, #dbdada));
+	background: -webkit-linear-gradient(#fff, #dbdada);
+	background: -moz-linear-gradient(#fff, #dbdada);
+	background: -o-linear-gradient(#fff, #dbdada);
+	background: linear-gradient(#fff, #dbdada);
+    border-color: #d1d1d1
 }
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
-    border-top-color: #ddd
+    border-top-color: #d1d1d1
 }
 
 .panel-default>.panel-heading .badge {
@@ -5853,7 +5891,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
 }
 
 .panel-default>.panel-footer+.panel-collapse>.panel-body {
-    border-bottom-color: #ddd
+    border-bottom-color: #d1d1d1
 }
 
 .panel-primary {
@@ -5862,8 +5900,17 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus, a.list-g
 
 .panel-primary>.panel-heading {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7
+    background: #4d6a79; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#65889a, #4d6a79); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#65889a, #4d6a79); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#65889a, #4d6a79); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#65889a, #4d6a79); /* Standard syntax */
+
+  	/*background: -webkit-linear-gradient(#628394, #4d6a79);
+  	background: -moz-linear-gradient(#628394, #4d6a79);
+  	background: -o-linear-gradient(#628394, #4d6a79);
+  	background: linear-gradient(#628394, #4d6a79);
+    border-color: #337ab7*/
 }
 
 .panel-primary>.panel-heading+.panel-collapse>.panel-body {
