@@ -136,7 +136,7 @@ small{
   padding-top: .5em;
 }
 .dropdown:hover .dropdown-submenu {
-display: block;
+  display: block;
 
 }
 
@@ -158,8 +158,17 @@ display: block;
 .dropcontainer h3{
   margin-top: 14px;
 }
+.dropdown-submenu:hover:after{
+  background-color: var(--ucf-gold);
+}
 
+.navigation ul li.dropdown-submenu:hover > a {
+    background-color: var(--ucf-gold);;
 
+}
+.navigation ul li.dropdown-submenu > a:hover {
+  color: #fff;
+}
 
 
 .btn-ucf{
