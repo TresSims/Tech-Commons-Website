@@ -5,48 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css\bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
-    <script src="JS\scripts.js"></script>
-
-
+    <script src="../JS\scripts.js"></script>
+    <script src="../JS\bootstrap.js"></script>
 </head>
 
+<!-- Go to Top Code -->
 
 <body>
     <a href="javascript:" id="return-to-top"><span class="glyphicon glyphicon-circle-arrow-up" style="z-index:2000"></span></a>
     <div class="nav jumbotron">
         <div class="Title">
-            <a href="index.html" class="head"><h2>Technology Commons</h2></a>
+            <a href="../index.html" class="head"><h2>Technology Commons</h2></a>
         </div>
         <div class="navigation">
+
+
             <div class="nav-Item">
-                <a href="blog.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
+                <a href="../blog/index.html" class="head"><h3><span class="glyphicon glyphicon-book"></span> Blog</h3></a>
             </div>
+
+
+
             <div class="nav-Item">
                 <div class="dropcontainer">
                     <div class="dropdown">
                         <button class="btn btn-ucf1 dropdown-toggle main-menu" type="button" data-toggle="dropdown"><a href="#" class="test"><h3><span class="glyphicon glyphicon-off"></span> Student Services</h3>
                           <span class="caret"></span></a></button>
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="computerlabs.html">Computer Labs</a></li>
+                            <li><a tabindex="-1" href="../computerlabs/index.html">Computer Labs</a></li>
                             <div class="dropdown-divider"></div>
                             <li><a tabindex="-1" href="https://ucf.service-now.com/ucfit" target="blank">UCF IT Support Center</a></li>
                             <div class="dropdown-divider"></div>
                             <li class="dropdown-submenu">
-                                <a class="test" tabindex="-1" href="ssd.html">Student Support Desk &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-menu-right right-arrow"></span></a>
+                                <a class="test" tabindex="-1" href="../ssd/index.html">Student Support Desk &nbsp;&nbsp;&nbsp; <span class="glyphicon glyphicon-menu-right right-arrow"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a tabindex="-1" href="techlend.html">Technology Checkout</a></li>
+                                    <li><a tabindex="-1" href="../techlend/index.html">Technology Checkout</a></li>
                                     <div class="dropdown-divider"></div>
                                     <!-- <li><a tabindex="-1" href="#">Reserve a Room</a></li> -->
-                                    <li><a tabindex="-1" href="repairs.html">Support & Repair</a></li>
+                                    <li><a tabindex="-1" href="#">Support & Repair</a></li>
                                     <div class="dropdown-divider"></div>
-                                    <li><a tabindex="-1" href="printing.html">Printing</a></li>
+                                    <li><a tabindex="-1" href="../printing/index.html">Printing</a></li>
 
                                 </ul>
                             </li>
@@ -56,94 +62,93 @@
             </div>
 
             <div class="nav-Item">
-                <a href="index.html" class="head"><h3><span class="glyphicon glyphicon-home"></span> Home</h3></a>
+                <a href="../index.html" class="head"><h3><span class="glyphicon glyphicon-home"></span> Home</h3></a>
             </div>
         </div>
     </div>
-
-
-
     <div class="header-image" style="margin-top: -2.2em;">
         <center>
-            <img src="Images\background.png" style="width: 100%;" />
+            <img src="../Images\background.png" style="width: 100%;" />
         </center>
     </div>
     <div class="container">
         <div class="body-head-gaurd">
             <div class="body-head">
-                <h2>Student Support Desk</h2>
+                <h2>Support & Repair</h2>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-lg-8">
                 <div class="card">
                     <div class="card-head">
-                        <h4>Welcome to the Student Support Desk</h4></div>
-                    <div class="card-body">
-                        <p class="tech-commons-para">
-                            Need help resetting your NID? Having issues connecting to the Campus WiFi? Don’t know where the nearest restroom is? We’ve got your back! You can come on down to the Student Support Desk with any technology related issues, or even questions in general. If you come to us with a problem, we’ll make sure that you leave with a solution.
-                            Check out some of the additional services we offer below.
-                        </p>
-
+                        <h4>Computer Repair Services</h4>
                     </div>
-                    <!-- <div class="card-body" style="display:flex;justify-content:left;align-items:left;">
-                        <table style="margin-top:1em;">
+                    <div class="card-body">
+                        <table class="static-list" style="width:95%;">
                             <tr>
-                                <td class="small-chart" style="padding-right: 20px;"><strong>Our Services:</strong></td>
-                                <td><a class="lab-anchor" href="techlend.html" style="border-left-style: solid; border-left-width: thin; border-left-color:var(--ucf-gold);">Technology Lending</a></td>
-                                <td><a class="lab-anchor" href="#anchor2" id="scroll2">Collaboration Rooms</a></td>
-                                <td><a class="lab-anchor" href="#anchor2" id="scroll2">Technology Repairs</a></td>
-                                <!-- <td><a class="lab-anchor" href="#anchor3">Classroom Building I</a></td>
+                                <th><span class="glyphicon glyphicon-cog"></span> Repairs</th>
+                                <th><span class="glyphicon glyphicon-usd"></span> Cost</th>
+                            </tr>
+                            <tr>
+                                <td>Diagnostic - First Hour of Labor</td>
+                                <td>$29.99</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Data Transfer
+                                </td>
+                                <td>
+                                    $64.99
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Data Backup/Recovery</td>
+                                <td>$64.99</td>
+                            </tr>
+                            <tr>
+                                <td>PC Tune-Up</td>
+                                <td>$59.99</td>
+                            </tr>
+                            <tr>
+                                <td>Reinstalling Operating System</td>
+                                <td>$69.99</td>
+                            </tr>
+                            <tr>
+                                <td>Virus Removal</td>
+                                <td>$59.99</td>
+                            </tr>
+                            <tr>
+                                <th><span class="glyphicon glyphicon-cog"></span> Installation</th>
+                                <th><span class="glyphicon glyphicon-usd"></span> Cost</th>
+                            </tr>
+                            <tr>
+                                <td>Software Installation</td>
+                                <td>$9.99</td>
+                            </tr>
+                            <tr>
+                                <td>Hard Drive Installation</td>
+                                <td>$29.99</td>
+                            </tr>
+                            <tr>
+                                <td>Memory Installation</td>
+                                <td>$29.99 ($9.99 if bought from Tech Product Center)</td>
                             </tr>
                         </table>
-                    </div> -->
-                    <div class="card-body" style="display:flex;justify-content:left;align-items:left; margin-top: 1em;">
-                        <p><strong>Technology Checkout</strong></p> <hr class="ssd-hr"/>
                     </div>
-                    <div class="card-body" style="isplay:flex;justify-content:left;align-items:left;">
-                        <p> The Student Support Desk in both Technology Commons II and Classroom Building I both offer FREE technology rental services. These rentals include Macbook Airs, Dell laptops, iPads, Microsoft Surfaces, GoPros, and Centiq tablets. Chargers for Dell laptops, Macbooks, iPhones, and Androids are also available for rent.
-
-All you need to bring with you is your student ID (or the 16 digit ISO number on your student ID), and yourself.
-                            Head on over to the <a href="techlend.html" class="link">Technology Lending</a> page to find out more!</p>
-                    </div>
-
-                    <!-- <div class="divider" style="margin-top: 2em;font-size:18px;">
-                      <strong>Technology Checkout </strong><hr class="right"/>
-                    </div>
-                    <div class="card-body" style="text-align: left;">
-                        <p class="ssd-description"> The Student Support Desk in both Technology Commons II and Classroom Building I both offer free technology lending services. We offer devices including the MacBook Air, Dell Inspiron, iPad, and much more!  Depending on the device, our rentals can last up to seven days.
-                            Head on over to the <a href="techlend.html" class="link">Technology Lending</a> page to find out more!</p>
-                    </div> -->
-
-                    <div class="card-body" style="display:flex;justify-content:left;align-items:left; margin-top: 1em;">
-                        <p><strong>Collaboration Rooms</strong></p> <hr class="ssd-hr"/>
-                    </div>
-                    <div class="card-body" style="display:flex;justify-content:left;align-items:left;">
-                        <p>Need to reserve a study room? We have three collaboration rooms available in Technology Commons II. If you’d like to reserve a collaboration room, you can either stop by the Student Support Desk or give us a call. We’re happy to save you a room as long as you make a reservation 24 hours in advance! <br /> <br /> Along with your reservation, you’ll be able to rent out materials as needed. This includes keyboards, markers, and adapters such as a mini DisplayPort out to multiple video inputs. In order to rent these, all you have to do is head on over to the Student Support Desk!
-
-                        </p>
-                    </div>
-                    <div class="card-body" style="display:flex;justify-content:left;align-items:left; margin-top: 1em;">
-                        <p><strong>Technology Repairs</strong></p> <hr class="ssd-hr"/>
-                    </div>
-                    <div class="card-body" style="display:flex;justify-content:left;align-items:left;">
-                        <p>If you need a computer, tablet, or iPhone repaired, our technicians would be glad to take a look at your device. Find out more information by visiting the <a href="repairs.html" class="link">Support & Repair</a> page!</p>
-                    </div>
-
                 </div>
-
                 <div class="card">
                     <div class="card-head">
-                        <h4>Where Are We located?</h4></div>
+                        <h4>Mobile Services</h4>
+                    </div>
                     <div class="card-body">
-                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCocWCVMXoSdixfKzWnMA-lp2gJs5FDGE8 &q=Technology+Commons" allowfullscreen>
-                            </iframe>
+                        <p class="tech-commons-para">
+                            <img src="Images\ifix.jpg" /><br /> At Tech commons, our mobile servicing and repair for Android and iPhone devices goes through i Fix Your i. Enjoy high quality service and same day repairs when you drop your phone off before
+                            12 A.M. Pricing can be found on <a href="https://www.ifixyouri.com/">their website</a> for your exact device, or ask your friendly Student Support Desk team for a quote.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="card card-highlight">
                     <div class="card-head">
                         <h4>Hours of Operation</h4></div>
@@ -157,49 +162,35 @@ All you need to bring with you is your student ID (or the 16 digit ISO number on
                             <tr>
                                 <td style="text-align: left;">Monday &nbsp; &nbsp;</td>
 
-                                <td style="text-align:center;">8:00am - 10:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
 
                             </tr>
                             <tr>
                                 <td style="text-align: left;">Tuesday &nbsp; &nbsp;</td>
 
-                                <td style="text-align:center;">8:00am - 10:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
 
                             </tr>
                             <tr>
                                 <td style="text-align: left;">Wednesday &nbsp; &nbsp;</td>
 
-                                <td style="text-align:center;">8:00am - 10:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
 
                             </tr>
                             <tr>
                                 <td style="text-align: left;">Thursday &nbsp; &nbsp;</td>
 
-                                <td style="text-align:center;">8:00am - 10:00pm</td>
+                                <td style="text-align:center;">8:00am-10:00pm</td>
 
                             </tr>
                             <tr>
                                 <td style="text-align: left;">Friday &nbsp; &nbsp;</td>
-                                <td style="text-align:center;">8:00am - 5:00pm</td>
+                                <td style="text-align:center;">8:00am-5:00pm</td>
 
                             </tr>
                         </table>
                     </div>
                 </div>
-                <div class="card">
-
-                    <div class="card-head">
-                        <h4>Contact Information</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul style="list-style: none;">
-                            <li>TechCommons@ucf.edu</li>
-                            <li>(407) 823-HELP</li>
-                        </ul>
-                    </div>
-                </div>
-
-
             </div>
         </div>
 
@@ -228,8 +219,8 @@ All you need to bring with you is your student ID (or the 16 digit ISO number on
                   </div>
                   <div class="footer-tech-content">
                       <ul class="content">
-                          <li class="blue"><a href="ssd.html">Student Support Desk</a></li>
-                          <li class="blue"><a href="computerlabs.html">Computer Labs</a></li>
+                          <li class="blue"><a href="../ssd/index.html">Student Support Desk</a></li>
+                          <li class="blue"><a href="../computerlabs/index.html">Computer Labs</a></li>
                               <!-- <li class="blue"><a href="techII.html">Tech Commons II</a></li>
                           <li class="blue"><a href="techI.html">Tech Commons I</a></li>
                           <li class="blue"><a href="cbI.html">Classroom I</a></li>-->
@@ -259,7 +250,7 @@ All you need to bring with you is your student ID (or the 16 digit ISO number on
                     <span class="social-img"><a href="https://twitter.com/ucftechcommons" target="blank"><img src="Images\Social\twitter.png" class = "img-fluid social-footer"/></a></span>
                     <span class="social-img"><a href="mailto:ssd@ucf.edu"><span class="glyphicon glyphicon-envelope"></span></a>
                     </span>
-                    <span class="social-img" id="hiring"><a href="work.html"><span class = "glyphicon glyphicon-user"></span></a>
+                    <span class="social-img" id="hiring"><a href="../work/index.html"><span class = "glyphicon glyphicon-user"></span></a>
                     </span>
                 </div>
 
@@ -272,6 +263,8 @@ All you need to bring with you is your student ID (or the 16 digit ISO number on
 
 
     </footer>
+
+
 
 </body>
 
