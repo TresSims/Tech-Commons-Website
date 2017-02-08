@@ -1,0 +1,10 @@
+<div class="intro card">
+    <div class="card-head">
+        <h4>Rent a GoPro, Now at Tech Commons</h4>
+    </div>
+    <div class="card-body">
+        <p>
+            override
+        </p>
+    </div>
+</div>

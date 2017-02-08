@@ -1,0 +1,11 @@
+<div class="col-sm-6 move">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3>Rent a GoPro, Now at Tech Commons</h3>
+      <small>February 8th, 2017</small>
+    </div>
+    <div class="panel-body">
+      <p>override</p>
+    </div>
+  </div>
+</div>

@@ -19,14 +19,14 @@ set /p title="Enter Title: "
 set /p body="Input the body: "
 set /p date="Input the date: "
 
-@echo -^> Making file blog%title%.txt
-echo. 2>AddToBlogHTML/blog%title%.txt
+@echo -^> Making file blog.txt
+echo. 2>AddToBlogHTML/blog.txt
 @echo -^> Done.
-@echo -^> Making file index%title%.txt
-echo. 2>AddToIndexHTML/index%title%.txt
+@echo -^> Making file index.txt
+echo. 2>AddToIndexHTML/index.txt
 @echo -^> Done.
 
-@echo -^> Populating file blog%title%.txt
+@echo -^> Populating file blog.txt
 (
 @echo ^<div class="col-sm-6 move"^>
 @echo   ^<div class="panel panel-primary"^>
@@ -39,10 +39,10 @@ echo. 2>AddToIndexHTML/index%title%.txt
 @echo     ^</div^>
 @echo   ^</div^>
 @echo ^</div^>
-) > AddToBlogHTML/blog%title%.txt
+) > AddToBlogHTML/blog.txt
 @echo -^> Done.
 
-@echo -^> Populating file index%title%.txt
+@echo -^> Populating file index.txt
 (
 @echo ^<div class="intro card"^>
 @echo     ^<div class="card-head"^>
@@ -54,7 +54,7 @@ echo. 2>AddToIndexHTML/index%title%.txt
 @echo         ^</p^>
 @echo     ^</div^>
 @echo ^</div^>
-) > AddToIndexHTML/index%title%.txt
+) > AddToIndexHTML/index.txt
 @echo -^> Done.
 
 
@@ -211,7 +211,7 @@ echo. 2>AddToTechLendJS/js%pageName%.txt
 @echo                 ^</div^>
 @echo                 ^<div class="card-body"^>
 @echo                     ^<p class="tech-commons-para"^>%description%^</p^>
-@echo                     ^<p class="tech-commons-para"^>Visit the ^<a href="../ssd.html"^>Student Support Desk^</a^> in either Tech Commons II or Classroom Building I to find out about availability.  
+@echo                     ^<p class="tech-commons-para"^>Visit the ^<a href="../ssd.html"^>Student Support Desk^</a^> in either Tech Commons II or Classroom Building I to find out about availability.
 @echo                     ^</p^>
 @echo                 ^</div^>
 @echo             ^</div^>

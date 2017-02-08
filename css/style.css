@@ -441,6 +441,11 @@ h3.activate:active{
   overflow: hidden;
 }
 
+.panel iframe{
+  width: 100%;
+  overflow: hidden;
+}
+
 .card hr{
   width: 100%;
   border-color: var(--ucf-gold);
