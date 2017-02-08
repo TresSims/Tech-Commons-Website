@@ -28,7 +28,7 @@ a:hover{
 
 a:visited {
   text-decoration: none;
-  color: #22282D;
+  /*color: #22282D;*/
 }
 
 a:active{
@@ -289,16 +289,33 @@ h3.activate:active{
   padding-bottom: .5em;
   position: relative;
   float: right;
-  background-color: #fff;
   width: 33%;
   z-index: 1000;
   border-bottom-style: solid;
   border-width: thick;
-  border-color: var(--ucf-gold);
-  margin-top: -200px;
-  color: #000;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  /*code that Mikayla commented out below*/
+  border-color: #000;
+  background-color: #fafafa;
+  margin-top: -200px;
+  border-color: var(--ucf-gold);
+  /*new background information*/
+  /*background-color:rgba(0, 0, 0, 0.8);
+
+
+  color: #000;
+  text-shadow:
+       1px 1px 0 #fff,
+     -1px -1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+       1px 1px 0 #fff;*/
+  /*end new background information*/
+
+  /*border-top: 1px solid var(--tech-grey);
+  border-right: 1px solid var(--tech-grey);
+  border-left: 1px solid var(--tech-grey);*/
 
   box-shadow: 2px, 2px, 5px, var(--tech-shadow);
 
@@ -504,6 +521,7 @@ h3.activate:active{
   text-align: left;
   padding-left: 1em;
   padding-right: 1em;
+  /*min-width:100px;*/
 
 }
 
@@ -514,10 +532,13 @@ h3.activate:active{
 
 .hours{
   color: #fff;
-  margin-top: 15px;
+  /*width: 100%;*/
+
   margin-bottom: 15px;
-  border-top-style: solid;
+  /*border-top-style: solid;*/
   border-bottom-style: solid;
+  /*table-layout: fixed*/
+  border-width: auto;
 }
 
 .hours tr{
@@ -528,12 +549,30 @@ h3.activate:active{
 .hours td{
   padding: 5px;
   text-align: center;
+  min-width: 100px;
+
+  /*width: 25%;*/
 }
+.hours th{
+  min-width: 100px;
+  max-width: 150px;
+}
+
 
 .hours td:nth-child(even){
   /*background-color: rgba(255,255,255,.34)*/
   /*color: var(--ucf-gold);*/
 }
+
+/*th.mins{
+  width: 1%;
+  white-space: nowrap;
+  width: 25%;
+}
+td.min{
+width: 25%;
+
+}*/
 
 .small-chart{
   border: none;
