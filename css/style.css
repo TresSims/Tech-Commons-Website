@@ -313,9 +313,9 @@ h3.activate:active{
        1px 1px 0 #fff;*/
   /*end new background information*/
 
-  /*border-top: 1px solid var(--tech-grey);
-  border-right: 1px solid var(--tech-grey);
-  border-left: 1px solid var(--tech-grey);*/
+  border-top: 1px solid var(--ucf-gold);
+  border-right: 1px solid var(--ucf-gold);
+  border-left: 1px solid var(--ucf-gold);
 
   box-shadow: 2px, 2px, 5px, var(--tech-shadow);
 
