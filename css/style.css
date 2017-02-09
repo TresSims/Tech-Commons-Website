@@ -623,15 +623,24 @@ width: 25%;
   font-size: 20px;
   margin-left: .5em;
 }
+.choice{
+  margin: 2px 0;
+  width: 10em;
+}
+.choice mark{
+  background-color:  rgba(0,0,0,0);
 
-.filtering-by{
+}
+
+.filtering-by mark{
   background-color: var(--tech-blue);
   color: #fff;
   text-decoration: underline;
   /*color: var(--tech-blue);*/
-  font-weight: bold;
+  /*font-weight: bold;*/
   border-radius: 2px;
-  margin: .5em;
+  padding: 5px;
+
 }
 
 .filter{
@@ -652,6 +661,7 @@ width: 25%;
   box-shadow: 1px 1px 5px var(--tech-shadow);
   margin: 1%;
   width: 22%;
+
 
   /*display: inline-block;*/
 }
