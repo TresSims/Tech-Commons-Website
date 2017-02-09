@@ -87,7 +87,7 @@ $(document).ready(function() {
         $(".filter").each(function() {
             $(this).addClass("invisible");
         });
-        if (type == "") {
+        if (type === "") {
             $(".filter").each(function() {
                 $(this).removeClass("invisible");
             });
