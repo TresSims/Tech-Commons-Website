@@ -295,7 +295,7 @@ h3.activate:active{
   border-width: thick;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  /*code that Mikayla commented out below*/
+
   border-color: #000;
   background-color: #fafafa;
   margin-top: -200px;
@@ -619,18 +619,27 @@ width: 25%;
 #all:hover{
     text-decoration: underline;
 }
+#all{
+  font-size: 20px;
+  margin-left: .5em;
+}
 
 .filtering-by{
-  /*background-color: var(--tech-blue);*/
-  /*color: #fff;*/
+  background-color: var(--tech-blue);
+  color: #fff;
   text-decoration: underline;
-  color: var(--tech-blue);
+  /*color: var(--tech-blue);*/
   font-weight: bold;
   border-radius: 2px;
+  margin: .5em;
 }
 
 .filter{
   cursor: pointer;
+}
+
+.filter-title{
+  width: 20em;
 }
 
 .panel-body{
