@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+  $("#filter-by").html("<h4>All Technology</h4><hr />");
+
+
+
     var colapse1Size = $("#colapse-1-body").height();
     $("#colapse-1-head").click(function() {
         if ($("#colapse-1-body").css("height") != "0px") {
@@ -116,76 +121,89 @@ $(document).ready(function() {
     }
 
     $("#tc2").click(function() {
+        $("#filter-by").html("<h4>Tech Commons II</h4><hr />");
         filterBy('.tc2');
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#cb1").click(function() {
+        $("#filter-by").html("<h4>Classroom Lab</h4><hr />");
         filterBy('.cb1');
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#1d").click(function() {
+        $("#filter-by").html("<h4>One Day Rental</h4><hr />");
         filterBy(".1d");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#3d").click(function() {
+        $("#filter-by").html("<h4>Three Day Rentals</h4><hr />");
         filterBy(".3d");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#7d").click(function() {
+        $("#filter-by").html("<h4>One Week Rentals</h4><hr />");
         filterBy(".7d");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#cam").click(function() {
+        $("#filter-by").html("<h4>Cameras</h4><hr />");
         filterBy(".cam");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#tab").click(function() {
+        $("#filter-by").html("<h4>Tablets</h4><hr />");
         filterBy(".tab");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#chg").click(function() {
+        $("#filter-by").html("<h4>Chargers</h4><hr />");
         filterBy(".chg");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#clo").click(function() {
+        $("#filter-by").html("<h4>Until Close Rentals</h4><hr />");
         filterBy(".clo");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#lap").click(function() {
+        $("#filter-by").html("<h4>Laptops</h4><hr />");
         filterBy(".lap");
         removeFilter();
         $(this).addClass("filtering-by");
     });
 
     $("#all").click(function() {
+        $("#filter-by").html("<h4>All Technology</h4><hr />");
         filterBy("");
         removeFilter();
     });
 
     $("#acc").click(function() {
+        $("#filter-by").html("<h4>Computer Acessories</h4><hr />");
         filterBy(".acc");
         removeFilter();
         $(this).addClass("filtering-by");
     });
     $("#cab").click(function() {
+        $("#filter-by").html("<h4>Computer Cables</h4><hr />");
         filterBy(".cab");
         removeFilter();
         $(this).addClass("filtering-by");
