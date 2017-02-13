@@ -867,6 +867,7 @@ width: 25%;
 }
 
 .footer-help-head{
+  width: 85%;
   border-bottom-style: solid;
   border-color: #5F8E33;
 }
@@ -878,6 +879,7 @@ width: 25%;
 }
 
 .footer-tech-head{
+  width: 85%;
   border-bottom-style: solid;
   border-color: #1b83c4;
 
@@ -901,6 +903,7 @@ width: 25%;
 }
 
 .footer-cst-head{
+  width: 85%;
   border-bottom-style: solid;
   border-color: #d82222;
 }
