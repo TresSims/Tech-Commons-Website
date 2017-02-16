@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="../css\bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css\date-picker.css">
+
     <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <title>Technology Commons</title>
     <link rel="icon" type="image/png" href="http://imgur.com/z9p4kx5.png">
 
     <script src="../JS\scripts.js"></script>
     <script src="../JS\bootstrap.js"></script>
-    <script src="../JS\reservation.js"></script>
+    <script src="../JS\generator.js"></script>
     <script src="../JS\date-picker.js"></script>
+
 
 </head>
 
@@ -106,7 +108,7 @@
     <div class="container">
         <div class="body-head-gaurd">
             <div class="body-head">
-                <h2>Room Reservations</h2>
+                <h2>Content Generator</h2>
             </div>
         </div>
 
@@ -115,147 +117,82 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="Card">
-                    <div class="panel panel-danger">
+                    <div class="panel panel-warning">
                         <div class="panel-heading">
-                            <h4><center><span class="glyphicon glyphicon-exclamation-sign"></span> CAUTION! This page is not yet complete. Please navigate back to the homepage. If you need to make a room reservation, please visit the Student Support Desk in Tech Commons II</center></h4>
+                            <h4><center><span class="glyphicon glyphicon-exclamation-sign"></span> CAUTION! This page is not part of the main Tech Commons Website, If you aren't sure how you got here, you should probably leave. </center></h4>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="name" class="col-xs-2 col-form-label">Name</label>
-                        <div class="col-xs-10 input-group">
-                            <input class="form-control" type="text" value="Joe Smith" id="name" />
-                        </div>
+                    <div class="card-head">
+                      <h4>SDD Code Generator</h4>
                     </div>
+                    <div class="card-body">
 
-                    <div class="form-group row">
-                        <label for="nid" class="col-xs-2 col-form-label">NID</label>
-                        <div class="col-xs-10 input-group">
-                            <input class="form-control" type="text" value="jo000000" id="nid" />
-                            <div class="input-group-addon help-iso"><a href="#" data-toggle="tooltip" data-placement="bottom" title="<img src='../Images\Social\twitter.png' style='width: 50px'/>"><span class="glyphicon glyphicon-question-sign"></span></a></div>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="iso" class="col-xs-2 col-form-label">ISO Number</label>
-                        <div class="col-xs-10 input-group">
-                            <input class="form-control" type="text" value="6009 2102 000 000" id="iso" />
-                            <div class="input-group-addon help-iso"><a href="#" data-toggle="tooltip" data-placement="bottom" title="<img src='../Images\Social\twitter.png' style='width: 50px'/>" id="isoTip"><span class="glyphicon glyphicon-question-sign"></span></a></div>
-                        </div>
-                    </div>
-                    <hr />
                     <div class="form-group">
-                        <label for="roomSelect">Room</label>
-                        <select class="form-control" id="roomSelect">
-      <option>Choose a Room</option>
-      <option>117A Green Room</option>
-      <option>117C Magenta Room</option>
-      <option>117D Blue Room</option>
-      <option>117E Yellow Room</option>
-    </select>
+                        <label for="Generator Selection">Select Which Element you want to generate code for</label>
+                        <select class="form-control" id="gen-select">
+                          <option>Choose an element</option>
+                          <option>New Blog Post</option>
+                          <option>New SSD Item</option>
+                          <option>New Filter Element</option>
+                        </select>
                     </div>
 
-                    <div id="roomInfo">
-                        <div id="green">
-                            <div class="card">
-                                <div class="card-head">
-                                    <h4> Room Info</h4>
-                                </div>
-                                <div class="card-body">
-                                    <b>Max Ocupancy: </b>5 people<br />
-                                    <b>Purpose: </b>Audio/Vidoe Recording<br />
-                                    <b>Max Reservation Time: </b>4 Hours, up to 4 times a month<br />
-                                    <div class="time-slot">
-                                        <br />
-                                        <b>Date</b><br />
-                                        <div style="overflow:hidden;">
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div id="datetimepicker0"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
+                    <div id="blog-gen">
+                      <hr />
+                      <div class="form-group">
+                        <label for="blog-title">Title:</label>
+                        <input type="text" class="form-control" id="blog-title" value="Sample Blog Title">
+                        <br />
+
+                        <label for="content">Content:</label>
+                        <div id ="sandbox-container" class="col-xs-5" style="float: right; margin: 1em; margin-top: -.25em">
+                        <div class="input-group date">
+                          <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                         </div>
-                        <div id="magenta">
-                            <div class="card">
-                                <div class="card-head">
-                                    <h4> Room Info</h4>
-                                </div>
-                                <div class="card-body">
-                                    <b>Max Ocupancy: </b>10 people<br />
-                                    <b>Purpose: </b>Study/Collaboration<br />
-                                    <b>Max Reservation Time: </b>4 Hours, up to 4 times a month<br />
-                                    <div class="time-slot">
-                                        <br />
-                                        <b>Date</b><br />
-                                        <div style="overflow:hidden;">
-                                            <div class="form-group">
-                                                <div class="row">
-                                                    <div class="col-md-8">
-                                                        <div id="datetimepicker1"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
+                      
+                        <textarea class="form-control" rows="5" id="content"></textarea>
+                        <br />
+
+                        <button type="button" class="btn btn-primary btn-block" style="padding: .25em" id="submit-blog">Submit</button>
+
+                      </div>
+
                     </div>
-                    <div id="blue">
-                        <div class="card">
-                            <div class="card-head">
-                                <h4> Room Info</h4>
-                            </div>
-                            <div class="card-body">
-                                <b>Max Ocupancy: </b>6 people<br />
-                                <b>Purpose: </b>Study/Collaboration<br />
-                                <b>Max Reservation Time: </b>4 Hours, up to 4 times a month<br />
-                                <div class="time-slot">
-                                    <br />
-                                    <b>Date</b><br />
-                                    <div style="overflow:hidden;">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div id="datetimepicker2"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="item-gen">
+                      <hr />
+                      <div class="form-group">
+                        <label for="blog-title">Item Name:</label>
+                        <input type="text" class="form-control" id="item-name" value="Item Name">
+                        <label for="sel2">Filter Types (hold shift or control to select more than one):</label>
+                        <select multiple class="form-control" id="sel2">
+                          <option>tab</option>
+                          <option>lap</option>
+                          <option>chg</option>
+                          <option>cab</option>
+                          <option>cam</option>
+                          <option>acc</option>
+                          <option>tc2</option>
+                          <option>cb1</option>
+                          <option>tc2</option>
+                          <option>1d</option>
+                          <option>3d</option>
+                          <option>7d</option>
+                          <option>clo</option>
+                        </select>
+                        <label for="description">Item Description:</label>
+                        <textarea class="form-control" rows="5" id="description"></textarea>
+                        <br />
+                        <button type="button" class="btn btn-primary btn-block" style="padding: .25em" id="submit-item">Submit</button>
+                      </div>
                     </div>
-                    <div id="yellow">
-                        <div class="card">
-                            <div class="card-head">
-                                <h4> Room Info</h4>
-                            </div>
-                            <div class="card-body">
-                                <b>Max Ocupancy: </b>10 people<br />
-                                <b>Purpose: </b>Study/Collaboration<br />
-                                <b>Max Reservation Time: </b>4 Hours, up to 4 times a month<br />
-                                <div class="time-slot">
-                                    <br />
-                                    <b>Date</b><br />
-                                    <div style="overflow:hidden;">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-8">
-                                                    <div id="datetimepicker3"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="filter-gen">
+                      <hr />
+                      filter
                     </div>
+                  </div>
                 </div>
             </div>
         </div>

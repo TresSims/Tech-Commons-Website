@@ -304,6 +304,28 @@ echo. 2>AddToTechLendJS/js%pageName%.txt
 
 goto end
 
+:menu-item
+set /p title="What is the name of the option: "
+set /p abbr="Give an abbreviation of the option: "
+set /p loc="Is this a location?(y/n): "
+IF /I "%loc%" == "y"( )
+set /p tim="Is this a duration?(y/n): "
+IF /I "%tim%" == "y"(  )
+set /p typ="Is this an item type?(y/n): "
+IF /I "%typ%" == "y"(  )
+
+:generate-menu
+@echo -^> Making file %abbr%ListItem.txt
+echo. 2>AddToTechLendHTML/%abbr%ListItem.txt
+@echo -^> Success.
+
+@echo -^> Making file %abbr%ListItem.txt
+echo. 2>AddToTechLendHTML/%abbr%ListItem.txt
+@echo -^> Success.
+
+
+goto end
+
 :end
 set /p again="Start over?(y/n): "
 IF /I "%again%" == "y" (
