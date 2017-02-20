@@ -88,6 +88,39 @@ h4{
   font-size: 25px;
 }
 
+code{
+  display: block;
+  width: 75%;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyable{
+  white-space: pre;
+}
+
+.error{
+  color: #d52d22;
+}
+
+.caution{
+  color: #eec929;
+}
+
+.incorrect-field{
+  border-color: #d52d22;
+  border-width: 3px;
+  background-color: #ff7f6e;
+}
+
+.caution-field{
+  border-color: #eec929;
+  border-width: 3px;
+  background-color: #fdffa3;
+}
+
+
 .accordion-help:hover:after{
   text-decoration: none;
   color: #333;

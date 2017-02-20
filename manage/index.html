@@ -146,18 +146,30 @@
                         <input type="text" class="form-control" id="blog-title" value="Sample Blog Title">
                         <br />
 
-                        <label for="content">Content:</label>
+                        <label for="content">Content: <small>use html formatting</small></label>
                         <div id ="sandbox-container" class="col-xs-5" style="float: right; margin: 1em; margin-top: -.25em">
                         <div class="input-group date">
-                          <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                          <input type="text" class="form-control" id="date-field"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                         </div>
                       </div>
-                      
+
                         <textarea class="form-control" rows="5" id="content"></textarea>
                         <br />
 
                         <button type="button" class="btn btn-primary btn-block" style="padding: .25em" id="submit-blog">Submit</button>
 
+                        <div class="invisible" id="add-to-blog">
+                          <br />
+                          <div class="alert alert-success"><b>Insert in blog/index.html</b>Under line:   &lt;div class="masonry-container"...</div>
+                          <br />
+                          <code class="copyable"></code>
+                          <br />
+                          <div class="alert alert-info" style="width: 75%; padding: 2px; margin-left: auto; margin-right: auto;">You will need to remove the 'panel-primary' class from the next element.</div>
+                        </div>
+                        <div class="invisible" id="add-to-index">
+                          <br />
+                          <div class="alert alert-success"><b>Insert in index.html</b>Under line:   &lt;div class="col-lg-8"&gt;</div>
+                        </div>
                       </div>
 
                     </div>
@@ -165,9 +177,9 @@
                       <hr />
                       <div class="form-group">
                         <label for="blog-title">Item Name:</label>
-                        <input type="text" class="form-control" id="item-name" value="Item Name">
-                        <label for="sel2">Filter Types (hold shift or control to select more than one):</label>
-                        <select multiple class="form-control" id="sel2">
+                        <input type="text" class="form-control" id="item-name" value="Item Name"><br />
+                        <label for="filters">Filter Types (hold shift or control to select more than one):</label>
+                        <select multiple class="form-control" id="filters">
                           <option>tab</option>
                           <option>lap</option>
                           <option>chg</option>
@@ -181,7 +193,7 @@
                           <option>3d</option>
                           <option>7d</option>
                           <option>clo</option>
-                        </select>
+                        </select><br />
                         <label for="description">Item Description:</label>
                         <textarea class="form-control" rows="5" id="description"></textarea>
                         <br />
@@ -190,7 +202,18 @@
                     </div>
                     <div id="filter-gen">
                       <hr />
-                      filter
+                      <div class ="form-group">
+                        <label for="blog-title">Filter Name:</label>
+                        <input type="text" class="form-control" id="filter-name" value="Filter Name"><br />
+                        <label for="type">What type of filter is this:</label>
+                        <select class="form-control" id="type">
+                          <option>Select One</option>
+                          <option>Location</option>
+                          <option>Technology Type</option>
+                          <option>Rental Duration</option>
+                        </select><br />
+                        <button type="button" class="btn btn-primary btn-block" style="padding: .25em" id="submit-filter">Submit</button>
+                      </div>
                     </div>
                   </div>
                 </div>
