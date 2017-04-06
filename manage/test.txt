@@ -1,0 +1,12 @@
+&lg;div class=\"col-sm-6 move\"&gt;
+  &lg;div class=\"panel panel-primary\"&gt;
+    &lg;div class=\"panel-heading\"&gt;
+      &lg;h3&gt;Rent a GoPro, Now at Tech Commons&lg;/h3&gt;
+      &lg;small&gt;February 8th, 2017&lg;/small&gt;
+    &lg;/div&gt;
+    &lg;div class=\"panel-body\"&gt;
+      &lg;iframe src=\"https://player.vimeo.com/video/203126976\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lg;/iframe&gt;
+&lg;p&gt;&lg;a href=\"https://vimeo.com/203126976\"&gt;GoPro Checkout Through the Tech Commons&lg;/a&gt; from &lg;a href=\"https://vimeo.com/user62608419\"&gt;UCF IT&lg;/a&gt; on &lg;a href=\"https://vimeo.com\"&gt;Vimeo&lg;/a&gt;.&lg;/p&gt;
+    &lg;/div&gt;
+  &lg;/div&gt;
+&lg;/div&gt;

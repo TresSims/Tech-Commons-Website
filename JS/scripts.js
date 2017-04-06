@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     // Add smooth scrolling to all links
   //  var a = document.getElementById("anchor1");
-    $("#scroll, #scroll2, #scroll3").on('click', function(event) {
+    $("#scroll, #scroll2, #scroll3, #scroll4").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
