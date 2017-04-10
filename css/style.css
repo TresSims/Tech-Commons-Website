@@ -36,9 +36,7 @@ a:active{
   color: var(--tech-grey);
 }
 
-a:ABOM{
-  SADFJH;
-}
+
 .navbar-help{
   color: #000;
 }
@@ -61,6 +59,14 @@ a:ABOM{
 
 }
 
+.more-btn{
+  float: right;
+  border-radius: 4px;
+  background-color: #0269C2;
+  color: white;
+  padding: 5px;
+  margin-top: -2em;
+}
 
 
 html {
