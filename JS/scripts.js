@@ -54,6 +54,10 @@ $(document).ready(function() {
         } // End if
     });
 
+    $("#adobe").on('click', function(event){
+      document.location.href="http://doodle.com/poll/mcsp4vw4qv6n89bm";
+    });
+
 
 
 });
