@@ -1,4 +1,4 @@
-var hiring = false;
+var hiring = true;
 
 
 
